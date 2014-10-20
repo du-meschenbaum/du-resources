@@ -1,0 +1,368 @@
+/* ACADEMIC COMMONS & UNIVERSITY LIBRARIES */
+/* Whole Page styling */
+
+body.palette_20 #pageBanners .bannersNav,
+body.palette_20 #mainContent h3,
+body.palette_20 .framedPhotoDefault,
+body.palette_20 .framedPhotoLeft,
+body.palette_20 .framedPhotoRight,
+body.palette_20 .overlay-wrapper h1.overlayTitle {
+	background:#a8996e;
+}
+body.palette_20 #body_wrapper {
+	background-color:#eae9e5;
+}
+body.palette_20 #wrapper {
+}
+body.palette_20.threeCol #mainContent {
+	width: 525px;
+	margin: 15px 0 0 0;
+	padding: 0 10px 0 0;
+}
+body.palette_20 #mainContent h3 {
+	padding:4px 11px;
+}
+body.palette_20 #mainContent header h1 {
+	font-size:12px;
+	margin:0;
+}
+body.palette_20 #mainContent header h2 {
+	font-size:19px;
+	color:#0bb3e4;
+}
+body.palette_20 .expandListItem {
+	background:#f4f3ed;
+}
+
+body.palette_20 #main {
+	background:#fff;
+	-webkit-box-shadow:
+		10px 0px 20px -8px rgba(0, 0, 0, 0.3),
+		-10px 0px 20px -8px rgba(0, 0, 0, 0.3);
+	box-shadow:
+		10px 0px 20px -8px rgba(0, 0, 0, 0.3),
+		 -10px 0px 20px -8px rgba(0, 0, 0, 0.3);	
+}
+body.palette_20 #main #mainContent img {
+	padding:5px;
+	background:#fff;
+	border: 1px solid #0bb3e4;
+}
+body.palette_20 ul.gallerylist li img {
+	border: 1px solid #0bb3e4;
+}
+body.palette_20 #mainContent ol li {
+	padding-bottom:20px;
+}
+body.palette_20.threeCol .threeSubCol .vertCol {
+	width:165px;
+}
+body.palette_20 #mainContent .vertCol h2 {
+	font-size:14px;
+	color:#0bb3e4;
+}
+body.palette_20 .floatbox {
+	border: solid 5px #eae9e5;
+	border-radius: 0;
+	padding: 10px 2px 10px 8px;
+	margin: 0 8px 20px 2px;
+	width: 232px;
+}
+body.palette_20 article.tall-110 {
+	height:110px;
+}
+body.palette_20 article.tall-165 {
+	height:165px;
+}
+body.palette_20 .text-blue {
+	color:#0bb3e4;
+}
+
+
+/* Top Nav and Banner Area */
+body.palette_20 #pageBanners .bannersNav {
+	height:50px;
+}
+body.palette_20 #pageBanners .bannersNav ol {
+	height:30px;
+}
+body.palette_20 #pageBanners .bannersNav ol li {
+	width:139px;
+	height:30px;
+	margin:10px 0 10px 0;
+	border-right:solid #bbb194 1px;
+}
+body.palette_20 #pageBanners .bannersNav ol li a.active {	
+	background: url(/_resources/images/btns/acc_on-state-top.gif);
+	background-repeat:no-repeat;
+	background-position:center 0;
+	overflow:visible;
+}
+body.palette_20 #pageBanners .bannersNav ol li:last-child {
+	border:none;
+}
+body.palette_20 #pageBanners .bannersNav ol li a,
+body.palette_20 #pageBanners .bannersNav ol li a:visited {
+	color:#000;
+	margin:0;
+	height:30px;
+	width:139px;
+	padding:6px 0 0 0;
+}
+body.palette_20 #pageBanners .bannersNav ol li a.active,
+body.palette_20 #pageBanners .bannersNav ol li a:hover {
+	color:#fff;
+	margin:-10px 0 0 0;
+	height:30px;
+	width:139px;
+	padding:16px 0 0 0;
+	background: url(/_resources/images/btns/acc_on-state-top.gif);
+	background-repeat:no-repeat;
+	background-position:center 0;
+	overflow:visible;
+}
+body.palette_20 #pageBanners .bannersNav ol li a.doubleLine {
+	margin:-10px 0 0 0;
+}
+body.palette_20 #pageBanners .bannersNav ol li a:hover.doubleLine,
+body.palette_20 #pageBanners .bannersNav ol li a.doubleLine.active {
+	padding:10px 0 0 0;
+}
+body.palette_20 #pageBanners .bannersTitle h1,
+body.palette_20 #pageBanners .bannersTitle h1 a {
+	color:#fff;
+	background:#000;
+}
+body.palette_20 #pageBanners .bannersTitle {
+	margin:35px auto 5px auto;
+}
+body.palette_20 #pageBanners .bannersTitle h1 {
+	color:#FFF;
+	margin:35px 0 0 0;
+	padding:10px 15px 6px 15px;
+	font-size:28px;
+	font-weight:normal;
+	display:inline;
+	background:#000;
+}
+body.palette_20 #pageBanners .oneColBanner,
+body.palette_20 #pageBanners .twoColBanner {
+	-webkit-box-shadow:
+		10px 0px 20px -8px rgba(0, 0, 0, 0.3),
+		-10px 0px 20px -8px rgba(0, 0, 0, 0.3);
+	box-shadow:
+		10px 0px 20px -8px rgba(0, 0, 0, 0.3),
+		 -10px 0px 20px -8px rgba(0, 0, 0, 0.3);	
+}
+body.palette_20 #pageBanners .bannersNav {
+	-webkit-box-shadow:
+		10px 0px 20px -8px rgba(0, 0, 0, 0.3),
+		-10px 0px 20px -8px rgba(0, 0, 0, 0.3),
+		0px -10px 20px -8px rgba(0, 0, 0, 0.3);
+	box-shadow:
+		10px 0px 20px -8px rgba(0, 0, 0, 0.3),
+		 -10px 0px 20px -8px rgba(0, 0, 0, 0.3),
+		 0px -10px 20px -8px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+/* Top Banner Overlay Left and Right */
+body.palette_20 article.overlay_right,
+body.palette_20 article.overlay_left {
+	color:#fff;
+	background:rgba(0, 0, 0, 0.65);
+	height:auto;
+	width:219px;
+	margin-top:-300px;
+	margin-bottom:-300px;
+	padding:17px;
+}
+body.palette_20 article.overlay_right h1,
+body.palette_20 article.overlay_left h1 {
+	color:#0bb3e4;
+	padding:0;
+	font-size:36px;
+	line-height:36px;
+}
+body.palette_20 article.overlay_right h2,
+body.palette_20 article.overlay_left h2 {
+	padding:0;
+	font-size:21px;
+	line-height:21px;
+}
+body.palette_20 article.overlay_right ul,
+body.palette_20 article.overlay_left ul {
+	padding: 0 0 0 20px;
+	list-style-type:none;
+}
+
+body.palette_20 article.overlay_right ul:last-child,
+body.palette_20 article.overlay_left ul:last-child {
+	border:none;
+}
+body.palette_20 article.overlay_right ul li,
+body.palette_20 article.overlay_left ul li {
+	line-height:20px;
+	list-style-image:url(/_resources/images/btns/acc_pointer.jpg);
+	margin:5px 0;
+}
+body.palette_20 article.overlay_right a:link, 
+body.palette_20 article.overlay_right a:visited,
+body.palette_20 article.overlay_left a:link,
+body.palette_20 article.overlay_left a:visited {
+	color:#ffffff;
+	text-decoration:underline;
+}
+body.palette_20 article.overlay_left a:hover,
+body.palette_20 article.overlay_right a:hover {
+	color:#fff;
+}
+body.palette_20 article.overlay_right {
+	margin-left: 732px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+	border-radius: 0px 0px 0px 0px;
+}
+
+
+/* Left Sidebar Secondary Navigation Area */
+body.palette_20 #leftSidebar {
+	background:#a8996e;
+	color:#000;
+	margin: 0 15px 0 0;
+	padding: 21px 10px 34px 0;
+}
+body.palette_20 #leftSidebar ol li {	
+	margin-left:40px;
+}
+body.palette_20 #leftSidebar ol li a {
+	color:#000;
+	border-bottom:solid #bbb194 1px;
+	margin:0;
+}
+body.palette_20 #leftSidebar nav ol li.level1.activeParent:hover {
+	margin:0 0 0 25px;
+	padding:0 0 0 15px;	
+}
+body.palette_20 #leftSidebar nav ol li.level1.activeParent a {
+	padding:10px 8px 12px 0px;
+}
+body.palette_20 #leftSidebar nav ol li.level2.activeParent a {
+	padding:10px 8px 12px 12px;
+}
+body.palette_20 #leftSidebar nav ol li.level3.activeParent a {
+	padding:10px 8px 12px 22px;
+}
+body.palette_20 #leftSidebar nav ol li.level4.activeParent a {
+	padding:10px 8px 12px 30px;
+}
+body.palette_20 #leftSidebar nav ol li.level5.activeParent a {
+	padding:10px 8px 12px 38px;
+}
+body.palette_20 #leftSidebar ol li:last-child a {
+	border:none;
+}
+body.palette_20 #leftSidebar ol li.active {
+	background: url(/_resources/images/btns/acc_on-state-left.gif);
+	background-repeat:no-repeat;
+	background-position:0px 5px;
+}
+
+body.palette_20 #leftSidebar nav ol li.level1 a {
+	padding-left: 0px;
+}
+body.palette_20 #leftSidebar nav ol li.level2 a {
+	padding-left: 12px;
+}
+body.palette_20 #leftSidebar nav ol li.level3 a {
+	padding-left: 22px;
+}
+body.palette_20 #leftSidebar nav ol li.level4 a {
+	padding-left: 30px;
+}
+body.palette_20 #leftSidebar nav ol li.level5 a {
+	padding-left: 38px;
+}
+
+
+body.palette_20 #leftSidebar ol li:hover a,
+body.palette_20 #leftSidebar nav ol li.level1.active a,
+body.palette_20 #leftSidebar nav ol li.level2.active a,
+body.palette_20 #leftSidebar nav ol li.level3.active a,
+body.palette_20 #leftSidebar nav ol li.level4.active a,
+body.palette_20 #leftSidebar nav ol li.level5.active a {
+	color:#fff;
+	background:none;
+	border-right:none;
+	border-bottom:solid #bbb194 1px;
+}
+body.palette_20 #leftSidebar nav ol li.level1.active,
+body.palette_20 #leftSidebar nav ol li.level1.active:hover {
+	margin:0 0 0 20px;
+	padding:0 0 0 15px;	
+}
+body.palette_20 #leftSidebar nav ol li.level2.active,
+body.palette_20 #leftSidebar nav ol li.level2.active:hover {
+	margin:0 0 0 32px;
+	padding:0 0 0 27px;
+}
+body.palette_20 #leftSidebar nav ol li.level3.active,
+body.palette_20 #leftSidebar nav ol li.level3.active:hover {
+	margin:0 0 0 42px;
+	padding:0 0 0 37px;
+}
+body.palette_20 #leftSidebar nav ol li.level4.active,
+body.palette_20 #leftSidebar nav ol li.level4.active:hover {
+	margin:0 0 0 50px;
+	padding:0 0 0 45px;
+}
+body.palette_20 #leftSidebar nav ol li.level5.active,
+body.palette_20 #leftSidebar nav ol li.level5.active:hover {
+	margin:0 0 0 58px;
+	padding:0 0 0 53px;
+}
+
+body.palette_20 #leftSidebar nav ol li.level1.active a {
+	padding:10px 8px 12px 0;
+	margin:0 0 0 5px;
+}
+body.palette_20 #leftSidebar nav ol li.level2.active a {
+	padding:10px 8px 12px 12px;
+	margin:0 0 0 -22px;
+}
+body.palette_20 #leftSidebar nav ol li.level3.active a {
+	padding:10px 8px 12px 22px;
+	margin:0 0 0 -42px;
+}
+body.palette_20 #leftSidebar nav ol li.level4.active a {
+	padding:10px 8px 12px 30px;
+	margin:0 0 0 -50px;
+}
+body.palette_20 #leftSidebar nav ol li.level5.active a {
+	padding:10px 8px 12px 38px;
+	margin:0 0 0 -58px;
+}
+
+
+/* Right Sidebar */
+body.palette_20 #rightSidebar {
+	margin:15px 0 0 0;
+}
+body.palette_20 #rightSidebar .simpleCallout {
+	background:#eae9e5;
+}
+body.palette_20 #rightSidebar h1 {
+	background:#0bb3e4;
+	color:#000;
+	padding: 8px 0 8px 10px;
+	font-weight:normal;
+}
+body.palette_20 #main #rightSidebar a {
+	display:inline;
+	font-weight:normal;
+}

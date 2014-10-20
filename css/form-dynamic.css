@@ -1,0 +1,16 @@
+.form-wrapper form {width:100%; margin:10px 0px; padding:10px 0; background:#f4f2ed; border:1px solid #ccc;}
+.form-wrapper form ul, .form-wrapper form li {padding:0; margin:0 auto; width:55em; margin-bottom:.75em; list-style:none !important; background:none !important;}
+.form-wrapper form li {clear:both; margin:0; padding:0.75em 0;}
+.form-wrapper form label {float:left; width:15em; margin-right:1em; text-align:right; font-size:12px;}
+.form-wrapper form textarea {width:30em; height:12em;}
+.form-wrapper form .text input {width:30em;}
+.form-wrapper form input.submit {width:auto; margin-left:8em;}
+.form-wrapper form li.paragraph p:last-child {margin-bottom:0 !important;}
+.form-wrapper form li.radio div, .form-wrapper form li.checkbox div {float:left;}
+.form-wrapper form li.radio span, .form-wrapper form li.checkbox span {display:block; clear:both; padding:0.25em 0;}
+.form-wrapper form li.radio span:first-child, .form-wrapper form li.checkbox span:first-child {padding-top:0;}
+.form-wrapper form li.radio span label, .form-wrapper form li.checkbox span label {float:right; width:30em; margin-right:0; margin-left:1em; padding:0.15em 0 0 0; text-align:left;}
+.form-wrapper form li.radio span input, .form-wrapper form li.checkbox span input {float:left;}
+.form-wrapper form li.select input {float:none; text-align:left;}
+.form-wrapper form div.clear {float:none !important; clear:both; height:0; line-height:0;}
+#webtechid {display:none;}

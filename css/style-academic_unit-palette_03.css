@@ -1,0 +1,42 @@
+body.palette_03 #body_wrapper {background-color:#012442;}
+body.palette_03 #main {background-color:#ffffff;}
+body.palette_03 #main a:link, body.palette_03 #main a:active, body.palette_03 #main a:visited {color:#982722;}
+body.palette_03 #pageBanners .bannersNav, body.palette_03 #main #leftSidebar, body.palette_03 #mainContent h3, body.palette_03 .framedPhotoDefault, body.palette_03 .framedPhotoLeft, body.palette_03 .framedPhotoRight, 
+body.palette_03 #rightSidebar h1, body.palette_03 .overlay-wrapper h1.overlayTitle {background:#000F1C;}
+body.palette_03 #pageBanners .bannersTitle h1, body.palette_03 #pageBanners .bannersTitle h1 a, body.palette_03 #pageBanners .bannersNav ol li a, body.palette_03 #pageBanners .bannersNav ol li a:visited, 
+body.palette_03 #pageBanners .bannersNav ol li a:active, body.palette_03 #pageBanners .bannersNav ol li a:hover, body.palette_03 #main #leftSidebar nav ol li a, body.palette_03 #main #leftSidebar nav ol li a:hover, 
+body.palette_03 #main #leftSidebar nav ol li.level1, body.palette_03 #mainContent h3, body.palette_03 .framedPhotoDefault p, body.palette_03 .framedPhotoLeft p, body.palette_03 .framedPhotoRight p, 
+body.palette_03 #rightSidebar h1, body.palette_03 #main #leftSidebar .simpleCallout li {color:#ffffff;}
+body.palette_03 #pageBanners .bannersNav ol li a.active, body.palette_03 #pageBanners .bannersNav ol li a:active, body.palette_03 #pageBanners .bannersNav ol li a:hover, body.palette_03 #main #leftSidebar nav ol li a:hover, 
+body.palette_03 #main #leftSidebar nav ol li.level1.active a, body.palette_03 #main #leftSidebar nav ol li.level2.active a, body.palette_03 #main #leftSidebar nav ol li.level3.active a, body.palette_03 #main #leftSidebar nav ol li.level4.active a, 
+body.palette_03 #main #leftSidebar nav ol li.level5.active a, body.palette_03 #main #leftSidebar nav ol li.level2.activeParent a, body.palette_03 #main #leftSidebar nav ol li.level3.activeParent a, 
+body.palette_03 #main #leftSidebar nav ol li.level4.activeParent a, body.palette_03 #main #leftSidebar .simpleCallout h1 {background:#14222D; color:#ffffff;}
+body.palette_03 #rightSidebar .simpleCallout {background:#EDEEF1;}
+body.palette_03 .expandListItem {background:#f1f1f1;}
+body.palette_03 .expandListItem h5 {color:#982722; background:url("/_resources/images/btns/btn_expand_plus-palette3.gif") no-repeat 0px 6px;}
+body.palette_03 .expandListItem h5.expandSelected {background:url("/_resources/images/btns/btn_expand_minus-palette3.gif") no-repeat 0px 6px;}
+body.palette_03 .expandListItemContent .framedPhotoDefault img, body.palette_03 .expandListItemContent .framedPhotoLeft img, body.palette_03 .expandListItemContent .framedPhotoRight img {border-color:#d3d5d6;}
+body.palette_03 #mainContent ul li {background:url("/_resources/images/blts/bullet-palette3.gif") no-repeat 0 .6em;}
+body.palette_03 #mainContent .profiles li ul.genericContentList li {background:url("/_resources/images/blts/bullet-palette3.gif") no-repeat 0 .6em !important;}
+body.palette_03 #rightSidebar li {border-bottom:#c8cccf 1px solid; color:#000000;}
+body.palette_03 #rightSidebar a {color:#9c231e;}
+body.palette_03 #mainContent .profiles li h2.profile, body.palette_03 #mainContent .profiles li h2.profile a {color:#9b2416; background:none;}
+
+/*body.palette_03 #pageBanners .bannersTitle h1, 
+body.palette_03 #pageBanners .bannersTitle h1 a {color:#252525;}
+body.palette_03 #mainContent .viewLarger a {color:#FFF;}
+body.palette_03 #mainContent h4, figcaption {color:#FFF; padding:3px; margin:3px 0 5px 0}
+body.palette_03 .framedPhotoDefault,  
+body.palette_03 #mainContent .threeSubCol .vertCol h4, figcaption {margin:0px; padding:4px; background:#000F1C;}
+body.palette_03 #mainContent .profiles li h3.profile, 
+body.palette_03 #mainContent .profiles li h3.profile a, 
+body.palette_03 #mainContent h3.profile a {color:#FFF;}
+body.palette_03 #mainContent ul li {background:none;}
+body.palette_03 #pageBanners .bannersNav, 
+body.palette_03 #main #leftSidebar, 
+body.palette_03 #mainContent h4, 
+body.palette_03 .framedPhotoDefault, 
+body.palette_03 .framedPhotoLeft, 
+body.palette_03 .framedPhotoRight, 
+body.palette_03 #rightSidebar h1, 
+body.palette_03 .overlay-wrapper h1.overlayTitle {background:#000F1C;}*/

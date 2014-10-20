@@ -1,0 +1,45 @@
+body.palette_01 #body_wrapper {background-color:#ffffff;}
+body.palette_01 #main {background-color:transparent;}
+body.palette_01 #main a:link, body.palette_01 #main a:active, body.palette_01 #main a:visited {color:#982722;}
+body.palette_01 #pageBanners .bannersTitle h1, body.palette_01 #pageBanners .bannersTitle h1 a {color:#252525;}
+
+body.palette_01 #mainContent .viewLarger a {color:#FFF;}
+
+body.palette_01 #pageBanners .bannersNav, body.palette_01 #leftSidebar, body.palette_01 #mainContent h3, body.palette_01 .framedPhotoDefault, body.palette_01 .framedPhotoLeft, body.palette_01 .framedPhotoRight, body.palette_01 #rightSidebar h1, body.palette_01 .overlay-wrapper h1.overlayTitle {background:#00456b;}
+
+
+body.palette_01 #mainContent h3, figcaption {color:#FFF; padding:3px; margin:3px 0 5px 0}
+body.palette_01 .framedPhotoDefault,  body.palette_01 #mainContent .threeSubCol .vertCol h3, figcaption {margin:0px; padding:4px; background:#00456b;}
+
+
+body.palette_01 #pageBanners .bannersNav ol li a, body.palette_01 #pageBanners .bannersNav ol li a:visited, body.palette_01 #pageBanners .bannersNav ol li a:active, body.palette_01 #pageBanners .bannersNav ol li a:hover, 
+body.palette_01 #main #leftSidebar li a, body.palette_01 #main #leftSidebar li a:hover, body.palette_01 #main #leftSidebar nav ol li.level1, body.palette_01 #mainContent h3, body.palette_01 .framedPhotoDefault p, 
+body.palette_01 .framedPhotoLeft p, body.palette_01 .framedPhotoRight p, body.palette_01 #rightSidebar h1, body.palette_01 #leftSidebar .simpleCallout li {color:#ffffff;}
+body.palette_01 #pageBanners .bannersNav ol li a.active, body.palette_01 #pageBanners .bannersNav ol li a:active, body.palette_01 #pageBanners .bannersNav ol li a:hover, body.palette_01 #leftSidebar li a:hover, 
+body.palette_01 #leftSidebar nav ol li.level1.active a, body.palette_01 #leftSidebar nav ol li.level2.active a, body.palette_01 #leftSidebar nav ol li.level3.active a, body.palette_01 #leftSidebar nav ol li.level4.active a, 
+body.palette_01 #leftSidebar nav ol li.level5.active a, body.palette_01 #leftSidebar nav ol li.level2.activeParent a, body.palette_01 #leftSidebar nav ol li.level3.activeParent a, 
+body.palette_01 #leftSidebar nav ol li.level4.activeParent a, body.palette_01 #leftSidebar .simpleCallout h1 {background:#002950; color:#ffffff;}
+body.palette_01 #rightSidebar .simpleCallout {background:#ebf0f3;}
+body.palette_01 .expandListItem {background:#f1f1f1;}
+body.palette_01 .expandListItem h5 {color:#982722; background:url("/_resources/images/btns/btn_expand_plus-palette1.gif") no-repeat 0px 6px;}
+body.palette_01 .expandListItem h5.expandSelected {background:url("/_resources/images/btns/btn_expand_minus-palette1.gif") no-repeat 0px 6px;}
+body.palette_01 .expandListItemContent .framedPhotoDefault img, body.palette_01 .expandListItemContent .framedPhotoLeft img, body.palette_01 .expandListItemContent .framedPhotoRight img {border-color:#d3d5d6;}
+body.palette_01 #mainContent ul li {background:url("/_resources/images/blts/bullet-palette1.gif") no-repeat 0 .6em;}
+body.palette_01 #mainContent .profiles li ul.genericContentList li {background:url("/_resources/images/blts/bullet-palette1.gif") no-repeat 0 .6em !important;}
+body.palette_01 #rightSidebar li {border-bottom:#c8cccf 1px solid; color:#000000;}
+body.palette_01 #rightSidebar a {color:#9c231e;}
+body.palette_01 #mainContent .profiles li h2.profile, body.palette_01 #mainContent .profiles li h2.profile a, body.palette_01 #mainContent h2.profile a {color:#FFF;}
+
+
+
+/* Old CSS Required for Migrated XHTML Content */
+
+
+
+body.palette_01 #content {background-color:transparent;}
+body.palette_01 #content a:link, body.palette_01 #content a:active, body.palette_01 #content a:visited {color:#982722;}
+body.palette_01 #featureCol li {border-bottom:#c8cccf 1px solid; color:#000000;}
+body.palette_01 #featureCol a {color:#9c231e;}
+body.palette_01 #sectionNav li a:hover, body.palette_01 #sectionNav li.level1.active a, body.palette_01 #sectionNav li.level2.active a, body.palette_01 #sectionNav li.level3.active a, body.palette_01 #sectionNav li.level4.active a, body.palette_01 #sectionNav li.level5.active a, body.palette_01 #sectionNav li.level2.activeParent a, body.palette_01 #sectionNav li.level3.activeParent a, body.palette_01 #sectionNav li.level4.activeParent a, body.palette_01 #sectionNav .simpleCallout h4 {background:#002950; color:#ffffff;}
+body.palette_01 #featureCol .simpleCallout {background:#ebf0f3;}
+body.palette_01 #featureCol h4, body.palette_01 #sectionNav .simpleCallout li {color:#ffffff;}

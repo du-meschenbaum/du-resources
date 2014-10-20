@@ -1,0 +1,95 @@
+@charset "UTF-8";
+
+/*------------------------------------------------------------------------------*/
+/* 	Import Unique Microsite Styles */
+	@import "/_resources/css/style-microsite-import.css";
+/*------------------------------------------------------------------------------*/
+
+/*
+PLEASE DO NOT MODIFY ANY OF THE BASE CODE BELOW.
+ALL SITE-SPECIFIC MODIFICATIONS SHOULD BE MADE IN THE STYLE-MICROSITE-IMPORT FILE.
+THESE BASE STYLES SHOULD NOT BE CHANGED.
+*/
+
+
+/* 	Global Selectors */
+#mainWrapper {padding-top:314px;}
+body.nonav #mainWrapper {padding-top:270px;}
+
+/* Section: pageBanners */
+#pageBanners {position:absolute; width:100%; height:314px; z-index:3;}
+body.nonav #pageBanners {height:270px;}
+#pageBanners .oneColBanner {height:270px;}
+#pageBanners .bannersNav {width:985px; height:44px; margin:0 auto; background:#7d7d7d;}
+#pageBanners .bannersNav ol {margin:0; padding:0;}
+#pageBanners .bannersNav ol li {float:left; width:120px; margin:0; padding:0; text-align:justify; list-style:none; line-height:0.95em;}
+#pageBanners .bannersNav ol li a, #pageBanners .bannersNav ol li a:visited, #pageBanners .bannersNav ol li a:active, #pageBanners .bannersNav ol li a:hover {display:block; height:36px; margin:0; padding:8px 4px 0 4px; font-size:0.813em; text-align:center; color:#ffffff;}
+#pageBanners .bannersNav ol li a.active, #pageBanners .bannersNav ol li a:active, #pageBanners .bannersNav ol li a:hover {background:#ffffff; color:#7d7d7d; text-decoration:none;}
+
+/* Crimson Nav Style */
+body.Crimson #mainWrapper {padding-top:230px;}
+body.Crimson #pageBanners .oneColBanner {height:197px;}
+body.Crimson #pageBanners {height:230px;}
+body.Crimson #pageBanners .bannersNav {width:961px; margin:0 auto; background-color:#58050d; border-left:12px solid #CCCCCC; border-right:12px solid #CCCCCC; height:33px;}
+body.Crimson #pageBanners .bannersNav ol {margin:0; padding:0; height:33px; overflow:hidden;}
+body.Crimson #pageBanners .bannersNav ol li {float:left; width:auto; margin:0; padding:0; text-align:justify; list-style:none; line-height:0.95em;}
+body.Crimson #pageBanners .bannersNav ol li a, body.Crimson #pageBanners .bannersNav ol li a:visited, body.Crimson #pageBanners .bannersNav ol li a:active, body.Crimson #pageBanners .bannersNav ol li a:hover {display:block; height:33px; margin:0; padding:9px 18px 0 18px; font-size:15px; text-align:center; color:#ffffff; text-decoration:none;}
+body.Crimson #pageBanners .bannersNav ol li a:hover {color:#ffffff; background-color:#9d231e;}
+body.Crimson #pageBanners .bannersNav ol li a.active, body.Crimson #pageBanners .bannersNav ol li a:active {color:#000; text-decoration:none; background: #ffffff url("/_resources/images/nav/microsite_crimson_nav_bg.gif") 0px 0px no-repeat;}
+
+section.simpleCallout h4 {margin-bottom:10px;}
+section.simpleCallout p {padding-left:10px;}
+
+#pageBanners #gallery {width:985px; height:349px; margin:0; padding:0;}
+body.Crimson #pageBanners #gallery img {height:197px; overflow:hidden;}
+#pageBanners #gallery li {display:none; position:absolute; float:left; width:100%; cursor:auto;}
+#pageBanners #gallery li img {border:none;}
+#pageBanners #gallery li.show {display:block; z-index:2;}
+#pageBanners #gallery .caption {position:absolute; right:0; bottom:0;; height:600px; width:224px; padding:0 30px; color:#fff; z-index:5}
+#pageBanners #gallery .caption .captionContent {}
+#pageBanners #gallery .caption .captionContent h3 {margin:0; padding:0; color:#1DCCEF;}
+
+.slideControl {position:absolute; z-index:6; height:30px; margin:0 10px 0 18px; padding:0 20px 0 0; color:#fff; cursor:default; clear:both; background:url("/_resources/images/bckgrnd/slide_controls-rt.png") top right no-repeat; vertical-align:middle;}
+.slideControl a {position:relative; top:4px; left:5px;}
+.slideControl ul {height:30px; margin:0 0 0 -13px; padding:0 0 0 13px; background:url("/_resources/images/bckgrnd/slide_controls-lt.png") top left no-repeat; z-index:5;}
+#mainContent .slideControl ul {margin:0 0 0 -13px;}
+.slideControl ul li {display:inline-block; height:20px; width:10px; margin:0 6px; padding:0; list-style:none; font-weight:bold; font-size:1.5em; line-height:0.5em; color:#666666; opacity:0.75; vertical-align:middle; text-align:center;}
+.slideControl ul li.slideSelected {color:#ffffff;}
+div.slideControl {display:none;}
+div.slideControl ul li.hover {cursor:pointer; color:#ffffff;}
+#IEroot {display:none;} /* IE hack to hide slidecontrols */ 
+
+/*
+.slideControl {position:relative; z-index:6; width:204px; margin:0 10px 0 -120px; padding:4px; color:#fff; cursor:default; clear:both;}
+.slideControl a {position:relative; top:3px; left:10px;}
+.slideControl ul {margin:0; padding:0;}
+.slideControl ul li {display:inline-block; width:10px; margin:0 6px; padding:0; list-style:none; font-weight:bold; font-size:1.5em; line-height:0.5em; color:#666666; opacity:0.75;}
+.slideControl ul li.slideSelected {color:#ffffff;}
+div.slideControl {display:none;}
+div.slideControl ul li.hover {cursor:pointer; color:#ffffff;}
+*/
+
+/* Admission Green Table Layout */
+div#adm {width:510px; background-color:#4b5e3d; border:1px solid #000; margin-bottom:10px; font-size:12px;}
+div#adm table.tableadm {width:510px; font-size:12px;}
+div#adm table.tableadm td {height:23px;}
+div#adm tr.adm1 {background-color:#e9e9e9; padding-top:5px; position:relative;}
+div#adm tr.adm1 p, div#adm tr.adm2 p, div#adm tr.adm3 p, div#adm tr.admtop p, div#adm tr.admbtm p {padding-left:15px; padding-top:10px;}
+div#adm tr.adm2 {background-color:#ffffff; position:relative;}
+div#adm tr.adm3 {background-color:#aab896; position:relative;}
+div#adm tr.admtop, div#adm tr.admbtm {background-color:#4b5e3d; color:#ffffff; font-weight:bold;}
+div#adm table.tableadm td p {padding-top:.9em; padding-left:15px;}
+
+/* Profiles */
+#mainContent .profiles {margin:0; padding:0;}
+#mainContent .profiles li {margin:0 !important; padding:10px !important; list-style:none; line-height:1.333em; border-top:1px #d7d7d7 solid; background:none !important; clear:both;}
+#mainContent .profiles li:first-child {padding-top:5px; border-top:none;}
+#mainContent .profiles li img.profile {float:left; margin:0 14px 14px 0; padding:0;}
+#mainContent .profiles li h3 {margin:23px 0 4px 0; padding:0; font-size:1.083em;}
+#mainContent .profiles li h3.profile {margin:0 0 10px 0;}
+#mainContent .profiles li p {margin:0px;}
+
+.top {margin-top:0px !important;}
+.bottom {margin-bottom:0px !important;}
+/*.mediaContainer {width:32em !important;}
+.mediaInfo {width:16em !important;}*/

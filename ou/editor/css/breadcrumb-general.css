@@ -1,0 +1,44 @@
+body {
+	background-image: url("/_resources/ou/editor/backgrounds/breadcrumb-microsite.jpg");
+	background-repeat: no-repeat;
+	width:1054px;
+	margin: 282px 0px 0px 0px;
+	font-family: Arial,"Helvetica Neue",Helvetica,Geneva,sans-serif;
+	font-size: 0.75em !important;
+	color: #666666;
+	text-align: left !important;
+	line-height: 1.5em;
+}
+td, th {
+	font-size:0.75em;
+}
+
+a:link, a:active, a:visited {
+    color: #A01400;
+    text-decoration: underline;
+}
+a:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+
+ol {
+
+	margin:0;
+	padding:10px;
+ 	font-size: 0.8em;
+}
+
+ol li {
+	display:inline;
+	min-height:30px;
+	width:400px;
+	border: 0 none;
+    	font-size: 100%;
+    	margin: 0;
+	outline: 0 none;
+	padding: 0;
+	vertical-align: baseline;
+
+}
+

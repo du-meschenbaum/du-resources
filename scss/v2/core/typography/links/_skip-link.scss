@@ -1,0 +1,6 @@
+@mixin du-skip-link {
+  text-decoration: none;
+  position: absolute;
+  left: -9999px;
+  z-index: 1001; 
+}

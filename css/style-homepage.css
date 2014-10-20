@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+/* Default Page Styles */
+#main {
+	overflow: hidden;
+	width:984px;
+	padding:0 !important;
+	margin:0 auto;
+	font-size:12px;
+	line-height:16px;
+	background:none;
+	-webkit-box-shadow:  0px 0px 7px 0px rgba(0, 0, 0, 0.4);
+	box-shadow:  0px 0px 7px 0px rgba(0, 0, 0, 0.4);
+	filter:
+		progid:DXImageTransform.Microsoft.Shadow(Color=#666666, Strength=3, Direction=90),
+        progid:DXImageTransform.Microsoft.Shadow(Color=#666666, Strength=3, Direction=180),
+        progid:DXImageTransform.Microsoft.Shadow(Color=#666666, Strength=3, Direction=270);
+}
+#container {
+	background:#baa779 url(/_resources/images/bckgrnd/bg.gif) repeat-y top center;
+	padding-bottom:20px;
+}
+
+/* Homepage Block Styles */
+#row1 {
+	height:439px;
+	position:relative;
+	z-index:1000;
+	-webkit-box-shadow:  0px 10px 15px -8px rgba(0, 0, 0, 0.5);
+	box-shadow:  0px 10px 15px -8px rgba(0, 0, 0, 0.5);
+}
+#row2 {
+	height:356px;
+}
+.block {
+	display:block;
+	float:left;
+	width:246px;
+	height:100%;
+	margin:;
+	background:#FFF;
+	-webkit-box-shadow:inset 6px 0px 6px -2px rgba(0, 0, 0, 0.3);
+	box-shadow:inset 6px 0px 6px -2px rgba(0, 0, 0, 0.3);
+}
+.block:first-child, .block:first-child hgroup {
+	box-shadow:none;
+}
+.block hgroup {
+	background:#872434;
+	height:40px;
+	padding:10px 10px 10px 14px;
+	background:rgb(118,32,46); /* Old browsers */
+	background:-moz-linear-gradient(left,  rgba(118,32,46,1) 0%, rgba(125,33,48,1) 5%, rgba(135,36,52,1) 50%, rgba(125,33,48,1) 95%, rgba(118,32,46,1) 100%); /* FF3.6+ */
+	background:-webkit-gradient(linear, left top, right top, color-stop(0%,rgba(118,32,46,1)), color-stop(5%,rgba(125,33,48,1)), color-stop(50%,rgba(135,36,52,1)), color-stop(95%,rgba(125,33,48,1)), color-stop(100%,rgba(118,32,46,1))); /* Chrome,Safari4+ */
+	background:-webkit-linear-gradient(left,  rgba(118,32,46,1) 0%,rgba(125,33,48,1) 5%,rgba(135,36,52,1) 50%,rgba(125,33,48,1) 95%,rgba(118,32,46,1) 100%); /* Chrome10+,Safari5.1+ */
+	background:-o-linear-gradient(left,  rgba(118,32,46,1) 0%,rgba(125,33,48,1) 5%,rgba(135,36,52,1) 50%,rgba(125,33,48,1) 95%,rgba(118,32,46,1) 100%); /* Opera 11.10+ */
+	background:-ms-linear-gradient(left,  rgba(118,32,46,1) 0%,rgba(125,33,48,1) 5%,rgba(135,36,52,1) 50%,rgba(125,33,48,1) 95%,rgba(118,32,46,1) 100%); /* IE10+ */
+	background:linear-gradient(to right,  rgba(118,32,46,1) 0%,rgba(125,33,48,1) 5%,rgba(135,36,52,1) 50%,rgba(125,33,48,1) 95%,rgba(118,32,46,1) 100%); /* W3C */
+	-webkit-box-shadow:inset 6px 0px 6px -2px rgba(0, 0, 0, 0.3);
+	box-shadow:inset 6px 0px 6px -2px rgba(0, 0, 0, 0.3);
+}
+.block hgroup h1{
+	color:#b7a67e;
+	font-size:10px;
+	line-height:14px;
+	text-transform:uppercase;
+	font-weight:lighter;
+}
+.block hgroup h2{
+	color:#FFF;
+	font-weight:normal;
+	font-size:15px;
+	line-height:16px;
+}
+.block hgroup h2 a, .block hgroup h2 a:visited, .block hgroup h2 a:active {
+	color:#FFF !important;
+	text-decoration:none !important;
+}
+.block hgroup h2 a:hover {
+	color:#FFF;
+	text-decoration:underline !important;
+}
+.block article {
+	padding:5px 14px;
+}
+.block article h1 {
+	text-transform:uppercase;
+}
+.block a:hover {text-decoration:none !important;}
+
+/* Main Image Block */
+#mainblock {
+	width:738px;
+	margin:0 auto;
+	background:#342a2c;
+}
+.main_img {
+	padding:13px;
+}
+.main_img_caption {
+	font-size:16px;
+	line-height:17.15px;
+	position:relative;
+	display:block;
+	width:450px;
+	margin:-100px 0 0 15px;
+	padding:12px;
+	background:#fff;
+	background:rgba(255,255,255,0.73);
+}
+
+/* Main Links Section */
+#mainlinks {
+	background:url(/_resources/images/bckgrnd/bg_shield.png) #342a2c no-repeat;
+}
+#mainlinks ol {
+	width:206px;
+	padding:28px 0 0 32px;
+	list-style-type:none;
+}
+#mainlinks ol li {
+	font-size:11px;
+	line-height:14px;
+	background-repeat:no-repeat;
+	background-position:0 2px;
+	padding:1px 3px 1px 17px;
+	margin:0;
+}
+#mainlinks ol li a, #mainlinks ol li a:hover {
+	color:#FFF !important;
+}
+#mainlinks ol li a:hover {
+	text-decoration:none !important;
+}
+.toplink a {
+	text-decoration:none !important;
+}
+.toplink a:hover, #mainlinks ol li.toplink a:hover {
+	text-decoration:underline !important;
+}
+.toplink {
+	font-size:14px !important;
+	text-transform:uppercase;
+	background-image:url(/_resources/images/bckgrnd/mainlink_toplink.png);
+}
+/* 150th */
+#mainlinks ol.sesqui-callout {padding:20px 0 0 32px; margin-bottom:-8px;}
+#mainlinks ol.sesqui-callout li {padding:0; background-image:none; background-position:0;}
+#mainlinks ol.sesqui-callout a { display:block; width:180px; height:89px; background:url("/_resources/images/btns/150-homepage-button.png") no-repeat; background-position:0 -89px; text-decoration:none !important; text-indent: -9999px;}
+#mainlinks ol.sesqui-callout a:hover { background-position:0 0; text-decoration:none;}
+
+#social_icons {
+	margin:20px 0 0 24px;
+}
+#social_icons a {
+	text-decoration:none !important;
+	display:inline-block;
+	text-indent: -9999px;
+	width:32px;
+	height:32px;
+	margin:8px;
+}
+.facebook {
+	background:url(/media/images/icons/iconSprite.png);
+	background-position:0 0;
+}
+.flickr {
+	background:url(/media/images/icons/iconSprite.png);
+	background-position:-32px 0;
+}
+.linkedin {
+	background:url(/media/images/icons/iconSprite.png);
+	background-position:-64px 0;
+}
+.twitter {
+	background:url(/media/images/icons/iconSprite.png);
+	background-position:-96px 0;
+}
+.youtube {
+	background:url(/media/images/icons/iconSprite.png);
+	background-position:-128px 0;
+}
+
+/* Unique Block Styles */
+.current_quote a, .current_facebook a, .current_twitter a {
+	text-decoration:none !important;
+}
+.current_quote a:hover, .current_facebook a:hover, .current_twitter a:hover {
+	text-decoration:underline !important;
+}
+.current_quote {
+    color:#9c231e;
+	font-style:italic;
+	font-weight:lighter;
+	background-image:url(/_resources/images/bckgrnd/current_quote.png);
+	background-repeat:no-repeat;
+	background-position:0 5px;
+	padding:3px 3px 3px 25px;
+	margin:0 0 20px 0;
+}
+.current_facebook {
+     color:#9c231e;
+	font-style:italic;
+	font-weight:lighter;
+	background-image:url(/_resources/images/bckgrnd/current_facebook.png);
+	background-repeat:no-repeat;
+	background-position:0 5px;
+	padding:3px 3px 3px 25px;
+	margin:0 0 20px 0;
+}
+.current_twitter {
+     color:#9c231e;
+	font-style:italic;
+	font-weight:lighter;
+	background-image:url(/_resources/images/bckgrnd/current_twitter.png);
+	background-repeat:no-repeat;
+	background-position:0 5px;
+	padding:3px 3px 3px 25px;
+	margin:0 0 20px 0;
+}

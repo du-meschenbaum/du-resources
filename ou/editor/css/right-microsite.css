@@ -1,0 +1,85 @@
+body {
+	background-image: url("/_resources/ou/editor/backgrounds/right-microsite.jpg");
+	background-repeat: no-repeat;
+	width: 247px;
+	margin: 470px 0px 0px 751px;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	line-height: 1.224em !important;
+	font-size: 0.75em !important;
+}
+.photoContentContainerRight, .photoContentContainerLeft {
+    margin-bottom: 15px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ .subContent {
+    margin-top: -5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.framedPhotoRight {
+    float: right;
+    margin-left: 8px;
+}
+
+h1 {
+    background: none repeat scroll 0 0 #ECECEC;
+    color: #666666;
+    font-weight: bold;
+    margin: 0;
+    padding: 3px 0 3px 10px;
+    text-transform: uppercase;
+    width: 233px;
+}
+
+li a {
+	text-decoration: underline !important;
+	font-weight: bold !important;
+	color: #A01400 !important;
+}
+
+ul {
+	list-style: none outside none;
+}
+
+li {
+	border-bottom: 1px solid #E1E1E1;
+	padding: 3px 0 7px 5px;
+}
+
+h3 {
+    padding-bottom: 4px;
+    padding-left: 11px;
+    padding-right: 0;
+    padding-top: 4px;
+}
+
+h3 {
+    -moz-background-clip: border;
+    -moz-background-origin: padding;
+    -moz-background-size: auto auto;
+    background-attachment: scroll;
+    background-color: #445C88;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    line-height: 1.211em;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 5px;
+    padding-top: 2px;
+    text-transform: uppercase;
+}

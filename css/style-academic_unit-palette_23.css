@@ -1,0 +1,392 @@
+/*
+PAGE BACKGROUNDS //////////////////////////////////////
+*/
+.palette_23 #wrapper{
+	background-image: none;
+}
+
+.palette_23 #mainWrapper{
+	margin-top: -7px;
+}
+	
+.palette_23 #main{
+	background: none;
+	padding:0 0 45px 0;
+	border-left:1px solid #DADAE6;
+	border-right:1px solid #DADAE6;
+	margin-top: -15px;
+}
+
+
+/*
+HEADER AREA //////////////////////////////////////
+*/
+
+/*Student Life Nav Label*/
+.palette_23 #pageBanners .bannersTitle h1 {
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 1.5em;
+	background-color: #890028;
+	display: inline-block;
+	padding: 5px 15px;
+	margin-left: 15px;
+	margin-top: 0px;
+}
+
+.palette_23 #pageBanners .bannersTitle h2.subTitle {
+	margin: 0 0 5px 30px;
+	padding: 0 0 5px 0;
+}
+
+.palette_23 #pageBanners .bannersTitle h2.subTitle a {
+	font-size: 0.75em;
+	text-decoration: underline;
+	font-weight: normal;
+	line-height: 1.243em;
+}
+
+.palette_23 #pageBanners .bannersTitle {
+	margin-bottom: 0px;
+	margin-top:10px;
+}
+
+/*MAIN NAVIGATION*/
+.palette_23 #pageBanners .bannersNav {
+	background-color: #e8bb00;
+	margin-bottom: -7px;
+}
+.palette_23 #pageBanners .bannersNav ol li {
+	width: auto;
+	line-height: 15px;
+}
+.palette_23 #pageBanners .bannersNav ol li a {
+	margin: 0px;
+	padding: 16px 30px 4px;
+	width: auto;
+	color: #000;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+/*one-off for 8 nav*/
+.palette_23.studentlife_duhealth #pageBanners .bannersNav ol li a {
+	padding:16px 30px 4px;
+}
+.palette_23 #pageBanners .bannersNav ol li a.active,
+.palette_23 #pageBanners .bannersNav ol li a:hover {
+	color: #FFF;
+	background: #d76548; /* Old browsers */
+	background: -moz-linear-gradient(top,  #d76548 1%, #a12e10 99%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#d76548), color-stop(99%,#a12e10)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #d76548 1%,#a12e10 99%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #d76548 1%,#a12e10 99%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #d76548 1%,#a12e10 99%); /* IE10+ */
+	background: linear-gradient(to bottom,  #d76548 1%,#a12e10 99%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d76548', endColorstr='#a12e10',GradientType=0 ); /* IE6-9 */
+
+}
+.palette_23 #pageBanners .bannersNav ol li:hover {
+	font-size: 14px;
+}
+
+.palette_23 #pageBanners .bannersNav ol li.doubleLine a {
+	padding-top:10px;
+	padding-bottom:9px;
+}
+
+.palette_23 #pageBanners .bannersNav ol li a.doubleLine,
+.palette_23 #pageBanners .bannersNav ol li a:visited.doubleLine,
+.palette_23 #pageBanners .bannersNav ol li a:active.doubleLine,
+.palette_23 #pageBanners .bannersNav ol li a:hover.doubleLine {
+	padding:10px 30px 10px;
+	font-size:14px;
+}
+.palette_23 #pageBanners .bannersNav ol li a.active.doubleLine,
+.palette_23 #pageBanners .bannersNav ol li a:active.doubleLine,
+.palette_23 #pageBanners .bannersNav ol li a:hover.doubleLine {
+	padding:10px 30px 10px;
+
+}
+
+.palette_23 #pageBanners .oneColBanner, .palette_23 #pageBanners #gallery{
+	width:1031px;
+	height:381px;
+	background-image: url("http://www.du.edu/_resources/images/bckgrnd/PhotoFrameBG.png");
+	background-position: left top;
+	background-repeat: no-repeat;
+}	
+
+#pageBanners .oneColBanner img, .palette_23 #pageBanners #gallery li{
+    margin: 0;
+    padding: 15px 0 0 22px;
+}
+
+.slideControl{
+	margin:15px 10px 0 35px;
+	background:none;
+}
+
+.slideControl ul{
+	background:none;
+}
+
+.slideControl ul li{
+	color:#e8bb00;
+	font-size:2em;
+}
+
+.slideControl ul li.slideSelected{
+	color:#d76548;
+}
+
+article.overlay_right {
+border-radius: 0;
+margin-left: 760px;
+}
+
+article.overlay_right, article.overlay_left {
+width: 210px;
+}
+/*
+SUB NAV //////////////////////////////////////
+*/
+
+.palette_23 #leftSidebar ol#nav {
+	background: #a50032;
+	padding-bottom: 30px;
+}
+
+.palette_23 #leftSidebar ol#nav li a {
+  margin: 0px;
+  color: #FFF;
+}
+.palette_23 #leftSidebar ol#nav li a:before {
+  font-size: 14px;
+}
+.palette_23 #leftSidebar ol#nav li.active a, .palette_23 #leftSidebar ol#nav li a:hover {
+  background: #58001b;
+  color: #FFF;
+  font-weight: normal;
+  text-transform: none;
+}
+
+/*
+Left Sidebar //////////////////////////////////////
+*/
+.palette_23 #leftSidebar{
+	padding-top: 30px;
+	width: 180px;
+	margin-right: 20px;
+	margin-bottom:20px;
+}
+
+/*
+Main Content //////////////////////////////////////
+*/
+.palette_23 #mainContent{
+	padding-top: 15px;
+}
+
+.palette_23 #breadcrumbs{
+	font-size: .75em;
+	text-transform: uppercase;
+	color: #252525;
+	margin-bottom: 10px;
+}
+
+.palette_23 #mainContent hgroup h2{
+	color: #cc3a14;
+	font-size: 1.6em;
+	font-style: normal;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #999;
+}
+
+.palette_23 #mainContent #breadcrumbs + hgroup{
+	border-bottom: 1px solid #000;
+	margin-bottom: 15px;
+}
+
+.palette_23 #mainContent p {
+	margin-bottom:12px;
+}
+	
+.palette_23 #mainContent p, .palette_23 #mainContent ul, .palette_23 #mainContent h4{
+	font-size: 1em;
+	line-height: 1.5em;
+	font-weight: normal;
+}
+
+/*unordered lists*/
+.palette_23 #mainContent ul{
+	margin-bottom: 15px;
+}
+
+.palette_23 #mainContent li{
+	padding-bottom: 0px;
+}
+
+/*tables*/
+.palette_23 #mainContent thead{
+	background-color: #cc3a14;
+	color: #FFF;
+}
+
+.palette_23 #mainContent thead td{
+	padding: 7px;
+}
+
+.palette_23 #mainContent tbody td{
+	padding-top: 5px;
+	font-size: .9em;
+	line-height: 1.6em;
+}
+
+.palette_23 #mainContent tbody tr:first-child td{
+	padding-top: 10px;
+}
+
+.palette_23 #mainContent tbody tr:last-child td{
+	padding-bottom: 10px;
+}
+
+/*right floated images*/
+.palette_23 #mainContent figure.imageColRight{
+	background: #e8e6df;
+	width: 218px;
+	padding: 2px;
+	border-left: 25px solid white;
+}
+.palette_23 #mainContent figure.imageColRight p{
+	font-size: .85em;
+	line-height: 1.2em;
+	padding: 10px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+
+/*
+Right Side Bar //////////////////////////////////////
+*/
+.palette_23 #rightSidebar{
+	margin-right: 17px;
+	margin-bottom: 70px;
+	margin-top: 31px;
+	width: 231px;
+}
+
+/*Quicklinks Styling*/
+.palette_23 #rightSidebar .simpleCallout{
+	padding-bottom: 10px;
+	margin-bottom: 0px;
+}
+
+.palette_23 #rightSidebar .simpleCallout h1{
+	color: #FFF;
+	background-color: #cc3a14;
+	padding: 10px 20px;
+	width: 191px;
+}
+
+.palette_23 #rightSidebar .simpleCallout ul{
+	width: 231px;
+	padding-left: 0px;
+	background-color: #e8e4dd;
+	padding: 10px 0;
+}
+
+.palette_23 #rightSidebar .simpleCallout li{
+	border-bottom: none;
+	padding-left: 20px;
+}
+
+.palette_23 #rightSidebar .simpleCallout li a{
+	color: black;
+}
+
+/*Social Media Banners Styling*/
+.palette_23 #rightSidebar .callOutBanner{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	width: 201px;
+	padding: 15px;
+	background-image: none;
+	background-color: #e8e4dd;
+	margin-bottom: 10px;
+}
+
+.palette_23 #rightSidebar .callOutBanner .callOutContent{
+	padding-right: 0px;
+}
+
+.palette_23 #rightSidebar .callOutBanner .callOutContent h2{
+	color: #cb3a15;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	margin: 0px;
+}
+
+.palette_23 #rightSidebar .callOutBanner .callOutContent p{
+	font-size: 1.1em;
+	margin: 5px 0;
+}
+
+.palette_23 #rightSidebar .callOutBanner img{
+	float: left;
+	margin: 0 8px 20px 0;
+}
+
+/*
+Two Column Right Layout //////////////////////////////////////
+*/
+.palette_23.twoColRight #mainContent{
+	width: 679px;
+	margin-left: 25px;
+	margin-bottom: 70px;
+}
+
+.palette_23.threeCol #main #mainContent {
+  width: 522px;
+  padding-right: 15px;
+	margin-bottom: 70px;
+}
+
+/*
+One Column Layout //////////////////////////////////////
+*/
+.palette_23.oneCol #mainContent{
+	width: 935px;
+	padding: 15px 25px 0;
+	margin-bottom: 70px;
+}
+
+/*
+Snippets //////////////////////////////////////
+*/
+.palette_23.threeCol .threeSubCol{
+	margin: 10px 0;
+}
+
+.palette_23.threeCol .threeSubCol .vertCol{
+	width: 170px;
+	padding-right: 0px;
+	margin-right: 6px;
+	background-color: #e8e3dc;
+	-webkit-box-shadow: 1px 1px 4px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow:    1px 1px 4px rgba(50, 50, 50, 0.4);
+	box-shadow:         1px 1px 4px rgba(50, 50, 50, 0.4);
+}
+
+.palette_23.threeCol .threeSubCol .vertCol.last{
+	margin-right: 0px;
+}
+
+.palette_23.threeCol .threeSubCol .vertCol figcaption{
+	background-color: #cc3a14;
+	padding: 7px;
+	color: #FFF;
+	font-size: 1.2em;
+	height: 30px;
+}

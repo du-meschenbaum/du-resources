@@ -1,0 +1,476 @@
+body.palette_17 #body_wrapper {
+  background: url('/_resources/images/bckgrnd/honeycomb.jpg') no-repeat center 125px #ffffff;
+}
+body.palette_17 #main {
+  background-color:transparent;
+  padding-top: 25px;
+}
+body.palette_17#pageBanners .bannersTitle {
+  margin: 0 auto;
+  padding: 32px 0 6px;
+}
+body.palette_17 #globalHeader.compact .searchContainer ol.headerSearchNav li.singleSearch {
+  margin-top: 0;
+}
+body.palette_17 #pageBanners figure.slideControl {
+	padding: 0 20px 0 0;
+}
+body.palette_17 .oneColBanner {
+  position: relative;
+}
+body.palette_17 article.overlay_right, body.palette_17 article.overlay_left {
+  background-color: #fff;
+  background-color: rgba(255,255,255,.9);
+  border-radius: 0;
+  height: 198px;
+  padding: 15px;
+  position: absolute;
+  width: 220px;
+}
+body.palette_17 a:link,
+body.palette_17 a:visited {
+  color: #9c231e;
+  text-decoration: underline;
+}
+
+body.palette_17 a:active,
+body.palette_17 a:hover {
+  text-decoration: none;
+}
+
+body.palette_17 article.overlay_right h1,
+body.palette_17 article.overlay_left h1 {
+  color: #ce8421;
+  font-size: 28px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+body.palette_17 article.overlay_right h2,
+body.palette_17 article.overlay_left h2  {
+  color: #ce8421;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+body.palette_17 article.overlay_right h3,
+body.palette_17 article.overlay_left h3  {
+  color: #33343d;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  margin: 5px 0 0;
+}
+
+body.palette_17 article.overlay_right p,
+body.palette_17 article.overlay_left p {
+  font-size: 12px;
+  line-height: 22px;
+  list-style: none;
+  margin-top: 5px;
+}
+body.palette_17 #globalHeaderContent a {
+  text-decoration: none;
+}
+body.palette_17 #wrapper {
+  background: url('/_resources/images/bckgrnd/header-honeycomb.png') no-repeat center 49px;
+}
+body.palette_17 #main a:link,
+body.palette_17 #main a:active,
+body.palette_17 #main a:visited {
+  color:#9c231e;
+}
+/* BREAKS HERO GALLERY! 
+body.palette_17 #pageBanners {
+  overflow: visible;
+}
+*/
+body.palette_17 #pageBanners .bannersTitle {
+  position: relative;
+}
+body.palette_17 #main,
+body.palette_17 #gallery,
+body.palette_17 .oneColBanner,
+body.palette_17 .bannersNav {
+}
+body.palette_17 #body_wrapper2 {
+  background: 
+  	url('/_resources/images/bckgrnd/body-shadow.png') repeat-y center,
+	url("/_resources/images/watermarks/academicunits/nsm_vertical.png") no-repeat center 110px;
+}
+
+/* NOT USED IN DESIGN, CAN'T ADD EXTRA CLASSES AND MARKUP */
+
+/*
+body.palette_17 #body_wrapper2 {
+  background: url('/_resources/images/bckgrnd/body-shadow.png') repeat-y center;
+}
+*/
+
+/*
+body.palette_17 #pageBanners .bannersTitle .bannersTitle-watermark {
+  background: url('/_resources/images/bckgrnd/watermark.png') no-repeat;
+  display: block;
+  text-indent: -9999px;
+  height: 803px;
+  left: -95px;
+  position: absolute;
+  top: 30px;
+  width: 84px;
+}
+*/
+
+body.palette_17 #pageBanners .bannersTitle h1,
+body.palette_17 #pageBanners .bannersTitle h1 a {
+  color:#252525;
+}
+
+body.palette_17 #mainContent .viewLarger a {
+  color:#FFF;
+}
+
+body.palette_17 #pageBanners .bannersNav,
+body.palette_17 #leftSidebar,
+body.palette_17 #mainContent h3,
+body.palette_17 .framedPhotoDefault,
+body.palette_17 .framedPhotoLeft,
+body.palette_17 .framedPhotoRight,
+body.palette_17 #rightSidebar h1,
+body.palette_17 .overlay-wrapper h1.overlayTitle {
+  background:#33343d;
+}
+
+
+body.palette_17 #mainContent h3 {
+  color:#FFF;
+  padding:3px;
+  margin:3px 0 5px 0;
+}
+body.palette_17 .framedPhotoDefault,
+body.palette_17 #mainContent .threeSubCol .vertCol h3,
+figcaption {
+  margin:0px;
+  padding:4px;
+  background:#00456b;
+}
+
+body.palette_17 #pageBanners .bannersNav{
+  background: url('/_resources/images/bckgrnd/main-nav-bg.jpg') repeat-x top #33343d;
+}
+body.palette_17 .bannersNav ul,
+body.palette_17 .bannersNav ol {
+  display: table;
+  padding: 5px;
+}
+body.palette_17 .bannersNav li {
+  display: inline-block;
+  margin-right: 5px;
+  *display: inline;
+  zoom: 1;
+}
+body.palette_17 .bannersNav li.last {
+  margin-right: 0;
+}
+body.palette_17 .bannersNav li a,
+body.palette_17 #leftSidebar nav li a {
+  color: #fff;
+  display: table-cell;
+  font-size: 14px;
+  line-height: 18px;
+  height: 40px;
+  text-decoration: none;
+  vertical-align: middle;
+  width: 144px;
+  *display: block;
+}
+body.palette_17 #leftSidebar nav li a {
+  height: 25px;
+}
+body.palette_17 #leftSidebar nav {
+  font-size: 13px;
+  padding: 5px;
+}
+body.palette_17 #leftSidebar nav a {
+  padding: 0 15px;
+}
+body.palette_17 .bannersNav li a {
+  text-align: center;
+}
+
+/* Left Sidebar Nav */
+body.palette_17 #leftSidebar nav li a:hover,
+body.palette_17 #leftSidebar nav li.active a,
+body.palette_17 #leftSidebar nav li.active a:active,
+body.palette_17 #leftSidebar nav li.active a:visited {
+  background: url('/_resources/images/bckgrnd/nav-active-bg.jpg') repeat-x top #d07700;
+  text-decoration: none;
+}
+body.palette_17 #leftSidebar nav ol li.level1 a,
+body.palette_17 #leftSidebar nav ol li.level2 a,
+body.palette_17 #leftSidebar nav ol li.level3 a,
+body.palette_17 #leftSidebar nav ol li.level4 a,
+body.palette_17 #leftSidebar nav ol li.level5 a {
+  border-bottom: none;
+  padding: 5px 8px 5px 13px;
+  font-size:13px;
+  font-weight:normal;
+  text-transform: none;
+  border: none;
+}
+body.palette_17 #leftSidebar li a:hover,
+body.palette_17 #main #leftSidebar li a:hover,
+body.palette_17 #leftSidebar nav ol li.level1.active a,
+body.palette_17 #leftSidebar nav ol li.level2.active a,
+body.palette_17 #leftSidebar nav ol li.level3.active a,
+body.palette_17 #leftSidebar nav ol li.level4.active a,
+body.palette_17 #leftSidebar nav ol li.level5.active a,
+body.palette_17 #leftSidebar nav ol li.level2.activeParent a,
+body.palette_17 #leftSidebar nav ol li.level3.activeParent a,
+body.palette_17 #leftSidebar nav ol li.level4.activeParent a,
+body.palette_17 #leftSidebar .simpleCallout h1 {
+  background:#002950;
+  color:#ffffff;
+  background: url('/_resources/images/bckgrnd/nav-active-bg.jpg') repeat-x top #d07700;
+  text-decoration: none;
+  padding: 5px 8px 5px 13px;
+  font-size:13px;
+  font-weight:normal;
+  text-transform: uppercase;
+}
+body.palette_17 #main #leftSidebar li a,
+body.palette_17 #main #leftSidebar nav ol li.level1,
+body.palette_17 #leftSidebar .simpleCallout li {
+  color:#ffffff;
+  font-size:13px;
+}
+
+body.palette_17 #leftSidebar nav ol li.level1,
+body.palette_17 #leftSidebar nav ol li.level2,
+body.palette_17 #leftSidebar nav ol li.level3,
+body.palette_17 #leftSidebar nav ol li.level4,
+body.palette_17 #leftSidebar nav ol li.level5 {
+  margin-bottom:3px;	
+}
+
+
+
+/* Top Header Nav */
+body.palette_17 .bannersNav li a:hover,
+body.palette_17 .bannersNav li.active a {
+  background: url('/_resources/images/bckgrnd/nav-active-bg.jpg') repeat-x top #d07700;
+  text-decoration: none;
+}
+body.palette_17 #pageBanners .bannersNav ol li a, 
+body.palette_17 #pageBanners .bannersNav ol li a:visited,
+body.palette_17 #pageBanners .bannersNav ol li a:active,
+body.palette_17 #pageBanners .bannersNav ol li a:hover, 
+body.palette_17 #mainContent h3,
+body.palette_17 .framedPhotoDefault p,
+body.palette_17 .framedPhotoLeft p,
+body.palette_17 .framedPhotoRight p,
+body.palette_17 #rightSidebar h1 {
+  color:#ffffff;
+  font-size:13px;
+}
+body.palette_17 #pageBanners .bannersNav ol li.active a,
+body.palette_17 #pageBanners .bannersNav ol li a.active,
+body.palette_17 #pageBanners .bannersNav ol li a:hover {
+  background:#002950;
+  color:#ffffff;
+  background: url('/_resources/images/bckgrnd/nav-active-bg.jpg') repeat-x top #d07700;
+  text-decoration: none;
+  font-size:13px;
+  text-transform: uppercase;
+}
+
+
+body.palette_17 #rightSidebar .simpleCallout {
+  background: #f5e5cf;
+}
+body.palette_17 #rightSidebar .simpleCallout a.apply img {
+  display: block;
+  border: none;
+}
+body.palette_17 #rightSidebar .simpleCallout a.apply h2 {
+  color: #982722;
+  font-size: 20px;
+  line-height: 25px;
+  margin: 0;
+}
+body.palette_17 .expandListItem {
+  background:#f1f1f1;
+
+}
+body.palette_17 .expandListItem h5 {
+  color:#982722;
+   background:url("/_resources/images/btns/btn_expand_plus-palette1.gif") no-repeat 0px 6px;
+}
+body.palette_17 .expandListItem h5.expandSelected {
+  background:url("/_resources/images/btns/btn_expand_minus-palette1.gif") no-repeat 0px 6px;
+}
+body.palette_17 .expandListItemContent .framedPhotoDefault img,
+body.palette_17 .expandListItemContent .framedPhotoLeft img,
+body.palette_17 .expandListItemContent .framedPhotoRight img {
+  border-color:#d3d5d6;
+}
+body.palette_17 #mainContent ul li {
+  background:url("/_resources/images/blts/bullet-palette1.gif") no-repeat 0 .6em;
+}
+body.palette_17 #mainContent .profiles li ul.genericContentList li {
+  background:url("/_resources/images/blts/bullet-palette1.gif") no-repeat 0 .6em !important;
+}
+body.palette_17 #rightSidebar {
+  margin: 15px 0 0;
+}
+body.palette_17 #rightSidebar li {
+  border-bottom:#d0c3b0 1px solid;
+  color:#000000;
+}
+body.palette_17 #rightSidebar a {
+  color:#9c231e;
+}
+body.palette_17 #mainContent .profiles li h2.profile,
+body.palette_17 #mainContent .profiles li h2.profile a,
+body.palette_17 #mainContent h2.profile a {
+  color:#FFF;
+}
+
+body.palette_17 #rightSidebar a {
+  font-weight: normal;
+}
+
+
+
+/* Old CSS Required for Migrated XHTML Content */
+
+
+
+body.palette_17 #content {
+  background-color:transparent;
+}
+body.palette_17 #content a:link,
+body.palette_17 #content a:active,
+body.palette_17 #content a:visited {
+  color:#9c231e;
+}
+body.palette_17 #featureCol li {
+  border-bottom:#c8cccf 1px solid;
+  color:#000000;
+}
+body.palette_17 #featureCol a {
+  color:#9c231e;
+}
+body.palette_17 #sectionNav li a:hover,
+body.palette_17 #sectionNav li.level1.active a,
+body.palette_17 #sectionNav li.level2.active a,
+body.palette_17 #sectionNav li.level3.active a,
+body.palette_17 #sectionNav li.level4.active a,
+body.palette_17 #sectionNav li.level5.active a,
+body.palette_17 #sectionNav li.level2.activeParent a,
+body.palette_17 #sectionNav li.level3.activeParent a,
+body.palette_17 #sectionNav li.level4.activeParent a,
+body.palette_17 #sectionNav .simpleCallout h4 {
+  background:#002950;
+  color:#ffffff;
+}
+body.palette_17 #featureCol .simpleCallout {
+  background:#ebf0f3;
+}
+body.palette_17 #featureCol h4,
+body.palette_17 #sectionNav .simpleCallout li {
+  color:#ffffff;
+}
+
+body.palette_17 .bannersSearch,
+body.palette_17 #globalFooter {
+  background-color: #9b2416;
+}
+body.palette_17 #globalFooter {
+  border-top: 1px solid #fff;
+  /* Footer and the watermark have potential to overlap.
+     This makes sure the footer will clip that off.
+   */
+  position: relative;
+  z-index: 10;
+}
+
+body.palette_17 .bannersSearch .bannersSearch-inner {
+  margin: 0 auto;
+  padding: 5px 0;
+  width: 985px;
+}
+
+body.palette_17 .universityName {
+  float: left;
+  height: 43px;
+  width: 143px;
+  background: url('/_resources/images/bckgrnd/du_logo.png') no-repeat center center;
+  display: block;
+  font-size: 0px;
+}
+body.palette_17 .universityName a {
+  display: block;
+  height: 100%;
+}
+body.palette_17 #pageBanners figure {
+  background-color: transparent;
+  padding: 0px;
+}
+body.palette_17 figure {
+  background-color: #d2d8df;
+  padding: 5px;
+}
+body.palette_17 figcaption {
+  background-color: transparent;
+  color: #405451;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+body.palette_17 .mainContent-rightCol {
+  float: right;
+  margin-left: 20px;
+  width: 222px;
+}
+
+body.palette_17 .mainContent-leftcol {
+  overflow: hidden;
+}
+
+body.palette_17 #mainContent hgroup h1 {
+  background-color: transparent;
+  color: #252525;
+  font-size: 12px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+body.palette_17 #mainContent h1,
+body.palette_17 #mainContent h2,
+body.palette_17 #mainContent h3,
+body.palette_17 #mainContent h4,
+body.palette_17 #mainContent h5,
+body.palette_17 #mainContent h6 {
+  color: #d07700;
+}
+
+body.palette_17 #mainContent ul,
+body.palette_17 #mainContent ol {
+  margin-left: 15px;
+}
+body.palette_17 #mainContent ul li {
+  background: none;
+  list-style: disc;
+  padding-left: 0;
+}
+
+body.palette_17 #rightSidebar .simpleCallout h1 {
+  background: url('/_resources/images/bckgrnd/quicklinks-bg.jpg') no-repeat;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 0 0 10px;
+  text-transform:uppercase;
+  font-size:17px;
+  font-weight:normal;
+}

@@ -1,0 +1,10 @@
+#mainContent input {width:215px;}
+#mainContent select {width:220px;}
+#mainContent label {font-weight:bold;}
+.vertCol {width: 312px !important; }
+address{ padding:0 15px 0 0 !important; font-style:normal !important;}
+em{ font-style:italic !important; }
+#mainContent .threeSubCol .vertCol p, #mainContent .threeSubCol .vertCol ul{ margin-left:0 !important; }
+#mainContent .threeSubCol .vertCol .expandListItemContent p{ margin-left:15px !important; }
+.vertCol .button{ margin-left:0 !important; }
+.expandListItem .expandListItem{ margin-bottom:10px !important; }

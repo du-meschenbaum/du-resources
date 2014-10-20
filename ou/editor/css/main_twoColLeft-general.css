@@ -1,0 +1,52 @@
+body {
+	background-image: url("/_resources/ou/editor/backgrounds/main_2colleft-general.jpg") ;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	background-repeat: no-repeat;
+	width:1000px;
+	margin: 331px 0px 0px 185px;
+	font-size: 0.75em !important;
+	text-align: left !important;
+	line-height: 1.5em;
+	color: #252525;
+	float: left;
+}
+#mainContent {
+	margin: 0;
+   	padding: 0;
+  	float: left;
+  	width: 512px;
+}
+
+.imageColContent {
+   	width: 720px;
+   	float: left;
+    	padding: 0 15px 0 0;
+}
+
+td, th {
+	font-size:0.75em;
+}
+h1 {
+	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 100%;
+}
+h3 {
+   	background: none repeat scroll 0 0 #445C88 !important;
+    	color: #FFFFFF;
+    	font-size: 1.1em;
+    	line-height: 1.211em;
+    	margin: 20px 0 10px;
+    	padding: 2px 5px 2px 7px;
+    	text-transform: uppercase;
+}
+img {
+    	float: right;
+    	vertical-align: baseline;
+    	background: url("http://www.du.edu/_resources/images/bckgrnd/photoFrame.gif") no-repeat scroll left top transparent;
+    	padding: 14px 16px 21px 14px;
+}
+.imageColRight {
+    	float: right;
+   	width: 250px;
+}

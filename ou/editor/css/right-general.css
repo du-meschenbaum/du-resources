@@ -1,0 +1,61 @@
+body {
+	background-image: url("/_resources/ou/editor/backgrounds/right-general.jpg") ;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	background-repeat: no-repeat;
+	width:300px;
+	margin: 331px 0px 0px 730px;
+	font-size: 0.75em !important;
+	text-align: left !important;
+	line-height: 1.5em;
+	color: #252525;
+	float: left;
+	text-decoration: none;
+}
+ul {
+    background: none repeat scroll 0 0 transparent;
+    list-style: none outside none;
+    margin: 0 0 0 10px;
+    font-weight: normal;
+    text-decoration: none !important;
+    padding: 0;
+}
+li {
+	text-decoration: none !important;
+}
+
+h1 {
+    background: none repeat scroll 0 0 #ECECEC;
+    color: #666666;
+    font-weight: bold;
+    margin: 0;
+    padding: 3px 0 3px 10px;
+    text-transform: uppercase;
+    width: 233px;
+    font-size: 100%;
+}
+.callOutBanner {
+    background: url("http://www.du.edu/_resources/images/bckgrnd/bg_call_out_banner_top.gif") repeat-x scroll 0 0 transparent;
+    margin: 0 0 18px;
+    padding: 15px 0 0;
+    position: relative;
+    width: 243px;
+}
+a {
+    background: none repeat scroll 0 0 transparent;
+    font-size: 100%;
+    padding: 0;
+    vertical-align: baseline;
+    display: block;
+    font-weight: bold;
+    margin-bottom: 18px;
+    text-decoration: underline !important;
+}
+a:link, a:active, a:visited {
+    color: #A01400;
+    text-decoration: underline;
+}
+a:hover {
+	color: #A01400;	
+ 	text-decoration: none;
+}
+   

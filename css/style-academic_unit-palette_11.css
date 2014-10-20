@@ -1,0 +1,95 @@
+body.palette_11 #body_wrapper {
+	background-color:#fff;
+}
+body.palette_11 #main {
+	background-color:#fff;
+}
+body.palette_11 #main a:link, body.palette_11 #main a:active, body.palette_11 #main a:visited {
+	color:#982722;
+}
+body.palette_11 #pageBanners .bannersTitle h1, body.palette_11 #pageBanners .bannersTitle h1 a {
+	color:#252525;
+}
+body.palette_11 #mainContent .viewLarger a {
+	color:#FFF;
+}
+body.palette_11 #pageBanners .bannersNav, body.palette_11 #leftSidebar, body.palette_11 #mainContent h3, body.palette_11 .framedPhotoDefault, body.palette_11 .framedPhotoLeft, body.palette_11 .framedPhotoRight, body.palette_11 #rightSidebar h1, body.palette_11 .overlay-wrapper h1.overlayTitle {
+	background:#565b5f;
+}
+body.palette_11 #mainContent h3, figcaption {
+	color:#FFF;
+	padding:3px;
+	margin:3px 0 5px 0
+}
+body.palette_11 .framedPhotoDefault, body.palette_11 #mainContent .threeSubCol .vertCol h3, figcaption {
+	margin:0px;
+	padding:4px;
+	background:#3d3f42;
+	color: #fff;
+}
+body.palette_11 #pageBanners .bannersNav ol li a, body.palette_11 #pageBanners .bannersNav ol li a:visited, body.palette_11 #pageBanners .bannersNav ol li a:active, body.palette_11 #pageBanners .bannersNav ol li a:hover, body.palette_11 #main #leftSidebar li a, body.palette_11 #main #leftSidebar li a:hover, body.palette_11 #main #leftSidebar nav ol li.level1, body.palette_11 #mainContent h3, body.palette_11 .framedPhotoDefault p, body.palette_11 .framedPhotoLeft p, body.palette_11 .framedPhotoRight p, body.palette_11 #rightSidebar h1, body.palette_11 #leftSidebar .simpleCallout li {
+	color:#ffffff;
+}
+body.palette_11 #pageBanners .bannersNav ol li a.active, body.palette_11 #pageBanners .bannersNav ol li a:active, body.palette_11 #pageBanners .bannersNav ol li a:hover, body.palette_11 #leftSidebar li a:hover, body.palette_11 #leftSidebar nav ol li.level1.active a, body.palette_11 #leftSidebar nav ol li.level2.active a, body.palette_11 #leftSidebar nav ol li.level3.active a, body.palette_11 #leftSidebar nav ol li.level4.active a, body.palette_11 #leftSidebar nav ol li.level5.active a, body.palette_11 #leftSidebar nav ol li.level2.activeParent a, body.palette_11 #leftSidebar nav ol li.level3.activeParent a, body.palette_11 #leftSidebar nav ol li.level4.activeParent a, body.palette_11 #leftSidebar .simpleCallout h1 {
+	background:#3d3f42;
+	color:#ffffff;
+}
+body.palette_11 #rightSidebar .simpleCallout {
+	background:#bcbcbc;
+}
+body.palette_11 .expandListItem {
+	background:#f1f1f1;
+}
+body.palette_11 .expandListItem h5 {
+	color:#982722;
+	background:url("/_resources/images/btns/btn_expand_plus-palette1.gif") no-repeat 0px 6px;
+}
+body.palette_11 .expandListItem h5.expandSelected {
+	background:url("/_resources/images/btns/btn_expand_minus-palette1.gif") no-repeat 0px 6px;
+}
+body.palette_11 .expandListItemContent .framedPhotoDefault img, body.palette_11 .expandListItemContent .framedPhotoLeft img, body.palette_11 .expandListItemContent .framedPhotoRight img {
+	border-color:#d3d5d6;
+}
+body.palette_11 #mainContent ul li {
+	background:url("/_resources/images/blts/bullet-palette1.gif") no-repeat 0 .6em;
+}
+body.palette_11 #mainContent .profiles li ul.genericContentList li {
+	background:url("/_resources/images/blts/bullet-palette1.gif") no-repeat 0 .6em !important;
+}
+body.palette_11 #rightSidebar li {
+	border-bottom:#c8cccf 1px solid;
+	color:#000000;
+}
+body.palette_11 #rightSidebar a {
+	color:#9c231e;
+}
+body.palette_11 #mainContent .profiles li h2.profile, body.palette_11 #mainContent .profiles li h2.profile a, body.palette_11 #mainContent h2.profile a {
+	color:#FFF;
+}
+/* Old CSS Required for Migrated XHTML Content */
+
+
+
+body.palette_11 #content {
+	background-color:transparent;
+}
+body.palette_11 #content a:link, body.palette_11 #content a:active, body.palette_11 #content a:visited {
+	color:#982722;
+}
+body.palette_11 #featureCol li {
+	border-bottom:#c8cccf 1px solid;
+	color:#000000;
+}
+body.palette_11 #featureCol a {
+	color:#9c231e;
+}
+body.palette_11 #sectionNav li a:hover, body.palette_11 #sectionNav li.level1.active a, body.palette_11 #sectionNav li.level2.active a, body.palette_11 #sectionNav li.level3.active a, body.palette_11 #sectionNav li.level4.active a, body.palette_11 #sectionNav li.level5.active a, body.palette_11 #sectionNav li.level2.activeParent a, body.palette_11 #sectionNav li.level3.activeParent a, body.palette_11 #sectionNav li.level4.activeParent a, body.palette_11 #sectionNav .simpleCallout h4 {
+	background:#002950;
+	color:#ffffff;
+}
+body.palette_11 #featureCol .simpleCallout {
+	background:#ebf0f3;
+}
+body.palette_11 #featureCol h4, body.palette_11 #sectionNav .simpleCallout li {
+	color:#ffffff;
+}

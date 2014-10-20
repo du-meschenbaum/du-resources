@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>RSS Asset Code Creator</title>
+
+	<!-- Included CSS Files -->
+	<link rel="stylesheet" href="stylesheets/foundation.css">
+	<link rel="stylesheet" href="stylesheets/app.css">
+
+	<script src="javascripts/modernizr.foundation.js"></script>
+
+	<!-- IE Fix for HTML5 Tags -->
+	<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	<link rel="stylesheet" type="text/css" href="stylesheets/system.css"/>
+
+	<style type="text/css">
+	.error_dlg{
+		background: none repeat scroll 0 0 #C53E3E;
+		color:#efefef;
+		border-radius: 3px;
+		border: solid 1px #E6E6E6;
+		padding: 10px;
+	}
+	input[type="text"].error_input{
+		    border: 1px solid #C53E3E;
+
+    box-shadow: 2px 2px 3px -2px rgba(197, 62, 62, 0.82) inset;
+	}
+	label.err_lbl{
+		color:#C53E3E;
+	}
+	.error{
+		display: none;
+	}
+	#num_msg{
+		display: none;
+	}
+	#rss_title_num_msg{
+		display: none;
+	}
+	#rss_desc_num_msg{
+		display: none;
+	}
+	#titlefeed_txt_msg{display:none;}
+	#rss_url{
+		display: none;
+	}
+.error_dlg p{
+	margin-bottom: 0px;
+	padding: 5px 0px;
+}
+	
+/* RSS */
+.rssfeed {margin:0 0 18px 0; border:1px dashed #999; font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:1em; line-height:1.267em; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+.rssfeed h1 {margin:0; padding:3px 0 3px 10px; background:#ececec; font-weight:bold; color:#666666; text-transform:uppercase; font-size:1em;}
+.rssfeed article {clear:both; margin:8px 0 10px 10px; padding:0 5px 10px 0; border-bottom:#e1e1e1 1px solid;}
+.rssfeed article:last-child {border:none;}
+.rssfeed article header {margin-bottom:2px;}
+.rssfeed article h1 {padding:0 !important; background:none !important; text-transform:none !important;}
+.rssfeed article h1 a, .rssfeed article h1 a:visited {display:inline !important; color:#a01400; text-decoration: underline;}
+.rssfeed article h1 a:hover {text-decoration:none;}
+.rssfeed article h1 span, .rssfeed article header p {font-size:85% !important; font-weight:normal;}
+.rssfeed article p {margin:0 !important;}
+.rssfeed article figure {float:left; max-width:33%; min-width:15%; margin-right:10px;}
+.rssfeed article figure figcaption {font-size:80% !important; font-style:italic;}
+/* <a href="http://www.omniupdate.com/oucampus/de.jsp?user=Denver&amp;site=DU_Main&amp;path=%2F_resources%2Fou%2Fwidgets%2Fasset_creator%2Findex.html" target="_blank"><img alt="edit page button" src="http://www.du.edu/_resources/images/icon_edit_lt.png" /></a> */</style>
+</head>
+<body>
+
+	<!-- container -->
+	<div class="container">
+
+		<div class="row">
+			<div class="twelve columns">
+				<h2>RSS Asset Code Creator</h2>
+				<hr />
+			</div>
+		</div>
+		<div class="row">
+			<div class="row error">
+				<div class="twelve columns ">
+					<div class="panel error_dlg">
+
+						<span id="rss_url">
+							<p>Please enter a URL for the RSS feed</p>
+						</span>
+						<span id="num_msg">
+							<p>Number of RSS items has be number</p>
+						</span>
+						<span id="rss_title_num_msg">
+							<p>Please use a number for the amount of characters to truncate for &quot;RSS Title&quot;</p>
+						</span>
+						<span id="rss_desc_num_msg">
+							<p>Please use a number for the amount of characters to truncate for &quot;RSS Description&quot;</p>
+						</span>
+						<span id="titlefeed_txt_msg">
+							<p>Please enter a title for the feed block</p>
+						</span>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+
+				<div class="row">
+					<div class="twelve columns">
+						<div class="panel">
+							<form accept-charset="utf-8" method="POST" id="form" class="nice custom" action="">
+              	<label for="multifeeds">Feed ID <span style="font-size:75%; font-style:italic;">(If there is more than 1 feed on a webpage, then you will need to give each a unique ID)</span></label>
+                <input type="number" name="multifeeds" id="multifeeds" value="1" min="1" max="10"/>
+								<label for="url">RSS URL</label>
+								<input type="url" name="url" placeholder="http://magazine.du.edu/feed" class="input-text" id="url" /><!--  value="http://www.du.edu/_resources/rss/test.xml"  value="http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml" value="http://www.du.edu/nsm/departments/geography/near-space/_resources/rss/nsm-nearspace.xml" /-->
+								<label for="num">Number of Items</label>
+								<input type="number" name="num" id="num" value="10" min="1" max="50" />
+								<fieldset>
+									<legend class="fieldset_legend">Hide Attributes</legend>
+									<div id="hide_items">
+										<div class="row">
+											<div class="three columns">
+												<label for="title">
+												  <input type="checkbox" id="title" style="display: none;"/>
+												  <span class="custom checkbox"></span> RSS Title
+												</label>
+											</div>
+											<div class="three columns">
+												<label for="desc">
+												  <input type="checkbox" id="desc" style="display: none;"/>
+												  <span class="custom checkbox"></span> RSS Description
+												</label>
+											</div>
+											<div class="three columns">
+												<label for="author">
+												  <input type="checkbox" id="author" style="display: none;"/>
+												  <span class="custom checkbox"></span> RSS Author
+												</label>
+											</div>
+											<div class="three columns">
+												<label for="date">
+												  <input type="checkbox" id="date" style="display: none;"/>
+												  <span class="custom checkbox"></span> RSS Publication Date
+												</label>
+											</div>
+										</div>
+										<br/>
+									</div>
+								</fieldset>
+								<fieldset>
+									<legend class="fieldset_legend">Hide Media</legend>
+									<div id="hide_media">
+										<div class="row">
+											<div class="three columns">
+												<label for="media">
+												  <input type="checkbox" id="media" checked style="display: none;"/>
+												  <span class="custom checkbox"></span> Media
+												</label>
+											</div>
+											<div class="three columns">
+												<label for="media_desc">
+												  <input type="checkbox" id="media_desc" checked style="display: none;"/>
+												  <span class="custom checkbox"></span> Media Description
+												</label>
+											</div>
+											<div class="three columns">
+												<label for="media_desc_num">
+												  <input type="number" id="media_desc_num" min="5" max="600" value="20" style="width:70px;"/>Media Description Truncate
+												</label>
+											</div>
+											<div class="three columns">
+												<label for="media_minheight">
+												  <input type="number" id="media_minheight" min="20" max="600" value="200" style="width:70px;"/>Media Min-Height
+												</label>
+											</div>
+										</div>
+										<br/>
+									</div>
+								</fieldset>
+								<br/>
+
+                <legend>Truncate Characters</legend>
+                <select style="display:none;" id="truncate">
+                  <option SELECTED>No</option>
+                  <option>Yes</option>
+                </select>
+
+                <div id="truncate_items" style="display:none; margin-left:40px;">
+                  <div class="row">
+                    <div class="six columns item_nums" >&nbsp;
+                      <label for="rss_title_num">RSS Title</label>
+                      <input type="number" id="rss_title_num" placeholder="Character limit" min="0" max="1000"/>
+                    </div>
+                  </div>
+  
+                  <div class="row" style="margin-bottom:20px;">
+                    <div class="six columns item_nums" >&nbsp;
+                      <label for="rss_desc_num">RSS Description</label>
+                      <input type="number" id="rss_desc_num" placeholder="Character limit"  min="0" max="1000"/>
+                    </div>
+                  </div>
+                </div>
+
+                <label for="sort">Sort Order</label>
+                <select style="display:none;" id="sort">
+                  <option SELECTED>Ascending</option>
+                  <option>Descending</option>
+                </select>
+
+                <legend>Add Feed Title</legend>
+                <select style="display:none;" id="titlefeed">
+                  <option SELECTED>No</option>
+                  <option>Yes</option>
+                </select>
+
+                <div id="titlefeed_items" style="display:none; margin-left:40px;">
+                  <div class="row">
+                    <div class="six columns item_nums" >&nbsp;
+                      <label for="titlefeed_txt">Feed Title</label>
+                      <input type="text" id="titlefeed_txt" placeholder="Title for Feed block" class="input-text" />
+                    </div>
+                  </div>
+                </div>
+
+								<br/>
+								<input type="submit" class="green radius button" value="Preview Below" name="sumbit" id="fetch" />
+							</form>
+						</div>
+					</div>
+				</div>
+
+		</div>
+		<div class="row" >
+      <div class="row">
+        <div class="twelve columns">
+          <div id="info"></div>
+        </div>
+      </div>
+		</div>
+		<div class="row" id="preview">
+      <div class="row">
+        <div class="twelve columns">
+          <div class="panel">
+            <h4>Preview</h4>
+
+            <hr />
+            <div style="background:#fff; padding:20px;">
+              <section id="feed" class="rssfeed" style="display:none;"></section>
+            </div>
+
+          </div>
+        </div>
+      </div>
+		</div>
+
+		<div class="row" id="asset_code">
+      <div class="row">
+        <div class="twelve columns">
+          <div class="panel">
+            <h4>Asset Code <span style="font-size:50%; font-style:italic; font-weight:normal;">(Copy the code below and paste it into a "Source Code" Asset. Then place the asset on any page, preferably in the sidebar.)</span></h4>
+
+            <hr />
+            <code id="snippet"></code>              
+
+          </div>
+        </div>
+      </div>
+		</div>
+
+	</div>
+	<!-- container -->
+
+	<!-- Included JS Files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="javascripts/foundation.min.js"></script>
+
+  <script src="javascripts/app.js"></script>
+	<script type="text/javascript" src="jquery.snippet.min.js"></script>
+  
+  <!-- Compressed JS: YUI - Minify only; Disable all the built-in micro optimizations >
+  <script>
+	//<![CDATA[
+window.showError=0;window.num_error=false;window.rss_title_num_error=false;window.rss_desc_num_error=false;window.titlefeed_txt_error=false;function d_error(b){var a=/^\d+$/;var c=/(?:\d+-){3}\d+/;if($("#"+b).val().match(/^\d+$/)|!($("#"+b).val().match(/\S/))){$("#"+b).removeClass("error_input");$("#"+b).prev().removeClass("err_lbl");window.showError-=1;window[b+"_error"]=false;if(window.num_error==false&&window.rss_title_num_error==false&&window.rss_desc_num_error==false&&window.titlefeed_txt_error==false&&$("#url").val()&&$("#truncate").val()=="No"&&$("#titlefeed").val()=="No"){$(".error").fadeOut();$("#fetch").removeAttr("disabled")}$(".error_dlg span").each(function(){if(window[b+"_error"]==false){$("#"+b+"_msg").hide()}});$("#"+b+"_msg").fadeOut()}else{$("#"+b).addClass("error_input");$("#"+b).prev().addClass("err_lbl");if(window.showError<=2){window.showError+=1}window[b+"_error"]=true;$(".error").fadeIn();$("#"+b+"_msg").fadeIn();$("#fetch").attr("disabled",true)}}$("#truncate").change(function(){var a=$(this).val();if(a=="Yes"){$("#truncate_items").fadeIn();d_error("rss_title_num");d_error("rss_desc_num")}else{$("#truncate_items").fadeOut();$("#rss_title_num_msg").hide();if((!$("#rss_title_num").val().match(/^\d+$/)||!($("#"+num).val().match(/\S/)))&&$("#rss_title_num").val().length!=0){window.rss_title_num_error=true;$(".error").fadeIn();$("#rss_title_num_msg").fadeIn();$("#fetch").attr("disabled",true)}else{if(!$("#rss_title_num").val()){$(".error").fadeIn();$("#rss_title_num_msg").fadeIn();$("#fetch").attr("disabled",true)}else{$(".error").fadeOut();$("#fetch").removeAttr("disabled")}}$("#rss_desc_num_msg").hide();if((!$("#rss_desc_num").val().match(/^\d+$/)||!($("#"+num).val().match(/\S/)))&&$("#rss_desc_num").val().length!=0){window.rss_title_num_error=true;$(".error").fadeIn();$("#rss_desc_num_msg").fadeIn();$("#fetch").attr("disabled",true)}else{if(!$("#rss_title_num").val()){$(".error").fadeIn();$("#rss_desc_num_msg").fadeIn();$("#fetch").attr("disabled",true)}else{$(".error").fadeOut();$("#fetch").removeAttr("disabled")}}}});$("#titlefeed").change(function(){var a=$(this).val();if(a=="Yes"){$("#titlefeed_items").fadeIn()}else{$("#titlefeed_items").fadeOut();$("#titlefeed_txt").val("");$("#titlefeed_txt_msg").hide()}});$("#url").bind("keyup blur select",function(){if(!$(this).val()){$("#fetch").attr("disabled",true);$(this).addClass("error_input");$(this).prev().addClass("err_lbl");$(".error").fadeIn();$("#rss_url").fadeIn()}else{if(window.num_error==false&&window.rss_title_num_error==false&&window.rss_desc_num_error==false&&window.titlefeed_txt_error==false&&$(this).val()){$("#fetch").removeAttr("disabled");$(this).removeClass("error_input");$(this).prev().removeClass("err_lbl");$(".error").fadeOut();$("#rss_url").hide()}else{$(this).removeClass("error_input");$(this).prev().removeClass("err_lbl");$("#rss_url").hide()}}});$("#num").keyup(function(){d_error("num")});$("#rss_title_num").keyup(function(){d_error("rss_title_num")});$("#rss_desc_num").keyup(function(){d_error("rss_desc_num")});$("#rss_title").next().click(function(){if(!$(this).hasClass("checked")){$("#rss_title_num").fadeIn()}else{$("#rss_title_num").fadeOut()}});$("#rss_desc").next().click(function(){if(!$(this).hasClass("checked")){$("#rss_desc_num").fadeIn()}else{$("#rss_desc_num").fadeOut()}});$("#fetch").click(function(j){j.preventDefault();var c=/^\d+$/;var d=$("#url").val();if(c.test(parseInt($("#num").val()))){var h=$("#num").val()}else{var h=10}var i=$("#sort").val();var a,b,l,f,k,g,media,mediadesc,mediadescnum,mediaminh,z,x;if((c.test(parseInt($("#rss_title_num").val())))&&$("#truncate").val()=="Yes"){a=$("#rss_title_num").val()}else{a=0}if((c.test(parseInt($("#rss_desc_num").val())))&&$("#truncate").val()=="Yes"){g=$("#rss_desc_num").val()}else{g=0}if($("#title").is(":checked")){l=true}else{l=false}if($("#desc").is(":checked")){f=true}else{f=false}if($("#author").is(":checked")){k=true}else{k=false}if($("#date").is(":checked")){b=true}else{b=false}if($("#media").is(":checked")){media=true}else{media=false}if($("#media_desc").is(":checked")){mediadesc=true}else{mediadesc=false}if(c.test(parseInt($("#media_desc_num").val()))){mediadescnum=$("#media_desc_num").val()}else{mediadescnum=50}if(c.test(parseInt($("#media_minheight").val()))){mediaminh=$("#media_minheight").val()}else{mediaminh=10}if($("#titlefeed").val()=="Yes"){z=$("#titlefeed_txt").val()}else{z=""}x=$("#multifeeds").val();$.ajax({type:"POST",cache:false,url:"/_resources/ou/widgets/asset_creator/prox.php",data:{rss:d,num:h,order:i,rss_title:a,rss_desc:g,hideTitle:l,hideDesc:f,hideAuth:k,hidePub:b,hideMedia:media,hideMediaDesc:mediadesc,hideMediaDescNum:mediadescnum,media_minheight:mediaminh,feed_title:z},dataType:"json",success:function(n){var m="";if(z.length){m+="<h1>"+z+"</h1>"}$.each(n,function(o,p){if(p.mediaurl){m+='<article style="min-height:'+p.mediaminh+'px;">';m+="<figure>";m+='<image src="'+p.mediaurl+'" alt="'+p.mediatitle+'"/>';if(p.mediadesc&&p.mediadesc.length>2){m+="<figcaption>"+p.mediadesc+"</figcaption>"}m+="</figure>"}else{m+="<article>"}if(p.date){m+="<header>"}if(p.title||(p.author&&p.author.length>1)){m+="<h1>"}if(p.title){m+='<a href="'+p.link+'">'+p.title+"</a> ";window.gotTitle=true}else{window.gotTitle=false}if(p.author&&p.author.length>1){m+=' <span class="author">( '+p.author+" )</span>"}else{window.gotAuth=false}if(p.title||(p.author&&p.author.length>1)){m+="</h1>"}if(p.date){m+='<p><time pubdate="pubdate">'+p.date+"</time></p>";window.gotPub=true}else{window.gotPub=false}if(p.date){m+="</header>"}if(p.description){m+=p.description;window.gotDesc=true}else{window.gotDesc=false}m+="</article>"});$("#preview").fadeIn();$("#feed").html(m).fadeIn("slow");$(".url").html(d);if(!h){h=10}d=String(d).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");var n="{'rss':'"+d+"','num':"+h+",'order':'"+i+"','rss_title':"+a+",'rss_desc':"+g+",'hideTitle':"+l+",'hideDesc':"+f+",'hideAuth':"+k+",'hidePub':"+b+",'hideMedia':"+media+",'hideMediaDesc':"+mediadesc+",'hideMediaDescNum':"+mediadescnum+",'media_minheight':"+mediaminh+",'feed_title':'"+z+"'}";var e="\n\n\n";e+='<section id="feed_'+x+'" class="rssfeed">&nbsp;</section>\n';e+="<script>\n";e+="//<![CDATA[\n";e+="if (typeof jQuery == 'undefined'){var jq = document.createElement('script'); jq.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'; var h = document.getElementsByTagName('head')[0]; h.appendChild(jq);}";e+='$.ajax({type:"POST",cache:false,url:"/_resources/ou/widgets/asset_creator/prox.php",';e+="data:"+n+',dataType:"json",success:function(data){';if(z.length){e+='var newH1 = document.createElement("h1");';e+='var newH1_txt = document.createTextNode("'+z+'");';e+="newH1.appendChild(newH1_txt);";e+='$("#feed_'+x+'").html(newH1);'}e+="var newArticle, newFigure, newImg, newFigCaption, newFigCaptionTxt, newHeader, newHeaderH1, newHeaderLink, newHeaderLink_txt, newHeaderSpan, newHeaderSpan_txt, newHeaderPara, newTime, newTime_txt, newPara, newPara_txt;";e+="$.each(data,function(index,value){";e+='newArticle = document.createElement("article");';e+='newArticle.setAttribute("id","feed_'+x+'_"+index);';e+="if(value.mediaurl){";e+='newArticle.style.minHeight = value.mediaminh+"px";';e+='newFigure = document.createElement("figure");';e+='newImg = document.createElement("img");';e+='newImg.setAttribute("src",value.mediaurl);';e+='newImg.setAttribute("alt",value.mediatitle);';e+="newFigure.appendChild(newImg);";e+="if(value.mediadesc){ if(value.mediadesc.length){";e+='newFigCaption = document.createElement("figcaption");';e+="newFigCaptionTxt = document.createTextNode(value.mediadesc);";e+="newFigCaption.appendChild(newFigCaptionTxt);";e+="newFigure.appendChild(newFigCaption);";e+="}}";e+="newArticle.appendChild(newFigure);";e+="}";e+='if(value.date){newHeader = document.createElement("header");}';e+='if(value.title||value.author){newHeaderH1 = document.createElement("h1");}';e+="if(value.title){";e+='newHeaderLink = document.createElement("a");';e+="newHeaderLink_txt = document.createTextNode(value.title);";e+="newHeaderLink.appendChild(newHeaderLink_txt);";e+="newHeaderLink.href = value.link;";e+="newHeaderH1.appendChild(newHeaderLink);";e+="}";e+="if(value.author){";e+='newHeaderSpan = document.createElement("span");';e+='newHeaderSpan_txt = document.createTextNode("( "+value.author+" )");';e+="newHeaderSpan.appendChild(newHeaderSpan_txt);";e+='newHeaderSpan.className = "author";';e+="newHeaderH1.appendChild(newHeaderSpan);";e+="}";e+="if(value.date){";e+="if(value.title||value.author){";e+="newHeader.appendChild(newHeaderH1);";e+="newArticle.appendChild(newHeader);";e+="}";e+='newHeaderPara = document.createElement("p");';e+='newTime = document.createElement("time");';e+="newTime_txt = document.createTextNode(value.date);";e+="newTime.appendChild(newTime_txt);";e+='newTime.setAttribute("pubdate","pubdate");';e+="newHeaderPara.appendChild(newTime);";e+="newHeader.appendChild(newHeaderPara);";e+="}else if(value.title||value.author){";e+="newArticle.appendChild(newHeaderH1);";e+="}";e+="if(value.description){";e+='newPara = document.createElement("div");';e+="$(newPara).append(value.description);";e+="newArticle.appendChild(newPara);";e+="}";e+='$("#feed_'+x+'").append(newArticle);';e+="});";e+='$("#feed_'+x+'").fadeIn("slow");},error:function(data){}});\n';e+="//]]>\n";e+="<\/script>\n";$("#snippet").html('<pre id="code"></pre>');$("#code").text(e);$("#code").snippet("html",{style:"bright"});$("#asset_code").fadeIn()},error:function(e){console.log(e)}});return false});
+//]]>
+</script-->
+
+<!-- Un-Compressed JS -->
+<script>
+window.showError = 0;
+window.num_error = false;
+window.rss_title_num_error = false;
+window.rss_desc_num_error = false;
+window.titlefeed_txt_error = false;
+
+function d_error(b) {
+  var a = /^\d+$/;
+  var c = /(?:\d+-){3}\d+/;
+  if ($("#" + b).val().match(/^\d+$/) | !($("#" + b).val().match(/\S/))) {
+    $("#" + b).removeClass("error_input");
+    $("#" + b).prev().removeClass("err_lbl");
+    window.showError -= 1;
+    window[b + "_error"] = false;
+    if (window.num_error == false && window.rss_title_num_error == false && window.rss_desc_num_error == false && window.titlefeed_txt_error == false && $("#url").val() && $("#truncate").val() == "No" && $("#titlefeed").val() == "No") {
+      $(".error").fadeOut();
+      $("#fetch").removeAttr("disabled");
+    }
+    $(".error_dlg span").each(function () {
+      if (window[b + "_error"] == false) {
+        $("#" + b + "_msg").hide();
+      }
+    });
+    $("#" + b + "_msg").fadeOut();
+  } else {
+    $("#" + b).addClass("error_input");
+    $("#" + b).prev().addClass("err_lbl");
+    if (window.showError <= 2) {
+      window.showError += 1;
+    }
+    window[b + "_error"] = true;
+    $(".error").fadeIn();
+    $("#" + b + "_msg").fadeIn();
+    $("#fetch").attr("disabled", true);
+  }
+}
+$("#truncate").change(function () {
+  var a = $(this).val();
+  if (a == "Yes") {
+    $("#truncate_items").fadeIn();
+    d_error("rss_title_num");
+    d_error("rss_desc_num");
+  } else {
+    $("#truncate_items").fadeOut();
+    $("#rss_title_num_msg").hide();
+    if ((!$("#rss_title_num").val().match(/^\d+$/) || !($("#" + num).val().match(/\S/))) && $("#rss_title_num").val().length != 0) {
+      window.rss_title_num_error = true;
+      $(".error").fadeIn();
+      $("#rss_title_num_msg").fadeIn();
+      $("#fetch").attr("disabled", true);
+    } else {
+      if (!$("#rss_title_num").val()) {
+        $(".error").fadeIn();
+        $("#rss_title_num_msg").fadeIn();
+        $("#fetch").attr("disabled", true);
+      } else {
+        $(".error").fadeOut();
+        $("#fetch").removeAttr("disabled");
+      }
+    }
+    $("#rss_desc_num_msg").hide();
+    if ((!$("#rss_desc_num").val().match(/^\d+$/) || !($("#" + num).val().match(/\S/))) && $("#rss_desc_num").val().length != 0) {
+      window.rss_title_num_error = true;
+      $(".error").fadeIn();
+      $("#rss_desc_num_msg").fadeIn();
+      $("#fetch").attr("disabled", true);
+    } else {
+      if (!$("#rss_title_num").val()) {
+        $(".error").fadeIn();
+        $("#rss_desc_num_msg").fadeIn();
+        $("#fetch").attr("disabled", true);
+      } else {
+        $(".error").fadeOut();
+        $("#fetch").removeAttr("disabled");
+      }
+    }
+  }
+});
+$("#titlefeed").change(function () {
+  var a = $(this).val();
+  if (a == "Yes") {
+    $("#titlefeed_items").fadeIn();
+  } else {
+    $("#titlefeed_items").fadeOut();
+		$("#titlefeed_txt").val('');
+    $("#titlefeed_txt_msg").hide();
+  }
+});
+$("#url").bind("keyup blur select", function () {
+  if (!$(this).val()) {
+    $("#fetch").attr("disabled", true);
+    $(this).addClass("error_input");
+    $(this).prev().addClass("err_lbl");
+    $(".error").fadeIn();
+    $("#rss_url").fadeIn();
+  } else {
+    if (window.num_error == false && window.rss_title_num_error == false && window.rss_desc_num_error == false && window.titlefeed_txt_error == false && $(this).val()) {
+      $("#fetch").removeAttr("disabled");
+      $(this).removeClass("error_input");
+      $(this).prev().removeClass("err_lbl");
+      $(".error").fadeOut();
+      $("#rss_url").hide();
+    } else {
+      $(this).removeClass("error_input");
+      $(this).prev().removeClass("err_lbl");
+      $("#rss_url").hide();
+    }
+  }
+});
+$("#num").keyup(function () {
+  d_error("num");
+});
+$("#rss_title_num").keyup(function () {
+  d_error("rss_title_num");
+});
+$("#rss_desc_num").keyup(function () {
+  d_error("rss_desc_num");
+});
+$("#rss_title").next().click(function () {
+  if (!$(this).hasClass("checked")) {
+    $("#rss_title_num").fadeIn();
+  } else {
+    $("#rss_title_num").fadeOut();
+  }
+});
+$("#rss_desc").next().click(function () {
+  if (!$(this).hasClass("checked")) {
+    $("#rss_desc_num").fadeIn();
+  } else {
+    $("#rss_desc_num").fadeOut();
+  }
+});
+$("#fetch").click(function (j) {
+  j.preventDefault();
+  var c = /^\d+$/;
+  var d = $("#url").val();
+  if (c.test(parseInt($("#num").val()))) {
+    var h = $("#num").val();
+  } else {
+    var h = 10;
+  }
+  var i = $("#sort").val();
+  var a, b, l, f, k, g, media, mediadesc, mediadescnum, mediaminh, z, x;
+  if ((c.test(parseInt($("#rss_title_num").val()))) && $("#truncate").val() == "Yes") {
+    a = $("#rss_title_num").val();
+  } else {
+    a = 0;
+  } 
+	if ((c.test(parseInt($("#rss_desc_num").val()))) && $("#truncate").val() == "Yes") {
+    g = $("#rss_desc_num").val();
+  } else {
+    g = 0;
+  } 
+	if ($("#title").is(":checked")) {
+    l = true;
+  } else {
+    l = false;
+  } 
+	if ($("#desc").is(":checked")) {
+    f = true;
+  } else {
+    f = false;
+  } 
+	if ($("#author").is(":checked")) {
+    k = true;
+  } else {
+    k = false;
+  } 
+	if ($("#date").is(":checked")) {
+    b = true;
+  } else {
+    b = false;
+  }
+	if ($("#media").is(":checked")) {
+    media = true;
+  } else {
+    media = false;
+  }
+	if ($("#media_desc").is(":checked")) {
+    mediadesc = true;
+  } else {
+    mediadesc = false;
+  } 
+  if (c.test(parseInt($("#media_desc_num").val()))) {
+    mediadescnum = $("#media_desc_num").val();
+  } else {
+    mediadescnum = 50;
+  }
+  if (c.test(parseInt($("#media_minheight").val()))) {
+    mediaminh = $("#media_minheight").val();
+  } else {
+    mediaminh = 10;
+  }
+	if ($("#titlefeed").val() == "Yes") {
+    z = $("#titlefeed_txt").val();
+  } else {
+    z = '';
+  } 
+	x = $("#multifeeds").val();
+
+  $.ajax({
+    type: "POST",
+    cache: false,
+    url: "/_resources/ou/widgets/asset_creator/prox.php",
+    data: {
+      rss: d,
+      num: h,
+      order: i,
+      rss_title: a,
+      rss_desc: g,
+      hideTitle: l,
+      hideDesc: f,
+      hideAuth: k,
+      hidePub: b,
+      hideMedia: media,
+      hideMediaDesc: mediadesc,
+      hideMediaDescNum: mediadescnum,
+			media_minheight: mediaminh,
+			feed_title: z
+    },
+    dataType: "json",
+    success: function (n) {
+      var m = "";
+			if (z.length)
+				m += "<h1>"+z+"</h1>";
+      $.each(n, function (o, p) {
+				if (p.mediaurl){
+					m += '<article style="min-height:'+p.mediaminh+'px;">';
+					m += "<figure>";
+					m += '<image src="' + p.mediaurl + '" alt="' + p.mediatitle + '"/>';
+					if (p.mediadesc && p.mediadesc.length > 2){
+						m += "<figcaption>" + p.mediadesc + "</figcaption>";
+					}
+					m += "</figure>";
+				}else{
+					m += "<article>";
+				}
+				if (p.date){ m += "<header>"; }
+				if (p.title || (p.author && p.author.length > 1))
+        	m += "<h1>";
+				if (p.title) {
+					m += '<a href="' + p.link + '">' + p.title + "</a> ";
+					window.gotTitle = true;
+				} else {
+					window.gotTitle = false;
+				}
+				if (p.author && p.author.length > 1) {
+					m += ' <span class="author">( ' + p.author + ' )</span>';
+				} else {
+					window.gotAuth = false;
+				}
+				if (p.title || (p.author && p.author.length > 1))
+        	m += "</h1>";
+				if (p.date) {
+					m += '<p><time pubdate="pubdate">' + p.date + '</time></p>';
+					window.gotPub = true;
+				} else {
+					window.gotPub = false;
+				}
+				if (p.date){ m += "</header>"; }
+				if (p.description) {
+          m += p.description;
+          window.gotDesc = true;
+        } else {
+          window.gotDesc = false;
+        }
+        m += "</article>";
+				if(p.debug && p.debug instanceof Array && p.debug.length)
+					console.log(JSON.stringify(p.debug));
+      });
+      $("#preview").fadeIn();
+      $("#feed").html(m).fadeIn("slow");
+      $(".url").html(d);
+      if (!h) {
+        h = 10;
+      }
+      d = String(d).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+      var n = "{'rss':'" + d + "','num':" + h + ",'order':'" + i + "','rss_title':" + a + ",'rss_desc':" + g + ",'hideTitle':" + l + ",'hideDesc':" + f + ",'hideAuth':" + k + ",'hidePub':" + b + ",'hideMedia':" + media +",'hideMediaDesc':" + mediadesc + ",'hideMediaDescNum':" + mediadescnum + ",'media_minheight':" + mediaminh + ",'feed_title':'" + z + "'}";
+      var e = "\n\n\n";
+      e += '<section id="feed_'+x+'" class="rssfeed">&nbsp;</section>\n';
+      e += '<script>\n';
+      e += "\/\/<![CDATA[\n";
+			e += "if (typeof jQuery == 'undefined'){var jq = document.createElement('script'); jq.src = 'https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'; var h = document.getElementsByTagName('head')[0]; h.appendChild(jq);}";
+      e += '$.ajax({type:"POST",cache:false,url:"/_resources/ou/widgets/asset_creator/prox.php",';
+      e += "data:" + n + ',dataType:"json",success:function(data){';
+			if(z.length){
+			e += "var newH1 = document.createElement(\"h1\");";
+			e += "var newH1_txt = document.createTextNode(\""+z+"\");";
+			e += "newH1.appendChild(newH1_txt);";
+			e += '$("#feed_'+x+'").html(newH1);';
+			}
+			e += "var newArticle, newFigure, newImg, newFigCaption, newFigCaptionTxt, newHeader, newHeaderH1, newHeaderLink, newHeaderLink_txt, newHeaderSpan, newHeaderSpan_txt, newHeaderPara, newTime, newTime_txt, newPara, newPara_txt;";
+			e += "$.each(data,function(index,value){";
+			e += "newArticle = document.createElement(\"article\");";
+			e += "newArticle.setAttribute(\"id\",\"feed_"+x+"_\"+index);";
+			e += "if(value.mediaurl){";
+			e += "newArticle.style.minHeight = value.mediaminh+\"px\";";
+			e += "newFigure = document.createElement(\"figure\");";
+			e += "newImg = document.createElement(\"img\");";
+			e += "newImg.setAttribute(\"src\",value.mediaurl);";
+			e += "newImg.setAttribute(\"alt\",value.mediatitle);";
+			e += "newFigure.appendChild(newImg);";
+			e += "if(value.mediadesc){ if(value.mediadesc.length){";
+			e += "newFigCaption = document.createElement(\"figcaption\");";
+			e += "newFigCaptionTxt = document.createTextNode(value.mediadesc);";
+			e += "newFigCaption.appendChild(newFigCaptionTxt);";
+			e += "newFigure.appendChild(newFigCaption);";
+			e += "}}";
+			e += "newArticle.appendChild(newFigure);";
+			e += "}";
+			e += "if(value.date){newHeader = document.createElement(\"header\");}";
+			e += "if(value.title||value.author){newHeaderH1 = document.createElement(\"h1\");}";
+			e += "if(value.title){";
+			e += "newHeaderLink = document.createElement(\"a\");";
+			e += "newHeaderLink_txt = document.createTextNode(value.title);";
+			e += "newHeaderLink.appendChild(newHeaderLink_txt);";
+			e += "newHeaderLink.href = value.link;";
+			e += "newHeaderH1.appendChild(newHeaderLink);";
+			e += "}";
+			e += "if(value.author){";
+			e += "newHeaderSpan = document.createElement(\"span\");";
+			e += "newHeaderSpan_txt = document.createTextNode(\"( \"+value.author+\" )\");";
+			e += "newHeaderSpan.appendChild(newHeaderSpan_txt);";
+			e += "newHeaderSpan.className = \"author\";";
+			e += "newHeaderH1.appendChild(newHeaderSpan);";
+			e += "}";
+			e += "if(value.date){";
+			e += "if(value.title||value.author){";
+			e += "newHeader.appendChild(newHeaderH1);";
+			e += "newArticle.appendChild(newHeader);";
+			e += "}";
+			e += "newHeaderPara = document.createElement(\"p\");";
+			e += "newTime = document.createElement(\"time\");";
+			e += "newTime_txt = document.createTextNode(value.date);";
+			e += "newTime.appendChild(newTime_txt);";
+			e += "newTime.setAttribute(\"pubdate\",\"pubdate\");";
+			e += "newHeaderPara.appendChild(newTime);";
+			e += "newHeader.appendChild(newHeaderPara);";
+			e += "}else if(value.title||value.author){";
+			e += "newArticle.appendChild(newHeaderH1);";
+			e += "}";
+			e += "if(value.description){";
+			e += "newPara = document.createElement(\"div\");";
+			e += "$(newPara).append(value.description);";
+			e += "newArticle.appendChild(newPara);";
+			e += "}";
+			e += "$(\"#feed_"+x+"\").append(newArticle);";
+			e += "});";
+			e += "$(\"#feed_"+x+"\").fadeIn(\"slow\");},error:function(data){}});\n";
+      e += "\/\/]]>\n";
+      e += "<\/script>\n";
+		  $("#snippet").html('<pre id="code"></pre>');
+      $("#code").text(e);
+      $("#code").snippet("html", {style:"bright"});
+      $("#asset_code").fadeIn();
+    },
+    error: function (e) {console.log(e);}
+  });
+  return false;
+});
+</script>
+</html>

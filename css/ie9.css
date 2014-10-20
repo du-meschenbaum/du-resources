@@ -1,0 +1,13 @@
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+.button
+, #mainContent h3, #pageBanners .bannersNav, #rightSidebar h1, article.overlay_right h1, article.overlay_left h1,
+.ritchiecenter_adultaquatics #rightSidebar h1, .ritchiecenter_adulthockeyskate #rightSidebar h1, .ritchiecenter_coorsfc #rightSidebar h1, .ritchiecenter_jrpioneers #rightSidebar h1, .ritchiecenter_studentprograms #rightSidebar h1, .ritchiecenter_youthprograms #rightSidebar h1
+{
+	filter:none !important;
+}
+/* Overlays */
+article.overlay_right, article.overlay_left {background:transparent;}
+body.palette_16 article.overlay_right,
+body.palette_16 article.overlay_left {
+	filter:none;
+}

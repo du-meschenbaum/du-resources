@@ -1,0 +1,13 @@
+.overlaySlideShow	Media: Overlay Slideshow
+.inlineSlideShow	Media: Inline Slideshow
+.instantInlineSlideShow	Media: Instant-Inline Slideshow
+.overlayVideo	Media: Overlay Video
+.inlineVideo	Media: Inline Video
+.overlayQuicktime	Media: Overlay Quicktime
+.inlineAudio	Media: Inline Audio
+.instantInlineAudio	Media: Instant-Inline Audio
+.inlineSWF	Media: Inline SWF
+.instantInlineSWF	Media: Instant-Inline SWF
+.overlaySWF	Media: Overlay SWF
+.overlayIMG	Media: Overlay Image
+.linkedimage	linkedimage

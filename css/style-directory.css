@@ -1,0 +1,24 @@
+#tabsPanel {width:980px;}
+.tabsContentPanels div.tabContent { background:url("/_resources/images/bckgrnd/bg_tabs_full.gif") no-repeat; padding:50px 25px; }
+
+div.inputBox {height:50px; margin:20px 0;}
+div.inputBox div {float:left; width:200px; margin:6px 0 0 0;}
+div.inputBox div input, div.inputBox div label {display:block;}
+div.inputBox div input {width:180px;}
+div.inputBox div label {margin:5px 0;}
+div.inputBox div.button {width:100px; margin:0; padding-bottom:20px;}
+div.inputBox div.button a {padding-bottom:12px;}
+div.inputBox div.clear {float:none; width:.1%; height:.1%; margin:0; padding:0;}
+div.inputBox p {padding:4px 0 0 4px;}
+
+div#results {padding:20px 0;}
+div.resultBox {margin:0 0 20px 0; padding:20px 15px;}
+div.resultBox.alt {background-color:#ededed;}
+div.resultBox h5 {margin:0 0 10px 0; font-size:1.4em;}
+div.resultBox h6 {margin:0 0 10px 0;}
+div.resultBox div.col1, div.resultBox div.col2, div.resultBox div.col3, div.resultBox div.col4, div.resultBox div.col5 {float:left; width:300px;}
+div.resultBox div.col2 {float:left; width:600px;}
+div.resultBox div.col3, div.resultBox div.col4, div.resultBox div.col5 {width:300px;}
+div.resultBox div.col1 p, div.resultBox div.col2 p, div.resultBox div.col3 p, div.resultBox div.col4 p, div.resultBox div.col5 p {margin:0 !important;}
+div#results a, div#results a:link, div#results a:visited, div#results a:active {text-decoration:underline !important;}
+div#results a:hover {text-decoration:none !important;}

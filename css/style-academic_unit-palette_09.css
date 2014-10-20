@@ -1,0 +1,83 @@
+body.palette_09 #pageBanners {padding-bottom:14px; background:url("/_resources/images/bckgrnd/academic_units-palette9-top-nav_bottom.png") 50% bottom no-repeat;}
+body.palette_09 #pageBanners .bannersTitle {margin:0 auto;}
+body.palette_09 #pageBanners .bannersTitle h1 {height:inherit; margin:32px 0 0 0; padding:0 0 0 13px; color:#363636;}
+body.palette_09 #pageBanners .bannersTitle h1 a {padding:0 0 0 10px; font-size:0.393em; color:#ffffff; background:url("/_resources/images/bckgrnd/academic_units-hero-title-arrow-wht.png") 0 50% no-repeat;}
+body.palette_09 #pageBanners .bannersTitle h1 img {display:block; margin-top:6px;}
+body.palette_09 #pageBanners .bannersNav {height:47px;}
+body.palette_09 #pageBanners .bannersNav ol {margin:0; padding:0 13px;}
+body.palette_09 #pageBanners .bannersNav ol li {width:132px;}
+body.palette_09 #pageBanners .bannersNav ol li a, body.palette_09 #pageBanners .bannersNav ol li a:visited, body.palette_09 #pageBanners .bannersNav ol li a:active, body.palette_09 #pageBanners .bannersNav ol li a:hover {width:120px; height:31px; margin:0 6px; padding:16px 0 0 0; color:#ffffff; font-weight:bold;}
+body.palette_09 #pageBanners .bannersNav ol li a.active, body.palette_09 #pageBanners .bannersNav ol li a:active, body.palette_09 #pageBanners .bannersNav ol li a:hover {background:transparent url("/_resources/images/nav/academic_units-top-nav-active-arrow-wht.png") center bottom no-repeat;}
+body.palette_09 #pageBanners .bannersNav ol li a.doubleLine, body.palette_09 #pageBanners .bannersNav ol li a:visited.doubleLine, body.palette_09 #pageBanners .bannersNav ol li a:active.doubleLine, 
+body.palette_09 #pageBanners .bannersNav ol li a:hover.doubleLine {padding:6px 0 10px 0;}
+body.palette_09 #pageBanners .oneColBanner img, body.palette_09 #pageBanners #gallery {padding:0 13px 15px 13px; background:#363636;}
+body.palette_09 #pageBanners #gallery {width:959px;}
+
+body.palette_09 #pageBanners .bannersNav, body.palette_09 #mainContent h3, body.palette_09 .overlay-wrapper h1.overlayTitle {background:#363636;}
+
+body.palette_09 #main {width:961px; padding-top:15px; padding-bottom:50px; background-color:#ffffff;}
+body.palette_09 #main a:link, body.palette_09 #main a:active, body.palette_09 #main a:visited {color:#9b2416;}
+
+body.palette_09 #leftSidebar {width:152px; margin:19px 35px 0 0; padding:0; border:none;}
+body.palette_09 #leftSidebar nav ol {width:136px; margin:0 0 18px 16px;}
+body.palette_09 #leftSidebar nav ol li {border-top:#929292 1px dotted; background:transparent;}
+body.palette_09 #leftSidebar nav ol li:first-child {border-top:none;}
+body.palette_09 #leftSidebar .simpleCallout ul {margin:0;}
+body.palette_09 #leftSidebar .simpleCallout ul li {border-top:none; background:transparent;}
+body.palette_09 #leftSidebar .simpleCallout li:last-child {border:none;}
+body.palette_09 #main #leftSidebar li a {margin:0; padding:15px 3px 14px 11px; color:#9b2416; line-height:1.333em; text-decoration:underline;}
+body.palette_09 #main #leftSidebar li a:hover, body.palette_09 #main #leftSidebar li.level1.active a, body.palette_09 #main #leftSidebar li.level2.active a, body.palette_09 #main #leftSidebar li.level3.active a, 
+body.palette_09 #main #leftSidebar li.level4.active a, body.palette_09 #main #leftSidebar li.level5.active a, body.palette_09 #main #leftSidebar li.level2.activeParent a, 
+body.palette_09 #main #leftSidebar li.level3.activeParent a, body.palette_09 #main #leftSidebar li.level4.activeParent a {margin:0; padding:15px 3px 14px 11px; background:transparent url("/_resources/images/nav/academic_units-side-nav-active-arrow-blk.png") left 50% no-repeat; color:#252525; text-decoration:none;}
+body.palette_09 #main #leftSidebar .simpleCallout li a, body.palette_09 #main #leftSidebar .simpleCallout li a:hover {margin:0; padding:0; font-weight:bold;}
+body.palette_09 #main #leftSidebar .simpleCallout li a:hover {color:#9b2416; background:none;}
+body.palette_09 #main #leftSidebar nav ol li.level1.active:first-child a {padding-top:0px; background-position:left 10%;}
+body.palette_09 #main #leftSidebar li.level2 a, body.palette_09 #main #leftSidebar li.level2 a:hover, body.palette_09 #main #leftSidebar li.level2.active a, body.palette_09 #main #leftSidebar li.level2.activeParent a {padding-left:16px;}
+body.palette_09 #main #leftSidebar li.level3 a, body.palette_09 #main #leftSidebar li.level3 a:hover, body.palette_09 #main #leftSidebar li.level3.active a, body.palette_09 #main #leftSidebar li.level3.activeParent a {padding-left:21px;}
+body.palette_09 #main #leftSidebar li.level4 a, body.palette_09 #main #leftSidebar li.level4 a:hover, body.palette_09 #main #leftSidebar li.level4.active a, body.palette_09 #main #leftSidebar li.level4.activeParent a {padding-left:26px;}
+body.palette_09 #main #leftSidebar li.level5 a, body.palette_09 #main #leftSidebar li.level5 a:hover, body.palette_09 #main #leftSidebar li.level5.active a {padding-left:27px;}
+body.palette_09 #main #leftSidebar li.level2.activeParent a, body.palette_09 #main #leftSidebar li.level3.activeParent a, body.palette_09 #main #leftSidebar li.level4.activeParent a {background:none;}
+
+body.palette_09 #mainContent, body.palette_09.twoColRight #mainContent, body.palette_09.threeColSplit #mainContent {width:505px; margin:19px 0 0 0; padding:0 20px 0 0;}
+body.palette_09.oneCol #mainContent {width:937px; margin:19px 0 0 16px; padding:0 8px 0 0;}
+body.palette_09.twoColLeft #mainContent {width:765px;padding:0 8px 0 0;}
+body.palette_09.twoColRight #mainContent, body.palette_09.threeColSplit #mainContent {width:676px; margin:19px 0 0 16px;}
+body.palette_09 #mainContent .subCol {width:232px; margin-left:0; padding:0 0 0 20px;}
+body.palette_09 #mainContent .subCol.first {padding:0 19px 0 0;}
+body.palette_09.oneCol #mainContent .subCol {width:440px; padding:0 0 0 19px;}
+body.palette_09.twoColLeft #mainContent .subCol {width:362px;}
+body.palette_09.twoColRight #mainContent .subCol, body.palette_09.threeColSplit #mainContent .subCol {width:318px;}
+
+body.palette_09 nav#breadcrumbs, body.palette_09.twoColRight nav#breadcrumbs, body.palette_09.threeColSplit nav#breadcrumbs, body.palette_09.oneCol nav#breadcrumbs, body.palette_09.twoColLeft nav#breadcrumbs {width:673px; margin:0 0 0 16px; padding:0 0 27px 0; border-bottom:#929292 1px dotted;}
+body.palette_09.oneCol nav#breadcrumbs, body.palette_09.twoColLeft nav#breadcrumbs {width:937px;}
+
+body.palette_09 #mainContent h3, body.palette_09 .framedPhotoDefault p, body.palette_09 .framedPhotoLeft p, body.palette_09 .framedPhotoRight p, body.palette_09 #rightSidebar h3 {color:#ffffff;}
+body.palette_09 #mainContent .profiles li h2.profile, body.palette_09 #mainContent .profiles li h2.profile a {color:#9b2416;}
+body.palette_09 #mainContent ul li {background:url("/_resources/images/blts/bullet-palette8.png") no-repeat 0 .5em;}
+body.palette_09 #mainContent .profiles li ul.genericContentList li {background:url("/_resources/images/blts/bullet-palette8.png") no-repeat 0 .5em !important;}
+body.palette_09 .framedPhotoDefault img, body.palette_09 .framedPhotoLeft img, body.palette_09 .framedPhotoRight img {margin:0; padding:0; border:6px solid #363636;}
+body.palette_09 .expandListItem {background:#ffffff; border-bottom:1px dotted #929292;}
+body.palette_09 .expandListItem h5 {color:#982722; background:url("/_resources/images/btns/btn_expand_plus2.gif") no-repeat 0px 6px;}
+body.palette_09 .expandListItem h5.expandSelected {background:url("/_resources/images/btns/btn_expand_minus.gif") no-repeat 0px 6px;}
+body.palette_09 .expandListItemContent .framedPhotoDefault img, body.palette_09 .expandListItemContent .framedPhotoLeft img, body.palette_09 .expandListItemContent .framedPhotoRight img {border-color:#d3d5d6;}
+
+body.palette_09 #rightSidebar {width:241px; margin:-30px 8px 0 0;}
+body.palette_09 #rightSidebar #breadcrumbFill {height:42px;}
+body.palette_09 #rightSidebar h1, body.palette_09 #leftSidebar h1 {width:231px; padding:4px 0 4px 10px; font-size:1.167em; color:#ffffff; background:#7d7d7d;}
+body.palette_09 #leftSidebar h1 {width:126px;}
+body.palette_09 #rightSidebar .simpleCallout {background:transparent;}
+body.palette_09 #rightSidebar .simpleCallout ul {width:231px; padding-left:0px;}
+body.palette_09 #rightSidebar li, body.palette_09 #leftSidebar .simpleCallout li {margin-right:13px; padding:14px 0px 15px 10px; border-bottom:#929292 1px dotted; color:#000000;}
+body.palette_09 #leftSidebar .simpleCallout li {margin-right:0px;}
+body.palette_09 #rightSidebar .simpleCallout li h2 {margin-top:0;}
+body.palette_09 #rightSidebar a {color:#9c231e;}
+
+/* Special case */
+body.palette_09.secsArti #mainContent h3  {background:#363636;}
+body.palette_09.secsArti .framedPhotoDefault img, body.palette_09.secsArti .framedPhotoLeft img, body.palette_09.secsArti .framedPhotoRight img {border-color:#363636;}
+body.palette_09.secsCompSci #mainContent h3  {background:#484a10;}
+body.palette_09.secsCompSci .framedPhotoDefault img, body.palette_09.secsCompSci .framedPhotoLeft img, body.palette_09.secsCompSci .framedPhotoRight img {border-color:#484a10;}
+body.palette_09.secsElectricalComp #mainContent h3  {background:#072628;}
+body.palette_09.secsElectricalComp .framedPhotoDefault img, body.palette_09.secsElectricalComp .framedPhotoLeft img, body.palette_09.secsElectricalComp .framedPhotoRight img {border-color:#072628;}
+body.palette_09.secsMechanicalMat #mainContent h3  {background:#1d0b09;}
+body.palette_09.secsMechanicalMat .framedPhotoDefault img, body.palette_09.secsMechanicalMat .framedPhotoLeft img, body.palette_09.secsMechanicalMat .framedPhotoRight img {border-color:#1d0b09;}

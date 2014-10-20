@@ -1,0 +1,62 @@
+body {
+	background-image: url("/_resources/ou/editor/backgrounds/main_2colright-academicunit.jpg");
+	background-repeat: no-repeat;
+	width:501px;
+	margin: 200px 0px 0px 230px;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	 font-size:80%
+	
+	}
+.photoContentContainerRight, .photoContentContainerLeft {
+    margin-bottom: 15px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+ .subContent {
+    margin-top: -5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+.framedPhotoRight {
+    float: right;
+    margin-left: 8px;
+}
+
+h3 {
+    padding-bottom: 4px;
+    padding-left: 11px;
+    padding-right: 0;
+    padding-top: 4px;
+}
+
+h3 {
+    -moz-background-clip: border;
+    -moz-background-origin: padding;
+    -moz-background-size: auto auto;
+    background-attachment: scroll;
+    background-color: #445C88;
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+    color: #FFFFFF;
+    font-size: 1.1em;
+    line-height: 1.211em;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    padding-bottom: 2px;
+    padding-left: 7px;
+    padding-right: 5px;
+    padding-top: 2px;
+    text-transform: uppercase;
+}

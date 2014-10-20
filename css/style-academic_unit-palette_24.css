@@ -1,0 +1,460 @@
+/**
+ * Theme Name: DU Graduate School of Professional Psychology
+ * Theme URI: http://du.edu/gspp
+ * Description: A custom academic unit theme for the University of Denver's GSPP program
+ * Author: Ron S. Doyle
+ * Author URI: http://waterdaymedia.com
+ * Version: 0.1
+ * Template: OU Campus
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+ */
+
+body.palette_24 #body_wrapper {
+	background-color: #fff;
+}
+
+body.palette_24 #main {
+	background-color: #fff; /*changed from transparent */
+}
+
+body.palette_24.oneCol #main {
+	background: #3a3a3c;
+	color: #fff;
+}
+
+/* 4 column homepage */
+body.palette_24.oneCol .vertCol {
+	padding:0 11px 0 0;
+}
+
+body.palette_24.oneCol .threeSubCol .vertCol {
+	width:230px;
+}
+
+body.palette_24.oneCol .last.vertCol {
+	padding-right:0;
+	width:240px;
+}
+
+body.palette_24.oneCol #main a:link, body.palette_24.oneCol #main a:active, body.palette_24.oneCol #main a:visited {
+	color: #fff;
+/*  text-decoration: none;  */
+}
+
+body.palette_24.oneCol #main a:hover {
+	color: #ccc;
+}
+
+body.palette_24 #main a:link,body.palette_24 #main a:active,body.palette_24 #main a:visited {
+	color: #982722;
+}
+
+body.palette_24 #pageBanners .bannersTitle h1,body.palette_24 #pageBanners .bannersTitle h1 a {
+	color: #252525;
+}
+
+body.palette_24 #mainContent .viewLarger a {
+	color: #FFF;
+}
+
+body.palette_24 #leftSidebar,body.palette_24 .framedPhotoDefault,body.palette_24 .framedPhotoLeft,body.palette_24 .framedPhotoRight,body.palette_24 .overlay-wrapper h1.overlayTitle {
+	background: #baaa85; /*changed from #00456b */
+}
+
+/* separated from leftSidebar */
+body.palette_24 #rightSidebar h1 {
+	background: transparent;
+	padding-left: 21px;
+}
+
+/* separated bannersNav */
+body.palette_24 #pageBanners .bannersNav {
+	background: #ecf1e1;
+	border-top: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+}
+
+
+body.palette_24 #mainContent h3,figcaption {
+	color: #FFF;
+	padding: 3px 0;
+	margin: 3px 0 5px;
+}
+
+body.palette_24 .framedPhotoDefault,body.palette_24 #mainContent .threeSubCol .vertCol h3,figcaption {
+	margin: 0;
+	padding: 4px;
+	background: #51141A;
+}
+
+body.palette_24 #mainContent h3,body.palette_24 .framedPhotoDefault p,body.palette_24 .framedPhotoLeft p,body.palette_24 .framedPhotoRight p,body.palette_24 #rightSidebar h1,body.palette_24 #leftSidebar .simpleCallout li {
+	color: #fff;
+}
+
+/* separated bannersNav */
+
+body.palette_24 #pageBanners .bannersNav ol li a,body.palette_24 #pageBanners .bannersNav ol li a:visited {
+	color: #333;
+}
+
+body.palette_24 #pageBanners .bannersNav ol li a:hover, body.palette_24 #pageBanners .bannersNav ol li a.active,body.palette_24 #pageBanners .bannersNav ol li a:active {
+	color: #51141a;
+	font-size: 1em;	
+	background-color:#EEAC3E;
+}
+
+body.palette_24 #pageBanners .bannersNav ol li a.doubleLine:hover, body.palette_24 #pageBanners .bannersNav ol li a.doubleLine.active,body.palette_24 #pageBanners .bannersNav ol li a.doubleLine:active {
+    height:38px;
+}
+
+
+/* separated leftSidebar */
+
+body.palette_24 #main #leftSidebar li a,body.palette_24 #main #leftSidebar nav ol li.level1 {
+	color: #51141a;
+}
+
+body.palette_24 #main #leftSidebar li a:hover, body.palette_24 #main #leftSidebar li a.active, body.palette_24 #main #leftSidebar li a:active {
+	/* color: #fff; */
+}
+
+body.palette_24 #leftSidebar li a:hover,body.palette_24 #leftSidebar nav ol li.level1.active a,body.palette_24 #leftSidebar nav ol li.level2.active a,body.palette_24 #leftSidebar nav ol li.level3.active a,body.palette_24 #leftSidebar nav ol li.level4.active a,body.palette_24 #leftSidebar nav ol li.level5.active a,body.palette_24 #leftSidebar nav ol li.level2.activeParent a,body.palette_24 #leftSidebar nav ol li.level3.activeParent a,body.palette_24 #leftSidebar nav ol li.level4.activeParent a,body.palette_24 #leftSidebar .simpleCallout h1 {
+	background: #ECF1E1;
+	/* color: #fff; */
+}
+
+body.palette_24 #leftSidebar li a,body.palette_24 #leftSidebar nav ol li.level1.active a,body.palette_24 #leftSidebar nav ol li.level2.active a,body.palette_24 #leftSidebar nav ol li.level3.active a,body.palette_24 #leftSidebar nav ol li.level4.active a,body.palette_24 #leftSidebar nav ol li.level5.active a {
+	font-size: 1.2em;
+	font-weight: normal;
+}
+
+body.palette_24 #rightSidebar .simpleCallout {
+	background: transparent;  /*changed from #ebf0f3 */
+}
+
+body.palette_24 #rightSidebar .simpleCallout li ul {
+	padding-left: 0;
+}
+
+body.palette_24 #rightSidebar .simpleCallout li ul li {
+    list-style: disc inside none;
+    padding: 2px 0;
+}
+
+body.palette_24 .expandListItem {
+	background: #f1f1f1;
+}
+
+body.palette_24 .expandListItem h5 {
+	color: #982722;
+	background: url(/_resources/images/btns/btn_expand_plus-palette1.gif) no-repeat 0 6px;
+}
+
+body.palette_24 .expandListItem h5.expandSelected {
+	background: url(/_resources/images/btns/btn_expand_minus-palette1.gif) no-repeat 0 6px;
+}
+
+body.palette_24 .expandListItemContent .framedPhotoDefault img,body.palette_24 .expandListItemContent .framedPhotoLeft img,body.palette_24 .expandListItemContent .framedPhotoRight img {
+	border-color: #d3d5d6;
+}
+
+body.palette_24 #mainContent ul li {
+	background: url(/_resources/images/blts/bullet-palette1.gif) no-repeat 0 .6em;
+}
+
+body.palette_24.oneCol #mainContent ul li {
+	background: none;
+	padding-bottom: 2px;
+}
+
+body.palette_24 #mainContent .profiles li ul.genericContentList li {
+	background: url(/_resources/images/blts/bullet-palette1.gif) no-repeat 0 .6em !important;
+}
+
+
+body.palette_24 #rightSidebar li {
+	border-bottom: none;
+	color: #fff; /*changed from #000 */
+}
+
+body.palette_24 #rightSidebar .simpleCallout li, #leftSidebar .simpleCallout li {
+    padding: 5px 12px;
+}
+
+body.palette_24 #main #rightSidebar a:link, body.palette_24 #main #rightSidebar a:active, body.palette_24 #main #rightSidebar a:visited {
+	color: #ccc;
+	text-decoration: none;
+}
+
+body.palette_24 #mainContent .profiles li h2.profile,body.palette_24 #mainContent .profiles li h2.profile a,body.palette_24 #mainContent h2.profile a {
+	color: #000;
+}
+
+/* Old CSS Required for Migrated XHTML Content */
+body.palette_24 #content {
+	background-color: transparent;
+}
+
+body.palette_24 #content a:link,body.palette_24 #content a:active,body.palette_24 #content a:visited {
+	color: #982722;
+}
+
+body.palette_24 #featureCol li {
+	border-bottom: #c8cccf 1px solid;
+	color: #000;
+}
+
+body.palette_24 #featureCol a {
+	color: #9c231e;
+}
+
+body.palette_24 #sectionNav li a:hover,body.palette_24 #sectionNav li.level1.active a,body.palette_24 #sectionNav li.level2.active a,body.palette_24 #sectionNav li.level3.active a,body.palette_24 #sectionNav li.level4.active a,body.palette_24 #sectionNav li.level5.active a,body.palette_24 #sectionNav li.level2.activeParent a,body.palette_24 #sectionNav li.level3.activeParent a,body.palette_24 #sectionNav li.level4.activeParent a,body.palette_24 #sectionNav .simpleCallout h4 {
+	background: #002950;
+	color: #fff;
+}
+
+body.palette_24 #featureCol .simpleCallout {
+	background: #ebf0f3;
+}
+
+body.palette_24 #featureCol h4,body.palette_24 #sectionNav .simpleCallout li {
+	color: #fff;
+}
+
+
+/* additions */
+
+/*search */
+
+body.palette_24 .searchContainer .headerSearch input[type="search"] {
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+    font-size: 1em;
+    padding: 2px 5px;
+}
+
+/* header and nav spacing */
+
+body.palette_24 #pageBanners .bannersTitle h1 { 
+	margin-top: 15px; 
+}
+
+body.palette_24 #pageBanners .bannersNav ol {
+    display: table;
+    width: 100%;
+}
+
+
+body.palette_24 #pageBanners .bannersNav ol li {
+    display: table-cell;
+    float: none;
+    vertical-align: top;
+    width: auto;
+}
+
+/* primary and secondary navigation links */
+
+body.palette_24 #pageBanners .bannersNav ol li a, body.palette_24 #pageBanners .bannersNav ol li a:visited, body.palette_24 #pageBanners .bannersNav ol li a:hover, body.palette_24 #pageBanners .bannersNav ol li a:active {
+	text-transform: uppercase;
+	width: auto;
+}
+
+/* spacing for nav items */
+body.palette_24 #pageBanners .bannersNav ol li a, body.palette_24 #pageBanners .bannersNav ol li a:visited, body.palette_24 #pageBanners .bannersNav ol li a:active, body.palette_24 #pageBanners .bannersNav ol li a:hover {
+	padding: 12px 5px 0;
+}
+
+body.palette_24 #pageBanners .bannersNav ol li a.doubleLine, body.palette_24 #pageBanners .bannersNav ol li a.doubleLine:visited, body.palette_24 #pageBanners .bannersNav ol li a.doubleLine:active, body.palette_24 #pageBanners .bannersNav ol li a.doubleLine:hover {
+    padding: 4px 5px 0;
+}
+
+body.palette_24 #leftSidebar nav ol li.level1, body.palette_24 #leftSidebar nav ol li.level2, body.palette_24 #leftSidebar nav ol li.level3, body.palette_24 #leftSidebar nav ol li.level4, body.palette_24 #leftSidebar nav ol li.level5 {
+	text-transform: uppercase;
+}
+
+
+
+/* banner+sidebar spacing */
+
+body.palette_24 #leftSidebar {
+	margin-top: 5px;
+}
+
+body.palette_24 #rightSidebar {
+	background: #3A3A3C;
+	margin-top: 5px;
+	margin-right: 0;
+}
+
+/* headings */
+
+body.palette_24 #rightSidebar h1{
+	margin: 10px 0;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 1.25em;
+}
+
+body.palette_24 #rightSidebar h2 {
+	margin: 0 0 10px;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+body.palette_24 #mainContent hgroup h1, body.palette_24 #mainContent header h1, body.palette_24 #mainContent h1, body.palette_24 #mainContent h3 {
+	text-transform:none;
+}
+
+body.palette_24 #mainContent h1 {
+	font-size: 2em;
+	line-height: 1.2em;
+	margin-bottom: 15px;
+}
+
+body.palette_24.twoColLeft #mainContent h1, body.palette_24.twoColRight #mainContent h1, body.palette_24.threeCol #mainContent h1, body.palette_24.threeCol #mainContent h2, body.palette_24.twoColLeft #mainContent h2, body.palette_24.twoColRight #mainContent h2 {
+	color: #51141a;
+}
+
+body.palette_24.oneCol.heroGallery #mainContent {
+	margin-top: 15px;
+}
+
+body.palette_24.oneCol #main h1 { 
+    color: #FFFFFF;
+    font-size: 1.4em;
+    margin-left: 25px;
+    text-transform: uppercase;
+}
+
+
+body.palette_24 #mainContent h3 {
+	color: #000;
+	font-weight: bold;
+	background: none;
+}
+
+body.palette_24 #mainContent p {
+	color: 4c4c4c;
+}
+
+/* increased gallery heights */
+
+body.palette_24.oneCol #pageBanners #gallery {
+	height: 490px;
+}
+
+body.palette_24.threeCol #pageBanners #gallery {
+	height: 360px;
+}
+
+/* gallery controls */ 
+
+body.palette_24 .slideControl {
+	background: none;
+}
+
+body.palette_24 .slideControl ul {
+	background: none;
+}
+
+body.palette_24 .slideControl ul li {
+	color: #ff9933;
+	font-size: 3.5em;
+}
+
+body.palette_24 .slideControl ul li.slideSelected {
+color: #fff;
+}
+
+/* overlays */
+
+body.palette_24 article.overlay_right, body.palette_24 article.overlay_left {
+	height: 274px;
+	margin-bottom: -312px;
+	margin-top: -312px;
+	width: 275px;
+	color: #fff;
+	text-align: center;
+	/* Fallback for web browsers that doesn't support RGBa */
+	background:rgb(51, 51, 51) transparent;
+	/* RGBa with 0.6 opacity */
+	background: rgba(51, 51, 51, 0.8);
+	filter:none;
+	/* For IE 5.5 - 7
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccFFFFFF, endColorstr=#ccFFFFFF);*/
+	/* For IE 
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccFFFFFF, endColorstr=#ccFFFFFF)";8*/
+}
+
+body.palette_24 article.overlay_right {
+	border-radius: 0;
+	margin-left: 670px;
+}
+
+body.palette_24 article.overlay_left {
+	border-radius: 0;
+}
+
+body.palette_24 article.overlay_home {
+	height:455px; /* - 20px padding */
+	margin-top:0;
+    text-align: center;	
+}
+
+/* Buttons */
+body.palette_24 article.overlay_home .button {
+	border: 1px solid #FDB813;
+    background: rgb(253,184,19);
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZkYjgxMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmY2Q2N2UiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(top,  rgb(253,184,19) 0%, rgb(252,214,126) 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgb(253,184,19)), color-stop(100%,rgb(252,214,126)));
+background: -webkit-linear-gradient(top,  rgb(253,184,19) 0%,rgb(252,214,126) 100%);
+background: -o-linear-gradient(top,  rgb(253,184,19) 0%,rgb(252,214,126) 100%);
+background: -ms-linear-gradient(top,  rgb(253,184,19) 0%,rgb(252,214,126) 100%);
+background: linear-gradient(to bottom,  rgb(253,184,19) 0%,rgb(252,214,126) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdb813', endColorstr='#fcd67e',GradientType=0 );
+
+	display: inline-block;
+    width: 150px;
+	text-transform:uppercase;
+	border-radius: 0.5em 0.5em 0.5em 0.5em;
+	font-size:1.5em;
+	}
+
+
+article.overlay_right h1, article.overlay_left h1 {
+	margin: 1em 0 1em;
+	font-size: 1.2em;
+	line-height: 1.4em;
+}
+
+article.overlay_right h2, article.overlay_left h2 {
+	font-size: 1em;
+}
+
+article.overlay_right p, article.overlay_left p {
+	padding: 3px;
+}
+
+article.overlay_home a, article.overlay_home a:link, article.overlay_home a:active, article.overlay_home a:visited {
+	color:#fff;
+	text-decoration:none;
+}
+
+article.overlay_home a:hover {
+	color:#ccc;
+	text-decoration:none;
+}
+
+article.overlay_home a.button, article.overlay_home a.button:link, article.overlay_home a.button:active, article.overlay_home a.button:visited, article.overlay_home a.button:hover {
+	color:#A01400 !important;
+	text-decoration: none;
+}
+
+article.overlay_home img {
+	padding: 20px 0 5px;
+}

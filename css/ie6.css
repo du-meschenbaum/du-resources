@@ -1,0 +1,39 @@
+#pageBanners, #contentWrapper, #footer {text-align:center;}
+.twoColBanner, .oneColBanner, #navContainer, #content, #footer #footerLinksContainer {text-align:left;}
+#footer {background:url("/_resources/images/bckgrnd/bg_footer_bar.gif") top left repeat-x;}
+.footerLinksContainer {width:1006px; margin:0 auto; color:#fff;}
+.footerLinksContainer .footerLinks, {width:170px; text-align:left;}
+.footerLinksContainer .newsFooter {width:300px; overflow:hidden}
+.newsFooter .newsSlider ul li{margin:-16px 0 16px} /*makes up the space taken up by the arrows that otherwise allows a clip of another img to show*/
+.prev, .next {display:none;}
+.newsSlider ul li {margin:5px 0;}
+.landscape_one, .landscape_two, .landscape_three, .landscape_four, .landscape_five {display:none;}
+.captionContent h2 {margin:180px 0 15px 0;}
+.captionContent p {line-height:1.50em;}
+#content{ width:980px; padding-right:0; padding-bottom:40px; }
+li.detail{ width: 675px; }
+#addMedia div.overlay-wrapper{ position:absolute; }
+#programGrid div.subContent{ padding-right:0}
+#programGrid div.subContent table{ width:90%}
+#navContainer #menu li.grad a { background-image:url("/_resources/images/du365/nav/ie6/365_nav_grad.jpg"); }
+#navContainer #menu li.tools a { background-image:url("/_resources/images/du365/nav/ie6/365_nav_tools.jpg"); }
+#navContainer #menu li.eventsActivities a { background-image:url("/_resources/images/du365/nav/ie6/365_nav_events_act.jpg"); }
+#navContainer #menu li.clubsOrgs a { background-image:url("/_resources/images/du365/nav/ie6/365_nav_clubs_orgs.jpg"); }
+#navContainer #menu li.newsEvents a { background-image:url("/_resources/images/du365/nav/ie6/365_nav_news_events.jpg"); }
+#navContainer #menu li.school a { background-image:url("/_resources/images/du365/nav/ie6/365_nav_school.jpg"); }
+body.twoColLeft #mainContent {margin:0; float:right; }
+body.twoColLeft #content { padding-right:0px; width:985px }
+.twoSubCol .callOutBanner{ width:190px }
+div.vertCol .callOutBanner ul{ margin:0; padding:0; width:auto }
+#featureCol .splitList ul, .twoSubCol .callOutBanner .splitList ul { float:left; margin:0 0 0 10px; width:40% }
+div.vertCol.last { display:inline; margin-left: 10px;}
+div.button { padding-top:0;  display:inline-block; width:auto}
+div.button a{ float:none; display:block; margin-top:-8px; padding-top:8px; }
+#pageBanners .twoColBannerRight a#submitStory { background-image:url("/_resources/images/du365/buttons/submit_story_365_ie6.jpg") }
+body.contacts .col{ width:227px; }
+body.contacts .last{ float:right; width:225px; }
+.contacts .threeSubCol .last{ width: 309px; }
+.threeSubCol .last, .twoSubCol .last{ margin-right:0; padding-right:0;  }
+.photoContentContainerLeft, .photoContentContainerRight { width:100%;  }
+/* Overlays */
+article.overlay_right, article.overlay_left {background:transparent;}

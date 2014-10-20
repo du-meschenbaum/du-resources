@@ -1,0 +1,688 @@
+<?php ini_set( 'display_errors', 1 ); ?>
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr" id="du-edu" class="no-js">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Search | University of Denver</title>
+  <meta name="Description" content="searc"/>
+  <meta name="Keywords" content="search"/>
+  <meta name="author" content="University of Denver"/>
+  <script type="text/javascript" src="/_resources/scripts/modernizr-2.0.6.js"><!--//--></script><!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"> </script><![endif]-->
+  <link rel="shortcut icon" href="/favicon.ico" sizes="16x16" type="image/x-icon"/>
+  <link rel="shortcut icon" href="/du-webclip.gif" sizes="16x16 32x32 48x48 57x57 144x144" type="image/gif"/>
+  <link id="css" rel="stylesheet" href="/_resources/css/style.css"/>
+  <link id="css" rel="stylesheet" href="/_resources/css/style-academic_unit.css"/>
+  <link id="css" rel="stylesheet" href="/_resources/css/style-academic_unit-palette_12.css"/>
+  <link id="ajaxMedia2css" rel="stylesheet" href="/_resources/css/jquery.ajaxMedia2.0.css" title="AJAX Media Styles"/>
+  <link rel="alternate" href="http://feeds.feedburner.com/dunewsandevents" type="application/rss+xml" title="RSS"/>
+  <script type="text/javascript" src="https://www.google.com/jsapi?key=ABQIAAAAPoM4NLX6jdY63Y3ZV4C2ERQ2EF6mNDALpIJZGeEAGWfXdUvTSxTaDV6-sukOTf7p0z9tcCiZ5_uZfQ"><!--//--></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"><!--//--></script>
+  <script type="text/javascript" src="/_resources/scripts/plugins/jquery.jFav_v1.0.js"><!--//--></script>
+  <script type="text/javascript" src="/_resources/scripts/scripts.js"><!--//--></script>
+  <script type="text/javascript">
+    var domain = "http://www.du.edu";
+    var skinUrl=domain+"/_resources/scripts/flash/skins/du_player_skin.zip", root=domain, shortRoot=root;
+  </script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"><!--//--></script>
+  <script type="text/javascript" src="/_resources/scripts/plugins/jquery.ajaxMedia3.0.js"><!--//--></script>
+  <script type="text/javascript" src="/_resources/scripts/plugins/jquery.navigationize.js"><!--//--></script>
+  <script type="text/javascript" src="/_resources/scripts/plugins/fancybox/jquery.fancybox-1.3.4.pack.js"><!--/ /--></script>
+  <script type="text/javascript" src="/_resources/scripts/plugins/fancybox/jquery.easing-1.3.pack.js"><!--/ /--></script>
+  <script type="text/javascript" src="/_resources/scripts/plugins/fancybox/jquery.mousewheel-3.0.4.pack.js"><!--/ /--></script>
+  <link rel="stylesheet" href="/_resources/scripts/plugins/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen"/>
+  <script type="text/javascript">
+		function showLoader() { 
+			var scrolledX, scrolledY; 
+			if( self.pageYOffset ) { 
+				scrolledX = self.pageXOffset; 
+				scrolledY = self.pageYOffset; 
+			} else if( document.documentElement && document.documentElement.scrollTop ) { 
+				scrolledX = document.documentElement.scrollLeft; 
+				scrolledY = document.documentElement.scrollTop; 
+			} else if( document.body ) { 
+				scrolledX = document.body.scrollLeft; 
+				scrolledY = document.body.scrollTop; 
+			}
+			
+			var centerX, centerY; 
+			if( self.innerHeight ) { 
+				centerX = self.innerWidth; 
+				centerY = self.innerHeight; 
+			} else if( document.documentElement && document.documentElement.clientHeight ) { 
+				centerX = document.documentElement.clientWidth; 
+				centerY = document.documentElement.clientHeight; 
+			} else if( document.body ) { 
+				centerX = document.body.clientWidth; 
+				centerY = document.body.clientHeight; 
+			}
+			
+			$("#ajaxLoader").css({
+				position: 'absolute',
+				"z-index": 5000,
+				width: function(){return $(this).children("img").width();},
+				height: function(){return $(this).children("img").height();},
+				top: function(){
+					var topOffset = Math.round(scrolledY + (centerY - $(this).children("img").height()) / 2);
+					return topOffset + 'px';
+				},
+				left: function(){
+					var leftOffset = Math.round(scrolledX + (centerX - $(this).children("img").width()) / 2);
+					return leftOffset + 'px';
+				},
+				"margin-top": function(){
+					var topMarg = Math.round((-1 * $(this).children("img").height()) / 2);
+					return topMarg + 'px';
+				},
+				"margin-left": function(){
+					var leftMarg = Math.round((-1 * $(this).children("img").width()) / 2);
+					return leftMarg + 'px';
+				}
+			}).toggle();
+		}
+
+    $(document).ready(function() {
+			/* ajax loader */
+			$("#ajaxLoader").bind("ajaxSend", function(){showLoader();}).bind("ajaxComplete", function(){showLoader();});
+      /* This is basic - uses default settings */
+			$("a.lightbox").fancybox({
+				'transitionIn'  : 'elastic',
+				'transitionOut' : 'fade',
+				'speedIn' : '500',
+				'speedOut' : '500',	
+				'titlePosition'  : 'inside',
+				'titleFormat' : function(title, currentArray, currentIndex, currentOpts) {return 'Image ' + (currentIndex + 1) + ' / ' + currentArray.length + ' - ' + title + '';}
+			});
+			$(".vidclass").fancybox({
+				'transitionIn'  : 'elastic',
+				'transitionOut' : 'fade',
+				'speedIn' : '500',
+				'speedOut' : '500',	
+				'titlePosition'  : 'inside'
+			});
+    });
+	  //
+  </script>
+  <script type="text/javascript">
+    var docstate = "pub";
+    $(document).ready(function() {
+      var navparent="";
+      if(docstate == 'pub')
+        if(navparent != ''){$("#"+navparent).navigationize(navparent);}else{$("#nav_bob").navigationize("nav_bob");}
+      $(document).ajaxMedia({rootPath:root, rootPathShort:shortRoot, playerPath:'/_resources/scripts/flash/players/StrobeMediaPlayback.swf', skinPath:'/_resources/scripts/flash/skins/du_player_skin.zip'});
+    });
+  </script>
+  <script type="text/javascript">
+    var glbSearch = "korbel";
+    //
+    function HandleSearch(e, text){var CharCode = e.keyCode? e.keyCode : e.charCode; if(CharCode == 13){DoOtherSearch(text); return false;}else{return true;}}
+    function DoOtherSearch(text){if(text != 'Search DU' && text != ''){location.href='http://search.du.edu/search?site='+glbSearch+'&client='+glbSearch+'&proxystylesheet='+glbSearch+'&output=xml_no_dtd&lr=&ie=utf8&oe=utf8&q=' + text.replace(' ', '+');}}
+    function DoDUSearch(text){if(text != 'Search DU' && text != ''){location.href='http://search.du.edu/search?site=du_collection&client=du_frontend&proxystylesheet=du_frontend&output=xml_no_dtd&lr=&ie=utf8&oe=utf8&q=' + text.replace(' ', '+');}}
+    //
+  </script>
+  <!--?php include($_SERVER['DOCUMENT_ROOT'].'/_resources/includes/analytics.inc');?-->
+  <style>
+		div.row { margin-bottom: 10px; }
+		*:focus{ outline:none; }
+		.floatLeft { float: left; }
+		.floatRight { float: right; }
+		form#pushFeed {
+		    padding: 20px;
+		    border: 1px solid #cccccc;
+		    border-radius:10px;
+		    -moz-border-radius: 10px;
+			  -webkit-box-shadow:0 0 10px #ccc;
+			  -moz-box-shadow: 0 0 10px #ccc;
+			  box-shadow: 0 0 10px #ccc;
+		  
+		    width: 400px;
+		    margin: 20px auto;		  
+			  background-image: -moz-linear-gradient(top, #ffffff,#f2f2f2);
+			  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f2f2f2));			
+		  }
+		  
+		  #pushFeed input {			
+			  border:1px solid #ccc;
+			  font-size: 13pt;			
+			  padding: 5px 10px 5px 10px;			
+			  border-radius:10px;
+			  -moz-border-radius: 10px;			
+			  -webkit-transition: all 0.5s ease-in-out;
+	      -moz-transition: all 0.5s ease-in-out;
+  			transition: all 0.5s ease-in-out;		
+		  }
+		  
+		  #pushFeed input[type=button] {
+		    background-image: -moz-linear-gradient(top, #ffffff, #dfdfdf);
+	  		background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#dfdfdf));
+		  }  				  
+
+		  
+		#pushFeed input:focus {
+			-webkit-box-shadow:0 0 10px #ccc;
+			-moz-box-shadow: 0 0 10px #ccc;
+			box-shadow: 0 0 5px #ccc;
+			
+			-webkit-transform: scale(1.05);
+			-moz-transform: scale(1.05);
+			transform: scale(1.05);			
+		}
+		
+		#fileToUpload { width: 378px; }
+		
+		#progressIndicator { font-size: 10pt; }
+		
+		#fileInfo 
+		{
+		  font-size: 10pt;
+		  font-style: italic;
+		  color: #aaa;
+		  margin-top: 10px;
+		}
+		
+		#progressBar 		
+		{		  
+		  height: 14px;
+		  border: 1px solid #cccccc;
+		  display: none;
+			border-radius:10px;
+		  -moz-border-radius: 10px;		  
+			background-image: -moz-linear-gradient(top, #66cc00, #4b9500);
+			background-image: -webkit-gradient(linear, left top, left bottom, from(#66cc00), to(#4b9500));		  
+		}
+		
+		#uploadResponse {
+		  margin-top: 10px;
+		  padding: 20px;
+		  overflow: hidden;
+		  display: none;
+		  border-radius:10px;
+		  -moz-border-radius: 10px;
+		  border: 1px solid #ccc;		  
+		  box-shadow: 0 0 5px #ccc;
+			background-image: -moz-linear-gradient(top, #ff9900, #c77801);
+			background-image: -webkit-gradient(linear, left top, left bottom, from(#ff9900), to(#c77801));		  
+		}
+		
+		/* Second Form */
+		.inputSingle {margin:5px 0 10px 8px;}
+		.inputError {padding:5px; background-color:rgba(255,0,0,1); -moz-border-radius:5px; -webkit-border-radius:5px; border-radius:5px;}
+		.errorMsg {margin:10px; color:#EDEDED; font-weight:bold;}
+		.form-item {position:relative;}
+		.inputCheckboxList, .inputCheckboxList-tree {
+			margin:5px 0 10px 8px !important;
+			background-color:rgb(255,255,255);
+			-moz-box-shadow:0 0 2px rgba(68,68,68,0.6) inset;
+			-webkit-box-shadow:0 0 2px rgba(68,68,68,0.6) inset;
+			box-shadow:0 0 2px rgba(68,68,68,0.6) inset;
+			filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30);
+			-ms-filter:"progid:DXImageTransform.Microsoft.Blur(PixelRadius=3,MakeShadow=true,ShadowOpacity=0.30)";
+			-moz-border-radius:3px;
+			-webkit-border-radius:3px;
+			border-radius:3px;
+			zoom:1;
+			overflow:auto;
+			max-height:115px;
+		}
+		.inputCheckboxList li, .inputCheckboxList-tree li {list-style:none; margin:0 0 0 5px; background:none !important; padding-left:0 !important; padding-bottom:0 !important;}
+		a.searchToggleSelections {position:absolute; right:20px; top:2px; text-decoration:none !important; text-transform:uppercase;}
+		a.searchToggleSelections:hover {color:#000000 !important;}
+	</style>
+  <script>
+		$(document).ready(function(e) {
+      $("a.searchToggleSelections").click(function(e) {
+				var selAll='Select All', selNone='Select None';
+        e.preventDefault();
+				if($(this).text() == selAll){
+					
+					$(this).html(selNone)
+					.next("div")
+					.children('.inputCheckboxList, .inputCheckboxList-tree')
+					.find('input[type=checkbox]').each(function() {
+						$(this).attr('checked', 'checked');
+					})
+					.end()
+					.find('input[type=checkbox]:first').change();
+				}else{
+					$(this).html(selAll)
+					.next("div")
+					.children('.inputCheckboxList, .inputCheckboxList-tree')
+					.find('input[type=checkbox]').each(function() {
+						$(this).attr('checked', null);
+					})
+					.end()
+					.find('input[type=checkbox]:first').change();
+				}
+      });
+    });
+	</script>
+</head>
+<body class="threeCol palette_12  footerNoLandscape footerCondensed tipss">
+  <a class="hiddenFromViewer" href="#skippedNav">Skip navigation</a>
+  <div id="ajaxLoader" style="display:none;"><img src="/_resources/images/ajax-runner.gif" alt="Loading..." width="110" height="64"/></div>
+  <div id="body_wrapper">
+    <div id="body_wrapper2">
+      <div id="wrapper">
+        <?php include($_SERVER['DOCUMENT_ROOT'].'/_resources/includes/headerMin.inc');?>
+        <section id="pageBanners">
+          <header class="bannersTitle">
+	          <h1>Transparency Initiative For Private Security Services</h1>
+          </header>
+          <nav class="bannersNav">
+          	<!--?php echo(file_get_contents($_SERVER['DOCUMENT_ROOT']."/korbel/sie/privatesecurity/_local.inc"));?-->
+	          <div class="hideme">&nbsp;</div>
+          </nav>
+          <div class="oneColBanner"><img alt="TIPSS Search Functionality" border="0" height="349" src="/_resources/images/place-holder/hero-palette_12-1.jpg" width="985"/></div>
+        </section>
+        <div id="mainWrapper">
+          <section id="main">
+            <aside id="leftSidebar">
+              <nav>
+	              <ol id="nav"><!--?php echo(file_get_contents($_SERVER['DOCUMENT_ROOT']."/korbel/sie/privatesecurity/search/_navigation.inc"));?--></ol>
+              </nav>
+            </aside>
+						<section id="mainContent">
+              <nav id="breadcrumbs">
+                <ol>
+                  <li itemscope="true" itemtype="http://data-vocabulary.org/Breadcrumb"><a href="/korbel/sie/privatesecurity/" itemprop="url"><span itemprop="title">Home</span></a> &gt; </li>
+                  <li>Search</li>
+                </ol>
+              </nav>
+              <header>
+                <hgroup>
+                  <h1>Search</h1>
+                  <h2>Testing Search</h2>
+                </hgroup>
+              </header>
+              <h3>Simple form for pushing a feed</h3>
+              <div class="subContent">
+                <form id="pushFeed" enctype="multipart/form-data" method="POST" action="http://search.du.edu:19900/xmlfeed">
+                	
+                  
+                  <p><strong>Name of datasource:</strong> <input type="text" name="datasource" value="PrivateSecurityMonitor" placeholder="PrivateSecurityMonitor"/>
+                  <br/>
+                  <strong>Type of feed:</strong> <input type="text" name="feedtype" value="metadata-and-url" placeholder="metadata-and-url"/>
+                  <br/>
+                  <strong>XML file to push:</strong><div class="inputSingle"><input type="file" name="data" id="data"/></div>
+                  </p>
+                  <p><input type="submit" name="pushSubmit" value="Push"/></p>
+                </form>
+                <!--p>Progress: <progress id="sendProgress" max="100"><span>0</span>%</progress></p-->
+              	<!--form id="pushFeed" enctype="multipart/form-data" method="post" action="http://google2010.du.edu:19900/xmlfeed">
+                  <div class="row">
+                    <label for="fileToUpload">Select a File to Upload</label><br />
+                    <input type="file" name="fileToUpload" id="fileToUpload" onchange="fileSelected();" autofocus/>
+                  </div>
+                  <div class="row">
+                    <input type="button" onclick="uploadFile()" value="Upload" />
+                  </div>
+                  <div id="fileInfo">
+                    <div id="fileName">&nbsp;</div>
+                    <div id="fileSize">&nbsp;</div>
+                    <div id="fileType">&nbsp;</div>
+                  </div>
+                  <div class="row"></div>
+                  <div id="progressIndicator">
+                    <div id="progressBar" class="floatLeft">&nbsp;</div>
+                    <div id="progressNumber" class="floatRight">&nbsp;</div>
+                    <div class="clear">&nbsp;</div>
+                    <div id="uploadResponse">&nbsp;</div>
+                  </div>
+                </form-->
+                <!--script>
+									function fileSelected() {
+										var file = document.getElementById('fileToUpload').files[0];
+										if (file) {
+											var fileSize = 0;
+											if (file.size > 1024 * 1024)
+												fileSize = (Math.round(file.size * 100 / (1024 * 1024)) / 100).toString() + 'MB';
+											else
+												fileSize = (Math.round(file.size * 100 / 1024) / 100).toString() + 'KB';
+														
+											document.getElementById('fileName').innerHTML = 'Name: ' + file.name;
+											document.getElementById('fileSize').innerHTML = 'Size: ' + fileSize;
+											document.getElementById('fileType').innerHTML = 'Type: ' + file.type;
+										}
+									}
+									
+									function uploadFile() {
+										var xhr = new XMLHttpRequest();
+										var url = "http://google2010.du.edu:19900/xmlfeed";
+										var fd = new FormData();
+										fd.append("datasource", "tipss"); 
+										fd.append("feedtype", "metadata-and-url");
+										fd.append("data", document.getElementById('fileToUpload').files[0]);
+										
+										if(xhr){
+											xhr.upload.addEventListener("progress", uploadProgress, false);
+											xhr.addEventListener("load", uploadComplete, false);
+											xhr.addEventListener("error", uploadFailed, false);
+											xhr.addEventListener("abort", uploadCanceled, false);
+											xhr.open("POST", url, true);
+											xhr.setRequestHeader('X-PINGOTHER', 'pingpong');
+											xhr.setRequestHeader('Content-Type', 'multipart/form-data');
+											xhr.send(fd);
+										}
+									}
+									
+									function uploadProgress(evt) {
+										if (evt.lengthComputable) {
+											var percentComplete = Math.round(evt.loaded * 100 / evt.total);
+											document.getElementById('progressNumber').innerHTML = percentComplete.toString() + '%';
+											document.getElementById('progressBar').style.width = (percentComplete * 3.55).toString() + 'px';
+											if (percentComplete == 100) {
+												document.getElementById('progressInfo').style.display = 'none';
+												var uploadResponse = document.getElementById('uploadResponse');
+												uploadResponse.innerHTML = '<span style="font-size: 18pt; font-weight: bold;">Please wait...</span>';
+												uploadResponse.style.display = 'block';
+											}
+										}
+										else {
+											document.getElementById('progressNumber').innerHTML = 'unable to compute';
+										}
+									}
+									
+									function uploadComplete(evt) {
+										var uploadResponse = document.getElementById('uploadResponse');
+										uploadResponse.innerHTML = evt.target.responseText;
+										uploadResponse.style.display = 'block';
+									}
+									
+									function uploadFailed(evt) {
+										alert("There was an error attempting to upload the file.");
+									}
+									
+									function uploadCanceled(evt) {
+										alert("The upload has been canceled by the user or the browser dropped the connection.");
+									}
+									/*var progressBar = document.getElementById('sendProgress');
+									function updateProgress(evt) {
+										progressBar.value = evt.loaded;
+										progressBar.max = evt.total;
+										progressBar.getElementsByTagName('span')[0].textContent = evt.loaded;
+									}
+                   attach a submit handler to the form 
+                  $("#pushFeed").submit(function(e) {
+                    e.preventDefault();
+										var fileInput = document.getElementById('data');
+										var file = fileInput.files[0];
+										var formData = new FormData();
+										formData.append("datasource", "tipss"); 
+										formData.append("feedtype", "metadata-and-url");
+										formData.append("data", file)
+										console.log(formData.valueOf());*/
+										/*var xhr = new XMLHttpRequest();
+										xhr.upload.addEventListener('progress', updateProgress, false);
+										xhr.open("POST", "http://google2010.du.edu:19900/xmlfeed");  
+										xhr.send(formData);
+                    var $form = $( this ),
+                      term_ds = $form.find('input[name="datasource"]').val(),
+                      term_ft = $form.find('input[name="feedtype"]').val(),
+                      term_xml = $form.find('input[name="data"]').val(),
+                      url = "http://google2010.du.edu:19900/xmlfeed";console.log($form.attr("action"));*/
+											//console.log("datasource: "+term_ds+"\nfeedtype: "+term_ft+"\ndata: "+term_xml+"\naction: "+url+"\nform: "+$form);
+                    //$.post( url, { datasource: term_ds, feedtype: term_ft, data: term_xml}, function( data ) {console.log(data);
+                      //var content = $( data ).find('#content');
+                      //$("#pushResult").html("<h2>"+content+"</h2>");
+                    //});
+                  //});
+                </script-->
+              </div>
+
+              <h3>Search Form</h3>
+              <div class="subContent">
+                <form id="searchTipss" method="get" action="http://search.du.edu/search" enctype="multipart/form-data">
+                  <fieldset>
+                  	<div class="form-item">
+                      <h4 for="tipss_s">Search</h4>
+                      <div class="inputSingle"><input type="search" name="tipss_s" placeholder="Search Term" required /><input type="submit" class="tipssSubmit" value="Search"/></div>
+                    </div>
+                    <div class="form-item">
+	                    <h4>Type</h4>
+                    	<a class="searchToggleSelections" href="#">Select All</a>
+                      <div>
+                        <ul class="inputCheckboxList">
+                          <li><input type="checkbox" name="tipss_type[]" id="tipss_type-1" value="Article" multiple/><label for="tipss_type-1">Article</label></li>
+                          <li><input type="checkbox" name="tipss_type[]" id="tipss_type-2" value="Book" multiple/><label for="tipss_type-2">Book</label></li>
+                          <li><input type="checkbox" name="tipss_type[]" id="tipss_type-3" value="Data" multiple/><label for="tipss_type-3">Data</label></li>
+                          <li><input type="checkbox" name="tipss_type[]" id="tipss_type-4" value="Guideline" multiple/><label for="tipss_type-4">Guideline</label></li>
+                          <li><input type="checkbox" name="tipss_type[]" id="tipss_type-5" value="Laws and Regulations" multiple/><label for="tipss_type-5">Laws and Regulations</label></li>
+                          <li><input type="checkbox" name="tipss_type[]" id="tipss_type-6" value="News and Press Release" multiple/><label for="tipss_type-6">News and Press Release</label></li>
+                          <li><input type="checkbox" name="tipss_type[]" id="tipss_type-7" value="Research and Reports" multiple/><label for="tipss_type-7">Research and Reports</label></li>
+                          <li><input type="checkbox" name="tipss_type[]" id="tipss_type-8" value="Government Report" multiple/><label for="tipss_type-8">Government Report</label></li>
+                          <li><input type="checkbox" name="tipss_type[]" id="tipss_type-9" value="Industry Report" multiple/><label for="tipss_type-9">Industry Report</label></li>
+                          <li><input type="checkbox" name="tipss_type[]" id="tipss_type-10" value="NGO Report" multiple/><label for="tipss_type-10">NGO Report</label></li>
+                          <li><input type="checkbox" name="tipss_type[]" id="tipss_type-11" value="Situation Report" multiple/><label for="tipss_type-11">Situation Report</label></li>
+                          <li><input type="checkbox" name="tipss_type[]" id="tipss_type-12" value="Testimony" multiple/><label for="tipss_type-12">Testimony</label></li>
+                          <li><input type="checkbox" name="tipss_type[]" id="tipss_type-13" value="UN Document" multiple/><label for="tipss_type-13">UN Document</label></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="form-item">
+	                    <h4>Country</h4>
+                    	<a class="searchToggleSelections" href="#">Select All</a>
+                      <div>
+                        <ul class="inputCheckboxList-tree">
+                          <li><input type="checkbox" name="tipss_country[]" id="tipss_country-1" value="Africa" multiple/><label for="tipss_country-1">Africa</label></li>
+                          <li><input type="checkbox" name="tipss_country[]" id="tipss_country-2" value="Americas" multiple/><label for="tipss_country-2">Americas</label></li>
+                          <li><input type="checkbox" name="tipss_country[]" id="tipss_country-3" value="Asia" multiple/><label for="tipss_country-3">Asia</label></li>
+                          <li><input type="checkbox" name="tipss_country[]" id="tipss_country-4" value="Europe" multiple/><label for="tipss_country-4">Europe</label></li>
+                          <li><input type="checkbox" name="tipss_country[]" id="tipss_country-5" value="Middle East and North Africa" multiple/><label for="tipss_country-5">Middle East and North Africa</label></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="form-item">
+                    <h4>Issue</h4>
+                    	<a class="searchToggleSelections" href="#">Select All</a>
+                      <div>
+                        <ul class="inputCheckboxList">
+                          <li><input type="checkbox" name="tipss_issue[]" id="tipss_issue-1" value="Armed Conflict" multiple/><label for="tipss_issue-1">Armed Conflict</label></li>
+                          <li><input type="checkbox" name="tipss_issue[]" id="tipss_issue-2" value="Casualties" multiple/><label for="tipss_issue-2">Casualties</label></li>
+                          <li><input type="checkbox" name="tipss_issue[]" id="tipss_issue-3" value="Corporate Social Responsibility" multiple/><label for="tipss_issue-3">Corporate Social Responsibility</label></li>
+                          <li><input type="checkbox" name="tipss_issue[]" id="tipss_issue-4" value="Civil and Criminal Liability" multiple/><label for="tipss_issue-4">Civil and Criminal Liability</label></li>
+                          <li><input type="checkbox" name="tipss_issue[]" id="tipss_issue-5" value="Fraud and Waste" multiple/><label for="tipss_issue-5">Fraud and Waste</label></li>
+                          <li><input type="checkbox" name="tipss_issue[]" id="tipss_issue-6" value="Grievance Mechanisms" multiple/><label for="tipss_issue-6">Grievance Mechanisms</label></li>
+                          <li><input type="checkbox" name="tipss_issue[]" id="tipss_issue-7" value="Human Rights and Humanitarian Law" multiple/><label for="tipss_issue-7">Human Rights and Humanitarian Law</label></li>
+                          <li><input type="checkbox" name="tipss_issue[]" id="tipss_issue-8" value="Industry Reform" multiple/><label for="tipss_issue-8">Industry Reform</label></li>
+                          <li><input type="checkbox" name="tipss_issue[]" id="tipss_issue-9" value="Maritime" multiple/><label for="tipss_issue-9">Maritime</label></li>
+                          <li><input type="checkbox" name="tipss_issue[]" id="tipss_issue-10" value="Peacekeeping" multiple/><label for="tipss_issue-10">Peacekeeping</label></li>
+                          <li><input type="checkbox" name="tipss_issue[]" id="tipss_issue-11" value="Reconstruction and Stabilization" multiple/><label for="tipss_issue-11">Reconstruction and Stabilization</label></li>
+                          <li><input type="checkbox" name="tipss_issue[]" id="tipss_issue-12" value="Security" multiple/><label for="tipss_issue-12">Security</label></li>
+                          <li><input type="checkbox" name="tipss_issue[]" id="tipss_issue-13" value="Standards and Codes of Conduct" multiple/><label for="tipss_issue-13">Standards and Codes of Conduct</label></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="form-item">
+	                    <h4>Year</h4>
+                    	<a class="searchToggleSelections" href="#">Select All</a>
+                      <div>
+	                      <ul class="inputCheckboxList">
+                        <?php
+                          //$j=1;
+                          for ($i=1948; $i<=2012; $i++){
+                            print("<li><input type='checkbox' name='tipss_year[]' id='tipss_year-$i' value='$i' multiple='multiple'/><label for='tipss_year-$i'>$i</label></li>");
+                          }
+                        ?>
+  	                    </ul>
+                      </div>
+                    </div>
+                    <input type="submit" class="tipssSubmit" value="Search"/>
+                  </fieldset>
+                </form>
+                <div id="tipssResult">&nbsp;</div>
+                <script>
+                  /* attach a submit handler to the form */
+                  $("#searchTipss").submit(function(e) {
+                    /* stop form from submitting normally */
+                    e.preventDefault();
+                    /* get some values from elements on the page: */
+										if($('input[name="tipss_s"]').val() != ''){
+											var $form = $( this ),urlPartialFields,formData,
+											searchURL = $form.attr('action'),
+											searchTerm = encodeURI(encodeURI($('input[name="tipss_s"]').val())),
+											tipssType=$('input[type=checkbox][name="tipss_type[]"]:checked').map(function(){return "documenttype:"+encodeURI(encodeURI($(this).val()));}).get().join("|"),
+											tipssCountry=$('input[type=checkbox][name="tipss_country[]"]:checked').map(function(){return "country:"+encodeURI(encodeURI($(this).val()));}).get().join("|"),
+											tipssIssue=$('input[type=checkbox][name="tipss_issue[]"]:checked').map(function(){return "issue:"+encodeURI(encodeURI($(this).val()));}).get().join("|"),
+											tipssYear=$('input[type=checkbox][name="tipss_year[]"]:checked').map(function(){return "year:"+encodeURI(encodeURI($(this).val()));}).get().join("|");
+											
+											urlPartialFields = (tipssType.length)?tipssType:'';
+											if(tipssCountry.length)
+												urlPartialFields = (urlPartialFields.length)?urlPartialFields+"&"+tipssCountry:tipssCountry;
+											if(tipssIssue.length)
+												urlPartialFields = (urlPartialFields.length)?urlPartialFields+"&"+tipssIssue:tipssIssue;
+											if(tipssYear.length)
+												urlPartialFields = (urlPartialFields.length)?urlPartialFields+"&"+tipssYear:tipssYear;
+												
+											if(urlPartialFields.length){
+												formData = {
+													q: searchTerm, 
+													output: "xml_no_dtd", 
+													site: "korbel-pdfs", 
+													client: "korbel-pdfs",
+													getfields: "*", 
+													partialfields: urlPartialFields
+												}
+											}else{
+												formData = {
+													q: searchTerm, 
+													output: "xml_no_dtd", 
+													site: "korbel-pdfs", 
+													client: "korbel-pdfs",
+													getfields: "*" 
+												}
+											}
+											/* Send the data using post and put the results in a div */
+											$.get( 'http://webteam.cair.du.edu/web_services/rest/index.php/search/query/', formData, function( data ) {
+													if($.isXMLDoc(data)){
+														var root = data;
+														var results = "";
+														var totalRecords = $(root).find("RES").attr("EN");
+
+														$(root).find("RES R").each(function() {
+															results += '<article class="searchRecord">';
+															results += '<h1><a href="'+$(this).find("UE").text()+'">'+$(this).find('MT[N="title"]').attr("V")+'</a></h1><div class="content">';
+															// Open PDFs
+															if($(this).find('MT[N^="pdf"]').length){
+																results += '<div class="openPDF"><strong>Open PDF:</strong>';
+																$(this).find('MT[N^="pdf"]').each(function() {
+																	switch($(this).attr("N")){
+																		case 'pdf:english':
+																			results += '<a href="'+$(this).attr("V")+'" title="English PDF">English</a>';
+																			break;
+																		case 'pdf:arabic':
+																			results += '<a href="'+$(this).attr("V")+'" title="Arabic PDF">Arabic</a>';
+																			break;
+																		case 'pdf:chinese':
+																			results += '<a href="'+$(this).attr("V")+'" title="Chinese PDF">Chinese</a>';
+																			break;
+																		case 'pdf:french':
+																			results += '<a href="'+$(this).attr("V")+'" title="French PDF">French</a>';
+																			break;
+																		case 'pdf:russian':
+																			results += '<a href="'+$(this).attr("V")+'" title="Russian PDF">Russian</a>';
+																			break;
+																		case 'pdf:spanish':
+																			results += '<a href="'+$(this).attr("V")+'" title="Spanish PDF">Spanish</a>';
+																			break;
+																	}
+																});
+																results += '</div>';
+															}
+															// Teaser
+															results += '<p>'+$(this).find('MT[N="teaser"]').attr("V")+'</p>';
+															// Tags
+															if($(this).find('MT[N="issue"]').length || $(this).find('MT[N="country"]').length || $(this).find('MT[N="documenttype"]').length || $(this).find('MT[N="year"]').length){
+																var a_tags = new Array();
+																$(this).find('MT[N="issue"]').each(function() {
+																	a_tags.push($(this).attr("V"));
+																});
+																$(this).find('MT[N="documenttype"]').each(function() {
+																	a_tags.push($(this).attr("V"));
+																});
+																$(this).find('MT[N="country"]').each(function() {
+																	a_tags.push($(this).attr("V"));
+																});
+																$(this).find('MT[N="year"]').each(function() {
+																	a_tags.push($(this).attr("V"));
+																});
+																results += '<div class="tags"><strong>Tags:</strong>'+a_tags.toString()+'</div>';
+															}
+															// Open PDFs
+															if($(this).find('MT[N^="resourceurl"]').length){
+																results += '<div class="resources">';
+																$(this).find('MT[N^="resourceurl"]').each(function() {
+																	var a_url = $(this).attr("V").split('_--_');
+																	switch($(this).attr("N")){
+																		case 'resourceurl:external':
+																			results += '<a href="'+a_url[1]+'" title="'+a_url[0]+'" target="_blank">'+a_url[0]+'</a>';
+																			break;
+																		case 'resourceurl:internal':
+																			results += '<a href="'+a_url[1]+'" title="'+a_url[0]+'">'+a_url[0]+'</a>';
+																			break;
+																	}
+																});
+																results += '</div>';
+															}
+															/*
+															$(this).find("MT").each(function() {
+																results += "<p><strong>"+$(this).attr("N");
+																results += " :</strong> ";
+																results += $(this).attr("V");
+																results += "</p>";
+																
+															});*/
+															results += '</div></article>';
+														});
+														$("#tipssResult").html(results);
+													}else{
+														$("#tipssResult").html("<h2>No results were found</h2>");
+													}													
+												})
+												.fail(function(jqXHR, textStatus) {
+													alert( "Request failed: " + textStatus);
+												});
+										}else{
+											$('input[name="tipss_s"]').focus().after("<label class='errorMsg'>You must enter a search term!</label>").parent(".inputSingle").addClass("inputError");
+										}
+                  });
+                </script>
+              </div>
+            </section>
+            <aside id="rightSidebar">
+              <div class="simpleCallout">
+                <h1>Quick Links</h1>
+                <ul class="singleLine">
+                  <li>
+                    <h2>Contact Us</h2>
+                    <address class="vcard">
+                      <span class="adr"><span class="org fn"><span class="organization-unit extended-address">Division of Marketing &amp; Communications</span> <span class="organization-name"><span class="value-title" title="University of Denver">&nbsp;</span></span></span><br/>
+                      <span class="street-address">Mary Reed Building Room 122 &amp; 022</span>,<br/>
+                      <span class="street-address">2199 S. University Blvd.</span>,<br/>
+                      <span class="locality">Denver</span>, <span class="region" title="Colorado">CO</span> <span class="postal-code">80208</span><br/>
+                      <span class="tel"><span class="type">Phone</span>: <span class="value">303-871-2711</span></span><br/>
+                      <span class="tel"><span class="type">Fax</span>: <span class="value">303-871-4880</span></span><span class="geo"><span class="latitude"><span class="value-title" title="39.676625">&nbsp;</span></span><span class="longitude"><span class="value-title" title="-104.961445">&nbsp;</span></span></span></span>
+                    </address>
+                  </li>
+                  <li><a href="http://www.du.edu/engage/student/studentmain.html" title="Civic Engagement and Service Learning">Civic Engagement and Service Learning</a></li>
+                  <li><a href="http://www.alumni.du.edu/Learn/CE/" title="Continuing Education for Alumni">Continuing Education for Alumni</a></li>
+                </ul>
+              </div>
+            </aside>
+            <div class="clear"><!--//--></div>
+          </section>
+      	</div>
+        <footer id="globalFooter">
+        <section id="footerLinksContainer">
+                <section id="followList">
+            <?php include($_SERVER['DOCUMENT_ROOT'].'/_resources/includes/followListNav.inc');?>
+          </section>
+                <nav id="subFooter">
+            <?php include($_SERVER['DOCUMENT_ROOT'].'/_resources/includes/subFooterNav.inc');?>
+            <p>Copyright © 2012 University of Denver. All rights reserved. <a href="http://www.du.edu/privacy/index.html" title="link to university privacy policy">Privacy.</a> The University of Denver is an equal opportunity affirmative action institution.</p>
+          </nav>
+              </section>
+      </footer>
+          </div>
+  </div>
+      </div>
+<a href="http://www.omniupdate.com/oucampus/de.jsp?user=Denver&amp;site=DU_Main&amp;path=%2F_resources%2Fapi%2Frest%2Fsearch%2Fgsa-feeder.html"><img src="/_resources/images/icon_edit_lt.png" /></a></body>
+</html>

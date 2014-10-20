@@ -1,0 +1,42 @@
+body {
+	background-image: url("/_resources/ou/editor/backgrounds/right-academicunit.jpg");
+	background-repeat: no-repeat;
+	width:248px;
+	margin:220px 0px 0px 740px;
+	 font-size:100%
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	
+}
+li {
+    border-bottom-color: #C8CCCF;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    color: #000000;
+      text-decoration:none;
+}
+li {
+    line-height: 1.333em;
+    padding-bottom: 9px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 9px;
+    display:block;
+}
+h1 {
+    font-size: 1.167em;
+    padding-bottom: 4px;
+    padding-left: 10px;
+    padding-right: 0;
+    padding-top: 4px;
+    width: 237px;
+    color:#000;
+      text-decoration:none;
+}
+h2 {
+    font-size: 1.083em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+}

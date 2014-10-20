@@ -1,0 +1,14 @@
+body {
+	background-image: url("/_resources/ou/editor/backgrounds/main_1col-general.jpg");
+	background-repeat: no-repeat;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	font-size: 0.75em !important;
+	color: #252525;
+	line-height: 1.5em;
+	margin-top: 241px;
+	margin-left: 27px;
+	width: 700px;
+}
+td, th {
+	font-size:0.75em;
+}

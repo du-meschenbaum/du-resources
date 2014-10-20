@@ -1,0 +1,256 @@
+/* SIE CENTER */
+
+html {
+  height: 100%;
+  background: #9b2416;
+}
+body {
+  background-image: url("/_resources/images/bckgrnd/sie-bg.jpg");
+  background-position: center top;
+}
+body.palette_21 #body_wrapper {
+  background-image: url("/_resources/images/bckgrnd/sie-bg-2.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+body.palette_21 #pageBanners {
+  background-image: url("/_resources/images/bckgrnd/sie-side-shadows-top.png");
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+body.palette_21 #pageBanners .bannersTitle h1 {
+  margin-top: 20px;
+}
+body.palette_21 #pageBanners .bannersTitle a {
+  font-size: .5em;
+  color: #000;
+}
+body.palette_21 #pageBanners .bannersNav {
+  text-align: center;
+  padding-bottom: 5px;
+}
+body.palette_21 #pageBanners .bannersNav ol {
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+body.palette_21 #pageBanners .bannersNav ol li {
+  width: auto;
+  padding: 0 27px;
+  margin: 0px;
+  display: inline;
+}
+body.palette_21 #pageBanners .bannersNav ol li a,
+body.palette_21 #pageBanners .bannersNav ol li a.active,
+body.palette_21 #pageBanners .bannersNav ol li a:active,
+body.palette_21 #pageBanners .bannersNav ol li a:hover {
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+  text-transform: none;
+  font-size: 1em;
+  color: #000;
+  line-height: 48px;
+  height: 48px;
+}
+body.palette_21 #pageBanners .bannersNav ol li a.active {
+  color: #1b4164;
+  background: url("/_resources/images/nav/nav-sie-on.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+body.palette_21 #pageBanners .oneColBanner,
+body.palette_21 #pageBanners #gallery {
+  width: 985px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+body.palette_21 #pageBanners #gallery li {
+	width:auto;
+	padding-left:17px;
+}
+body.palette_21 #pageBanners .oneColBanner img,
+body.palette_21 #pageBanners #gallery li img {
+  -moz-box-shadow: 4px 7px 6px #888;
+  -webkit-box-shadow: 4px 7px 6px #888;
+  box-shadow: 4px 7px 6px #888;
+  /* For IE 8 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888')";
+  /* For IE 5.5 - 7 */
+
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=4, Direction=135, Color='#888888');
+}
+body.palette_21 #mainWrapper {
+  background-image: url("/_resources/images/bckgrnd/sie-side-shadows.png") !important;
+  background-position: center top;
+  background-repeat: repeat-y;
+}
+body.palette_21 #mainWrapper #main {
+  background-image: url("/_resources/images/bckgrnd/sie-main-3col.jpg");
+  background-repeat: no-repeat;
+  padding-bottom: 10px;
+}
+body.palette_21 #mainWrapper #main #mainContent {
+  width: 527px;
+  margin: 55px 20px 40px 0;
+  padding: 0px;
+}
+body.palette_21 #mainWrapper #main #mainContent hgroup h2 {
+  color: #1b4164;
+  font-size: 1.6em;
+}
+body.palette_21 #mainWrapper #main #mainContent h3 {
+  text-transform: none;
+  font-style: italic;
+  background:#1b4164;
+  margin:0 0 10px 0;
+}
+body.palette_21 #mainWrapper #main #mainContent h5 {
+  font-weight: normal;
+  padding-bottom: 5px;
+}
+body.palette_21 #mainWrapper #main #mainContent .expandListItem {
+  background:#1b4164;
+}
+body.palette_21 #mainWrapper #main #mainContent .expandListItem h5 {
+  color:#fff;
+  background: url("/_resources/images/btns/btn_expand_plus-palette8.gif") no-repeat 0px 6px;
+}
+body.palette_21 #mainWrapper #main #mainContent .expandListItem h5.expandSelected { 
+  background:url("/_resources/images/btns/btn_expand_minus-palette8.gif") no-repeat 0px 6px;
+}
+body.palette_21 #mainWrapper #main #mainContent .expandListItemContent {
+  background:#fff;
+}
+body.palette_21 #mainWrapper #main #mainContent p {
+  line-height: 1.5em;
+}
+body.palette_21 #mainWrapper #main #mainContent .subCol {
+  width: 170px;
+  height: 350px;
+  background-color: #F7F7F7;
+  padding: 0 0 10px 0;
+  margin-left: 5px;
+  margin-top: 10px;
+  border: none;
+  -moz-box-shadow: 3px 3px 3px #DDD;
+  -webkit-box-shadow: 3px 3px 3px #DDD;
+  box-shadow: 3px 3px 3px #DDD;
+  /* For IE 8 */
+
+  -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#DDDDDD')";
+  /* For IE 5.5 - 7 */
+
+  filter: progid:DXImageTransform.Microsoft.Shadow(Strength=2, Direction=135, Color='#DDDDDD');
+}
+body.palette_21 #mainWrapper #main #mainContent .subCol hgroup h3 {
+  font-size: 1.25em;
+  line-height: 1em;
+  font-style: normal;
+  margin: 0px;
+  height: 30px;
+  padding: 5px;
+  font-weight: normal;
+  background-color: #1b4164;
+}
+body.palette_21 #mainWrapper #main #mainContent .subCol img {
+  padding: 5px;
+}
+body.palette_21 #mainWrapper #main #mainContent .subCol p {
+  font-size: .9em;
+  line-height: 1.3em;
+  padding: 5px 10px;
+  margin: 0px;
+}
+body.palette_21 #mainWrapper #main #mainContent .subCol p + a {
+  display: block;
+  padding: 5px 10px;
+  font-size: .9em;
+  margin-left: 10px;
+  background: url("/_resources/images/nav/more-link.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+body.palette_21 #mainWrapper #main #mainContent .subCol.first {
+  margin-left: 0px;
+}
+body.palette_21 #mainWrapper #main #leftSidebar {
+  margin-right: 20px;
+  margin-top: 15px;
+  background-color: #eae9e5;
+  font-size: .9em;
+}
+body.palette_21 #mainWrapper #main #leftSidebar li.active a {
+  color: #1b4164;
+  text-transform: none;
+  font-weight: normal;
+  font-size: 1.2em;
+  background: url("/_resources/images/nav/nav-sie-on-side.jpg");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+body.palette_21 #mainWrapper #main #rightSidebar {
+  width: 218px;
+  margin: 15px 0 0;
+  padding: 5px 12px 20px 13px;
+  background-color: #f7f7f7;
+}
+body.palette_21 #mainWrapper #main #rightSidebar .simpleCallout {
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+body.palette_21 #mainWrapper #main #rightSidebar .simpleCallout a {
+  font-weight: normal;
+}
+body.palette_21 #mainWrapper #main #rightSidebar .simpleCallout h1 {
+  width: 208px;
+  padding: 5px;
+  background-color: #1b4164;
+  color: #FFF;
+  font-size: 1em;
+}
+body.palette_21 #mainWrapper #main #rightSidebar .simpleCallout ul {
+  width: auto;
+  margin: 0px;
+  padding: 0px;
+}
+body.palette_21 #mainWrapper #main #rightSidebar .simpleCallout li {
+  padding: 10px 5px;
+}
+body.palette_21 #mainWrapper #main #rightSidebar .simpleCallout {
+  background-image: url("/_resources/images/bckgrnd/sie-bg-address.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 40px;
+}
+body.twoColRight #mainWrapper #main {
+  background-image: url("/_resources/images/bckgrnd/sie-main-2colr.jpg");
+  background-repeat: no-repeat;
+  padding-bottom: 10px;
+}
+body.twoColRight #mainWrapper #main #mainContent {
+  width: 702px;
+  padding: 25px 20px 20px;
+  margin: 0px;
+}
+body.twoColLeft #mainWrapper #main {
+  background-image: url("/_resources/images/bckgrnd/sie-main-2coll.jpg");
+  background-repeat: no-repeat;
+  padding-bottom: 10px;
+}
+body.twoColLeft #mainWrapper #main #mainContent {
+  width: 702px;
+  padding: 55px 20px 40px;
+  margin: 0px;
+}
+body.oneCol #mainWrapper #main {
+  background-image: url("/_resources/images/bckgrnd/sie-main-1col.jpg");
+  background-repeat: no-repeat;
+  padding-bottom: 10px;
+}
+body.oneCol #mainWrapper #main #mainContent {
+  width: 945px;
+  padding: 25px 20px 20px;
+  margin: 0px;
+}

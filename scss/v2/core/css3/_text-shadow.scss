@@ -1,0 +1,59 @@
+// Text Shadow
+
+$du-text-shadow-color: rgba(0, 0, 0, 0.5);
+$du-text-shadow-blur: 2px;
+$du-text-shadow-h-offset: 2px;
+$du-text-shadow-v-offset: 2px;
+$du-text-shadow-spread: false;
+
+//@mixin du-text-shadow ($x-coord, $y-coord, $blur, $color) {
+// adds drop shadow effect to text
+//text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+//}
+@mixin du-text-shadow($shadow...) {
+  $shadow: if(length($shadow) > 0, $shadow, default);
+  $default: $du-text-shadow-h-offset $du-text-shadow-v-offset $du-text-shadow-blur $du-text-shadow-spread $du-text-shadow-color;
+  $shadows-without-spread: join((), (), comma);
+  $shadows: join((), (), comma);
+  $has-spread: false;
+  @each $layer in $shadow {
+    $layer: if($layer == "default", $default, $layer);
+    @if length($layer) > 4 {
+      $has-spread: true;
+      $shadows-without-spread: append($shadows-without-spread, nth($layer, 1) nth($layer, 2) nth($layer, 3) nth($layer, 5));
+      $shadows: append($shadows, $layer);
+    }
+    @else {
+      $shadows-without-spread: append($shadows-without-spread, $layer);
+      $shadows: append($shadows, $layer);
+    }
+  }
+  @if $has-spread {
+    text-shadow: $shadows-without-spread;
+  }
+  text-shadow: $shadows;
+}
+@mixin du-single-text-shadow($hoff: false, $voff: false, $blur: false, $spread: false, $color: false) {
+  // A lot of people think the color comes first. It doesn't.
+  @if type-of($hoff) == color {
+    $temp-color: $hoff;
+    $hoff: $voff;
+    $voff: $blur;
+    $blur: $spread;
+    $spread: $color;
+    $color: $temp-color;
+  }
+  // Can't rely on default assignment with multiple supported argument orders.
+  $hoff: if($hoff, $hoff, $du-text-shadow-h-offset);
+  $voff: if($voff, $voff, $du-text-shadow-v-offset);
+  $blur: if($blur, $blur, $du-text-shadow-blur);
+  $spread: if($spread, $spread, $du-text-shadow-spread);
+  $color: if($color, $color, $du-text-shadow-color);
+  // We don't need experimental support for this property.
+  @if $color == none or $hoff == none {
+    @include du-text-shadow(none);
+  }
+  @else {
+    @include du-text-shadow($hoff $voff $blur $spread $color);
+  }
+}

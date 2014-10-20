@@ -1,0 +1,81 @@
+#pageBanners, #pageBanners .oneColBanner {height:400px; background:none !important;}
+#pageBanners .oneColBanner {width:986px; padding:0px;}
+#pageBanners figure {height:400px; width:986px;}
+#pageBanners figure figcaption {float:left; height:400px; width:346px; background:url("/_resources/images/currentstudents/background/hdr_html_bckgrnd.jpg") left top no-repeat; overflow:hidden; color:#ededed; font-size:12px; line-height:16px;}
+#pageBanners figure figcaption a {color:#ededed;}
+#pageBanners figure figcaption h1{margin:0; padding:0 0 0 15px;}
+#pageBanners figure figcaption ul {margin:-15px 0 0 25px; list-style:none;}
+#pageBanners figure figcaption ul li {padding:4px 0;}
+#pageBanners figure figcaption ul li ul {margin:0 0 20px 37px; list-style:disc;}
+#pageBanners figure figcaption ul li ul li {padding-right:60px;}
+#allWebcams {display:inline-block; position:relative; top:325px; left:240px; color:#afafaf !important; text-decoration:underline !important;}
+#allWebcams:hover {color:#ededed !important;}
+#capWebCam {position:relative; top:-30px; left:530px; color:#ffffff; font-size:11px; line-height:11px; text-shadow:0 2px 2px #000000; letter-spacing:0.1em;}
+
+
+.current #main {overflow:visible !important; width:986px; padding-top:0px; background:url("/_resources/images/currentstudents/background/bckgrnd_main_body-top.png") left top no-repeat, url("/_resources/images/currentstudents/background/bckgrnd_main_body.png") left top repeat-y #fff;}
+
+/* Nav */
+#navContainer {width:986px !important; margin:0 auto; padding:0;}
+#breadcrumbs {float:left; width:13em; list-style:none; padding:0; margin:12px 0 0 0; line-height:1.556em; font-size:0.8em;}
+#breadcrumbs li {display:inline;}
+#breadcrumbs a:link, #breadcrumbs a:active, #breadcrumbs a:visited {text-decoration:none;}
+#breadcrumbs a:hover {color:#252525; text-decoration:underline;}
+
+#menu {float:right; display:inline; position:relative; z-index:4; margin:0; padding:0; list-style:none; background:#ebab00;}
+#menu li {float:left; display:inline; position:relative; z-index:1; margin:0; padding:0; background:url("/_resources/images/currentstudents/nav/bckgrnd_nav-divider-shdw.png") top left no-repeat;}
+#menu li a {display:block; height:33px; padding:7px 19px 0 19px; overflow:hidden; background:url("/_resources/images/currentstudents/nav/bckgrnd_nav-bottom-shdw.png") top left repeat-x;}
+#menu li:hover {background-color:#d2ddf1;}
+#menu li .subMenu {display:none; position:absolute; top:40px; width:130px; padding:20px; z-index:4; background:#d2ddf1; -moz-box-shadow:3px 3px rgba(0,0,0,0.1); -webkit-box-shadow:3px 3px rgba(0,0,0,0.1); box-shadow:3px 3px rgba(0,0,0,0.1);}
+#menu li.navAcademics .subMenu {width:440px;}
+#menu li.navBuildingsServices .subMenu {width:470px;}
+#menu li.navHousingFood .subMenu {width:245px;}
+#menu table {color:#333; font-size:12px; text-align:left;}
+#menu table th {padding:0px 15px 10px 15px; color:#1f3b6b; text-transform:uppercase;}
+#menu table td {vertical-align:top; padding:0 15px; line-height:22px;}
+#menu table th:first-child, #menu table td:first-child {padding-left:0;}
+#menu table th:last-child, #menu table td:last-child {padding-right:0;}
+#menu table td ul {margin:0; padding:0;}
+#menu table td ul li {display:block; float:none; padding:2px 0; background:none;}
+#menu table td ul li:first-child {padding-top:0;}
+#menu table td ul li:last-child {padding-bottom:0;}
+#menu table td a {display:block; padding:0; height:auto; color:#333 !important; background:none;}
+#menu table td a:hover {color:#000; text-decoration:none;}
+#menu table th.separator, #menu table td.separator {width:1px; padding:0; font-size:0.25em;}
+#menu table td.separator {background:#ffffff;}
+#menu li.active .subMenu, #menu.noJS li:hover .subMenu { /*Show nav. Also Allow users to navigate with JS turned off*/ display:block; }
+/* Begin Content */
+#mainContent {width:698px !important; margin:20px 0 0 !important; padding-right:15px !important; padding-left:0 !important;}
+#mainContent h3 {margin-bottom:10px !important; padding:9px 7px 7px 7px !important; font-size:1.4em !important; background-color:#67744a !important;}
+#mainContent p {margin:0 0 10px 7px !important;}
+.vertCol {width:338px !important; margin-right:30px !important; padding:0 !important; border:none !important;}
+.vertCol.last {width:330px !important; margin-right:0 !important;}
+.vertCol h3, .vertCol.last h3 {margin-top:25px !important;}
+.vertCol h3:first-child, .vertCol.last h3:first-child {margin-top:0 !important;}
+
+.photoContentContainerLeft, .photoContentContainerRight {padding:4px !important; background:#f2f2f2;}
+.photoContentContainerLeft .framedPhotoLeft, .photoContentContainerRight .framedPhotoRight {padding:0 !important; background:none !important;}
+.photoContentContainerLeft .framedPhotoLeft {margin-right:4px;}
+.photoContentRight {float:right; width:110px; margin-left:0px;}
+.photoContentRight .subContent {margin-top:0 !important; padding-left:0 !important; padding-right:0 !important;}
+.photoContentRight .subContent p {margin-left:0 !important; font-size:10px !important; line-height:14px !important;}
+#studentCalendar, #studentCalendar ul {margin:0 !important; padding:0 !important; list-style:none !important;}
+#studentCalendar li {padding:0 0 15px 6px !important; background:none !important;}
+#studentCalendar li.placeholder {display:none;}
+#studentCalendar li:last-child {padding-bottom:0 !important;}
+#duPhotos h3 {margin-top:25px !important; margin-bottom:0 !important;}
+
+#onlineTools {padding:0 20px 20px 20px; background:url("/_resources/images/currentstudents/background/bckgrnd_box-shadow-top.png") left top repeat-x, url("/_resources/images/currentstudents/background/bckgrnd_box-shadow-bottom.png") left bottom repeat-x #fff;}
+#onlineTools h3 {margin-left:-20px; color:#5d6d38; background:none !important;}
+#onlineTools td {padding-bottom:6px;}
+#onlineTools .facultyStaffBookmark {padding-left:4px;}
+/* Begin rightSidebar Col */
+#rightSidebar {width:250px; margin:60px 0 0 0; padding:0;}
+#rightSidebar h1 {width:100%; padding-left:0; background:none;}
+#rightSidebar ul {width:100% !important; padding-left:0 !important;}
+#rightSidebar ul li {padding-left:20px !important; border-bottom:none;}
+#rightSidebar ul.follow {margin-top:10px; height:40px;}
+#rightSidebar ul.follow li {float:left; display:inline; margin:0 5px; padding:0px !important; border-bottom:none;}
+#rightSidebar ul.follow li:first-child {margin-left:0;}
+#rightSidebar ul.follow li:last-child {margin-right:0;}
+#rightSidebar ul.follow li a {margin:0; text-decoration:none;}

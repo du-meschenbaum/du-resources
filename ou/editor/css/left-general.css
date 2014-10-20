@@ -1,0 +1,29 @@
+body {
+	background-image: url("/_resources/ou/editor/backgrounds/left-general.jpg");
+	background-repeat: no-repeat;
+	width: 120px;
+	margin-top: 80px;
+	margin-left: 60px;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	font-size: 1.0em;
+	color: #FFF !important;
+	list-style: none outside none;
+}
+li a {
+	border-bottom: medium none;
+	color: #FFFFFF !important;
+	padding: 0;
+	text-decoration: none !important;
+}
+li.level1 {margin:0px; font-weight:normal; text-transform:none;}
+li.level1,  li.level2,  li.level3,  li.level4, li.level5 {border-bottom:none; padding:0;}
+li.level1 a,  li.level2 a,  li.level3 a, li.level4 a, li.level5 a {display:block; padding:0px 8px 6px 6px; background:transparent; border-right:none; text-decoration:none;}
+
+li.level1, li.level1 a, li.level1 a:hover, li.level1.active a, li.level1.activeParent a {padding-left:0px;}
+li.level2, li.level2 a, li.level2 a:hover, li.level2.active a, li.level2.activeParent a {padding-left:8px;}
+li.level3, li.level3 a, li.level3 a:hover,  li.level3.active a, li.level3.activeParent a {padding-left:16px;}
+li.level4, li.level4 a, li.level4 a:hover, li.level4.active a,  li.level4.activeParent a {padding-left:24px;}
+li.level5, li.level5 a, li.level5 a:hover,  li.level5.active a {padding-left:32px;}
+
+
+

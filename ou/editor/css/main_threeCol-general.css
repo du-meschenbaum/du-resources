@@ -1,0 +1,46 @@
+body {
+	background-image: url("/_resources/ou/editor/backgrounds/main_3col-general.jpg") ;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	background-repeat: no-repeat;
+	width:521px;
+	margin: 331px 0px 0px 195px;
+	font-size: 0.75em !important;
+	text-align: left !important;
+	line-height: 1.5em;
+	color: #252525;
+	float: left;
+}
+#mainContent {
+	margin: 0;
+   	padding: 0;
+  	float: left;
+  	width: 431px;
+}
+
+.imageColContent {
+   	width: 431px;
+   	float: left;
+    	padding: 0 15px 0 0;
+}
+
+td, th {
+	font-size:0.75em;
+}
+h1 {
+	font-weight: normal;
+	font-size: 100% !important;
+}
+h2 {
+	font-weight: normal;
+	font-size: 100% !important;
+}
+h3 {
+   	background: none repeat scroll 0 0 #445C88 !important;
+    	color: #FFFFFF;
+    	font-size: 1.1em;
+    	line-height: 1.211em;
+    	margin:0px 0 5px 0;
+    	padding:2px 5px 2px 7px;
+    	text-transform: uppercase;
+}
+h4.simple {margin:20px 0 10px 0; padding:2px 5px 2px 7px; font-size:1.2em; line-height:1.211em;}

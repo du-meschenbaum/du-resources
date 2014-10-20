@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr" id="du-edu">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>DU Video Playback</title>
+    <style type="text/css">body {font:12px "Trebuchet MS", Arial, Helvetica, sans-serif; background-color:transparent; color:#252525; height:100%; width:100%; margin:0; overflow:hidden;}</style>
+    <link type="text/css" href="/_resources/scripts/flash/players/strobe-embed/jquery.strobemediaplayback.css" rel="stylesheet" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js"><!--//--></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"><!--//--></script>
+    <script type="text/javascript" src="/_resources/scripts/flash/players/strobe-embed/jquery.strobemediaplayback.js"><!--//--></script>
+    <script type="text/javascript">
+			$(function(){
+				// Get the page query string and retrieve page params
+				var incoming={}, queryString = window.location.search;
+				if (queryString) {
+					queryString = queryString.substring(1);				
+					incoming = $.fn.strobemediaplayback.parseQueryString(queryString);
+				}
+				
+				// Use a sample video for geeks that look at the source code for samples
+				if (!incoming.src) {incoming.src = encodeURI("http://www.du.edu/_resources/scripts/flash/players/samples/big_buck_bunny/bbb_trailer.mp4");}
+				if (!incoming.title) {incoming.title = 'NoTitle';}else{encodeURIComponent(incoming.title)}
+				
+				// Use default tracking for google
+					var gTrackPluginConfig = 
+				'<value key="reTrackConfig" type="class" class="com.realeyes.osmf.plugins.tracking.google.config.RETrackConfig">\
+						<account><![CDATA[UA-516606-1]]></account>\
+						<url><![CDATA[http://www.du.edu]]></url>\
+						<event name="percentWatched" category="DU Video" action="Percent Watched">\
+										<marker percent="0" label="'+incoming.title+'" />\
+										<marker percent="25" label="'+incoming.title+'" />\
+										<marker percent="50" label="'+incoming.title+'" />\
+										<marker percent="75" label="'+incoming.title+'" />\
+						</event>\
+						<event name="complete" category="DU Video" action="Complete" label="'+incoming.title+'" value="1" />\
+						<event name="pageView" category="DU Video" action="Viewers" label="'+incoming.title+'" value="1" />\
+						<event name="timeWatched" category="DU Video" action="Time Watched">\
+										<marker time="10" label="'+incoming.title+'" />\
+										<marker time="20" label="'+incoming.title+'" />\
+										<marker time="30" label="'+incoming.title+'" />\
+										<marker time="60" label="'+incoming.title+'" />\
+										<marker time="90" label="'+incoming.title+'" />\
+										<marker time="120" label="'+incoming.title+'" />\
+										<marker time="150" label="'+incoming.title+'" />\
+										<marker time="180" label="'+incoming.title+'" />\
+										<marker time="210" label="'+incoming.title+'" />\
+										<marker time="240" label="'+incoming.title+'" />\
+										<marker time="270" label="'+incoming.title+'" />\
+										<marker time="300" label="'+incoming.title+'" />\
+										<marker time="420" label="'+incoming.title+'" />\
+										<marker time="540" label="'+incoming.title+'" />\
+										<marker time="660" label="'+incoming.title+'" />\
+										<marker time="780" label="'+incoming.title+'" />\
+										<marker time="900" label="'+incoming.title+'" />\
+										<marker time="1020" label="'+incoming.title+'" />\
+										<marker time="1140" label="'+incoming.title+'" />\
+										<marker time="1200" label="'+incoming.title+'" />\
+										<marker time="1500" label="'+incoming.title+'" />\
+										<marker time="1800" label="'+incoming.title+'" />\
+										<marker time="2100" label="'+incoming.title+'" />\
+										<marker time="2400" label="'+incoming.title+'" />\
+										<marker time="2700" label="'+incoming.title+'" />\
+										<marker time="3000" label="'+incoming.title+'" />\
+										<marker time="3300" label="'+incoming.title+'" />\
+										<marker time="3600" label="'+incoming.title+'" />\
+						</event>\
+						<event name="bufferingChange" category="DU Video" action="Buffer Change" label="'+incoming.title+'" />\
+						<event name="bufferTimeChange" category="DU Video" action="Buffer Time Change" label="'+incoming.title+'" />\
+						<debug><![CDATA[false]]></debug>\
+						<updateInterval><![CDATA[250]]></updateInterval>\
+				</value>';
+				var options = {plugin_ga : "http://www.du.edu/_resources/scripts/flash/players/GTrackPlugin.swf", "ga_http://www.realeyes.com/osmf/plugins/tracking/google" : escape (gTrackPluginConfig), src_namespace_realeyes : "http://www.realeyes.com/osmf/plugins/tracking/google"}
+				options.src = incoming.src;
+				options.poster = (incoming.poster) ? incoming.poster : '';
+				options.streamType = (incoming.streamType) ? incoming.streamType : 'recorded';
+				options.favorFlashOverHtml5Video= true;
+	
+				options = $.fn.adaptiveexperienceconfigurator.adapt(options);
+				
+				// Retrieve the window dimensions
+				options.width = $(window).width();
+				options.height = $(window).height();
+				
+				// Now we are ready to generate the video tags
+				$("#strobemediaplayback").strobemediaplayback(options);
+			});
+    </script>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-516606-1']);
+  _gaq.push(['_setDomainName', 'du.edu']);
+  _gaq.push(['_setAllowHash', false]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  </head>
+  <body>
+    <div id="strobemediaplayback">
+      <p>To view this video, you will need to <a href="http://www.adobe.com/go/getflashplayer">download the free Adobe Flash Player</a>.  Flash player is a small, fast download that allows you to watch videos, listen to audio clips, view interactive content across the University of Denver's Web Sites and across the internet.</p>
+      <p><a href="http://www.adobe.com/go/getflashplayer"><img src="/_resources/images/btns/get_flash_player.jpg" alt="Get Adobe Flash player" /></a></p>
+    </div></body>
+</html>

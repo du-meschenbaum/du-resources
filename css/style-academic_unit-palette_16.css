@@ -1,0 +1,275 @@
+/* Social Work */
+/* Whole Page styling */
+body.palette_16 #body_wrapper {
+	background-color:#f2f1ef;
+	background-position:center 49px;
+}
+body.palette_16 #main {
+	background-color:transparent;
+}
+body.palette_16 #main a:link,
+body.palette_16 #main a:active,
+body.palette_16 #main a:visited {
+	color:#395b72;
+	text-decoration:underline;
+}
+body.palette_16 .twoColRight #mainContent {
+	padding-right: 31px;
+}
+body.palette_16 #mainContent h1 {
+	color:#395b72;
+	text-transform:none;
+	font-size:20px;
+	margin:0 0 5px 0;
+	padding:0;
+	font-weight:normal;
+	background:none;
+}
+body.palette_16 #mainContent img {
+	margin:0 5px;
+}
+body.palette_16 #mainContent .viewLarger a {
+	color:#FFF;
+}
+body.palette_16 #pageBanners .bannersNav,
+/* body.palette_16 #mainContent h3,*/
+body.palette_16 .framedPhotoDefault,
+body.palette_16 .framedPhotoLeft,
+body.palette_16 .framedPhotoRight,
+body.palette_16 .overlay-wrapper h1.overlayTitle {
+	background:#000000;
+}
+/* remove for training
+body.palette_16 #mainContent h3, figcaption {
+	color:#FFF;
+	padding:3px;
+	margin:3px 0 5px 0;
+}
+*/
+body.palette_16 #mainContent header h2,
+body.palette_16 #mainContent h2 {
+	text-transform:uppercase;
+	font-size: 1.65em;
+	font-weight: normal;
+	line-height: 1.185em;
+}
+body.palette_16 #mainContent h2 {
+	text-transform:uppercase;
+	font-size: 1.65em;
+	font-weight: normal;
+	line-height: 1.185em;
+}
+body.palette_16 #mainContent h3 {
+	text-transform:uppercase;
+	color:#fff;
+	font-size:1.1em;
+	background:#395B72 none;
+}
+body.palette_16 #mainContent h4 {
+	color:#000;
+	margin: 0 0 16px 0;
+	font-size: 1.2em;
+	font-weight:bold;
+	line-height: 1.185em;
+}
+body.palette_16 .framedPhotoDefault, body.palette_16 #mainContent .threeSubCol .vertCol h3, figcaption {
+	margin:0px;
+	padding:4px;
+	background:#00456b;
+}
+body.palette_16 #mainContent ul.profiles {
+	background:#869aa7;
+	padding:10px;
+}
+body.palette_16 #mainContent ul.profiles li {
+	border:none;
+}
+body.palette_16 #mainContent ul.profiles li > h1 {
+	color:#fafaf9;
+}
+body.palette_16 #mainContent ul.profiles h2.profile, body.palette_16 #mainContent ul.profiles h2.profile a, body.palette_16 #mainContent ul.profiles li a {
+	color:#fafaf9;
+	font-weight:normal;
+	text-decoration:underline;
+}
+body.palette_16 #mainContent img.profile {
+	border:solid;
+	border-bottom-width:2px;
+	border-color:#fafaf9;
+}
+body.palette_16 #mainContent ul li ul li {
+	background-image: url(/_resources/images/btns/btn_dash.jpg);
+}
+
+
+/* Top Nav and Banner Area */
+body.palette_16 #pageBanners .bannersNav ol li {
+	width: 120px;
+}
+body.palette_16 #pageBanners .bannersTitle h1,
+body.palette_16 #pageBanners .bannersTitle h1 a {
+	color:#891d2c;
+}
+body.palette_16 #pageBanners .bannersNav ol li a,
+body.palette_16 #pageBanners .bannersNav ol li a:visited,
+body.palette_16 #pageBanners .bannersNav ol li a:active,
+body.palette_16 #pageBanners .bannersNav ol li a:hover,
+/* body.palette_16 #mainContent h3, */
+body.palette_16 .framedPhotoDefault p,
+body.palette_16 .framedPhotoLeft p,
+body.palette_16 .framedPhotoRight p,
+body.palette_16 #leftSidebar .simpleCallout li {
+	color:#d0c388;
+	width: 120px;
+}
+body.palette_16 #pageBanners .bannersNav ol li a.active,
+body.palette_16 #pageBanners .bannersNav ol li a:active,
+body.palette_16 #pageBanners .bannersNav ol li a:hover {
+	background:#395b72;
+	color:#ffffff;
+}
+
+#pageBanners .bannersNav ol li a.active.doubleLine, #pageBanners .bannersNav ol li a:active.doubleLine, #pageBanners .bannersNav ol li a:hover.doubleLine { padding:2px 0px 0px; font-size:0.929em; }
+
+#pageBanners .bannersNav ol li a.doubleLine, #pageBanners .bannersNav ol li a:visited.doubleLine, #pageBanners .bannersNav ol li a:active.doubleLine, #pageBanners .bannersNav ol li a:hover.doubleLine {
+padding: 2px 0 0 0;
+min-height:38px;
+}
+/* Top Banner Overlay Left and Right */
+body.palette_16 article.overlay_right,
+body.palette_16 article.overlay_left {
+	background:#5d788a;
+	height: 100%;
+	width: 252px;
+	margin-top: -349px;
+	padding:0;
+}
+body.palette_16 article.overlay_right h1,
+body.palette_16 article.overlay_left h1 {
+	padding:10px 0 0 0;
+}
+body.palette_16 article.overlay_right ul,
+body.palette_16 article.overlay_left ul {
+	padding: 10px 0 10px 20px;
+	list-style-type:none;
+	font-size:12px;
+	border-bottom:solid #FFF 1px; 
+}
+
+body.palette_16 article.overlay_right ul:last-child,
+body.palette_16 article.overlay_left ul:last-child {
+	border:none;
+}
+body.palette_16 article.overlay_right ul li,
+body.palette_16 article.overlay_left ul li{
+	line-height:20px;
+}
+body.palette_16 article.overlay_right a:link, 
+body.palette_16 article.overlay_right a:visited,
+body.palette_16 article.overlay_left a:link,
+body.palette_16 article.overlay_left a:visited {
+	color:#ffffff;
+	text-decoration:none;
+}
+body.palette_16 article.overlay_left a:hover,
+body.palette_16 article.overlay_right a:hover {
+	color:#000;
+}
+body.palette_16 article.overlay_right {
+	margin-left: 732px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	-webkit-border-radius: 0px 0px 0px 0px;
+	border-radius: 0px 0px 0px 0px;
+}
+
+
+/* Left Sidebar Secondary Navigation Area */
+body.palette_16 #leftSidebar nav ol li.level1 a, 
+body.palette_16 #leftSidebar nav ol li.level2 a,
+body.palette_16 #leftSidebar nav ol li.level3 a,
+body.palette_16 #leftSidebar nav ol li.level4 a,
+body.palette_16 #leftSidebar nav ol li.level5 a {
+	color:#ffffff;
+	text-decoration:none;
+	padding-top:7px;
+	padding-bottom:7px;
+}
+body.palette_16 #leftSidebar li a:hover,
+body.palette_16 #leftSidebar nav ol li.level1.active a,
+body.palette_16 #leftSidebar nav ol li.level2.active a,
+body.palette_16 #leftSidebar nav ol li.level3.active a,
+body.palette_16 #leftSidebar nav ol li.level4.active a,
+body.palette_16 #leftSidebar nav ol li.level5.active a,
+body.palette_16 #leftSidebar nav ol li.level2.activeParent a,
+body.palette_16 #leftSidebar nav ol li.level3.activeParent a,
+body.palette_16 #leftSidebar nav ol li.level4.activeParent a,
+body.palette_16 #leftSidebar .simpleCallout h1 {
+	background:#000000;
+	color:#d0c388;
+}
+body.palette_16 #leftSidebar {
+	background:#5d788a;
+	color:#ffffff;
+}
+
+
+/* Right Sidebar */
+body.palette_16 #main #rightSidebar a {
+	display:inline;
+	font-weight:normal;
+}
+body.palette_16 #main #rightSidebar a:link,
+body.palette_16 #main #rightSidebar a:visited {
+	color:#ffffff;
+	text-decoration:none !important;
+}
+
+body.palette_16 #main #rightSidebar a:hover {
+	color:#000;
+}
+body.palette_16 #rightSidebar h1 {
+	background:#000000;
+	color:#d0c388;
+	width: 226px;
+	padding: 4px 0 4px 20px;
+	font-weight:normal;
+}
+body.palette_16 #rightSidebar ul.singleLine {
+	background:#5d788a;
+	color:#ffffff;
+	width: 236px;
+}
+body.palette_16 #rightSidebar .simpleCallout {
+	background:#5d788a;
+	color:#ffffff;
+}
+body.palette_16 #rightSidebar .simpleCallout ul {
+	list-style-type:none;
+	font-size:12px;
+	padding: 10px 0 0 10px;
+}
+body.palette_16 #rightSidebar .simpleCallout ul li {
+	color:#ffffff;
+	border-bottom:none;
+	padding:0 10px 10px 10px;
+}
+body.palette_16 #rightSidebar .gssw_callout ul {
+	background:#5d788a;
+	color:#ffffff;
+	margin:0;
+	padding: 10px 0 10px 20px;
+	list-style-type:none;
+	font-size:12px;
+	border-bottom:solid #FFF 1px; 
+}
+body.palette_16 #rightSidebar .gssw_callout ul li {
+	color:#ffffff;
+	border-bottom:none;
+	padding:0 10px 10px 10px;
+}
+body.palette_16 #rightSidebar .gssw_callout ul:last-child {
+	border:none;
+}

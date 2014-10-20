@@ -1,0 +1,47 @@
+/*  IE hacks */
+#pageBanners .oneColBanner div {position:absolute;}
+#pageBanners .oneColBanner .overlay_right, #pageBanners .oneColBanner .overlay_left {
+	top:55px;
+	margin-bottom:-200px; 
+}
+.block {
+	width:245px;
+	border-left:#986c73 1px solid;
+}
+.block:first-child, #mainblock, #mainlinks {
+	border:none;
+}
+#row1 {
+	filter:
+		progid:DXImageTransform.Microsoft.Shadow(Color=#666666, Strength=3, Direction=90),
+        progid:DXImageTransform.Microsoft.Shadow(Color=#000000, Strength=3, Direction=180),
+        progid:DXImageTransform.Microsoft.Shadow(Color=#666666, Strength=3, Direction=270);
+}
+#mainblock {
+	width:734px;
+}
+.main_img_caption {
+	background:url(/_resources/images/bckgrnd/1x1alpha.png) repeat;
+}
+#row2 .block {
+	width:244px;
+}
+#main.hpmain {
+	filter:
+		progid:DXImageTransform.Microsoft.Shadow(Color=#666666, Strength=3, Direction=90),
+        progid:DXImageTransform.Microsoft.Shadow(Color=#666666, Strength=3, Direction=180),
+        progid:DXImageTransform.Microsoft.Shadow(Color=#666666, Strength=3, Direction=270);
+}
+.block hgroup {
+	filter:none;
+}
+/* Overlays */
+article.overlay_right, article.overlay_left {background:transparent;}
+body.palette_16 article.overlay_right,
+body.palette_16 article.overlay_left { 
+	margin-top:64px;
+	filter:none;
+}
+
+/*Site specific Hacks*/
+.ritchiecenter #pageBanners .oneColBanner .overlay_right, .ritchiecenter_adultaquatics #pageBanners .oneColBanner .overlay_right, .ritchiecenter_adulthockeyskate #pageBanners .oneColBanner .overlay_right, .ritchiecenter_athletics #pageBanners .oneColBanner .overlay_right, .ritchiecenter_coorsfc #pageBanners .oneColBanner .overlay_right, .ritchiecenter_eventsrentals #pageBanners .oneColBanner .overlay_right, .ritchiecenter_jrpioneers #pageBanners .oneColBanner .overlay_right, .ritchiecenter_studentprograms #pageBanners .oneColBanner .overlay_right, .ritchiecenter_youthprograms #pageBanners .oneColBanner .overlay_right, .ritchiecenter #pageBanners .oneColBanner .overlay_left, .ritchiecenter_adultaquatics #pageBanners .oneColBanner .overlay_left, .ritchiecenter_adulthockeyskate #pageBanners .oneColBanner .overlay_left, .ritchiecenter_athletics #pageBanners .oneColBanner .overlay_left, .ritchiecenter_coorsfc #pageBanners .oneColBanner .overlay_left, .ritchiecenter_eventsrentals #pageBanners .oneColBanner .overlay_left, .ritchiecenter_jrpioneers #pageBanners .oneColBanner .overlay_left, .ritchiecenter_studentprograms #pageBanners .oneColBanner .overlay_left, .ritchiecenter_youthprograms #pageBanners .oneColBanner .overlay_left {top:0; height:310px;}

@@ -1,0 +1,12 @@
+.svg-icon {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	fill: currentColor;
+}
+
+$icons: baidu bing blogger creative_commons delicious digg_alt digg dribbble dropbox facebook facebook2 facebook3 feed feed2 feed3 feedburner flickr flickr2 flickr3 foursquare foursquare2 friendster goodreads google_buzz google_talk googleplus googleplus2 googleplus3 instagram instapaper linkedin linkedin2 meetup openid photobucket picasa pinterest pinterest2 scribd sharethis slideshare stumbleupon stumbleupon2 tumblr tumblr2 twitter twitter2 twitter3 vcard vimeo vimeo2 vimeo3 wordpress_alt wordpress yelp youtube youtube2; 
+
+@each $icon in $icons {
+  .svg-icon-#{$icon} {fill:$primary-color;}
+}

@@ -1,0 +1,81 @@
+// Environment Variables
+$du-debug: true;
+$du-env-path: '/_marcomm' !default;
+$du-env-path-resources: "#{$du-env-path}/_resources" !default;
+$du-env-path-resources-css: "#{$du-env-path-resources}/css/v2" !default;
+$du-env-path-resources-scss: "#{$du-env-path-resources}/scss/v2" !default;
+$du-env-path-resources-images: "#{$du-env-path-resources}/images/v2" !default;
+
+//@mixin var-dump($type, $var){
+//  content: "#{$type}: #{$var}";
+//}
+
+@function du-get-env-path($du-path: 'base'){
+  @if $du-path == 'base' {
+    @return $du-env-path;
+  }
+  @else if ($du-path == 'resources'){
+    @return $du-env-path-resources;
+  }
+  @else if ($du-path == 'css'){
+    @return $du-env-path-resources-css;
+  }
+  @else if ($du-path == 'scss'){
+    @return $du-env-path-resources-scss;
+  }
+  @else if ($du-path == 'images'){
+    @return $du-env-path-resources-images;
+  }
+  @else {
+    @return $du-env-path;
+  }
+}
+
+// Fonts
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800);
+
+// Base settings
+@import "settings-foundation";
+
+// Add palette settings here
+
+@import "../../bower_components/foundation/scss/foundation.scss";
+
+// Additional styles here
+@import "core/utilities";
+@import "core/typography";
+@import "core/css3";
+
+// Themes
+@import "themes/global";
+
+
+/* Global */
+//#debug {
+//  &.state{
+//    @include var-dump("Debug", $du-debug);
+//  }
+//  &.root{
+//    @include var-dump("Root Path", $du-env-path);
+//  }
+//  &.resources{
+//    @include var-dump("Resources Path", $du-env-path-resources);
+//  }
+//  &.css{
+//    @include var-dump("CSS Path", $du-env-path-resources-css);
+//  }
+//  &.scss{
+//    @include var-dump("SCSS Path", $du-env-path-resources-scss);
+//  }
+//  &.images{
+//    @include var-dump("Images Path", $du-env-path-resources-images);
+//  }
+//}
+
+#skip-link {
+  display: block;
+  
+  a {
+    @include du-skip-link;
+  }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr" id="du-edu" class="no-js"><head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+   <title> Countdown | University of Denver</title>
+   
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"><!--//--></script>
+   <script src="/_resources/scripts/plugins/jquery.countdown.js"><!--//--></script>
+   <script>
+        $(document).ready(function() { 
+            //settings for countdown date: timezone, year, month (0 is Jan), day, hour, min, sec
+            $('#defaultCountdown').countdown({until: $.countdown.UTCDate(-7, 2013, 2, 25, 10, 0, 0),
+                layout:'<h4><span class="num">{dn}</span> {dl} <br/> <span class="num">{hn}</span> {hl} <br/> <span class="num">{mn}</span> {ml}</h4>'
+            });
+        });
+    </script>   
+    <style>
+	body {
+		margin:0;
+		font-family: "Trebuchet MS", Arial, Helvetica, sans-serif; }	
+    h4 {
+		margin:0;
+		text-transform:lowercase;
+		font-weight:normal; }
+	h5 { 
+		font-size:10px;
+		padding:20px 0 0 0;
+		margin:0 10px 0 0;
+		border-bottom:solid #999 1px;
+		margin-bottom:10px; }
+	.container {
+		background:url(/_resources/images/bckgrnd/bg_countdown.png) no-repeat top left;
+		margin:0;
+		padding:0;
+		height:140px;
+		width:218px; }
+	.right {
+		margin-left:110px; 	}
+	.num {
+		color:#98002E }
+    </style>
+    </head>
+	<body>
+    	<div class="container">
+        	<div class="right">
+            <h5>MONDAY MARCH 25</h5>
+            <section id="defaultCountdown"> </section>
+            </div>
+        </div>
+   <div class="clear"><!--//--></div>
+<a href="http://www.omniupdate.com/oucampus/de.jsp?user=Denver&amp;site=DU_Main&amp;path=%2F_resources%2Fincludes%2Fcountdown.html"><img src="/_resources/images/icon_edit_lt.png" /></a></body>
+</html>
